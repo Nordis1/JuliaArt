@@ -13,7 +13,7 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
 public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener, AdapterView.OnItemClickListener {
-    public static final String API_KEY = "AIzaSyBP5b4pciPceo40yjBdzzaTveNcwvV7DkM";
+    public static final String API_KEY = "Поставь свой";
     public static final String VIDEO_PREVIEW = "JYsNySLuF-c";
     public static final String VIDEO_part2 = "Xkp-RYFI1do";
     YouTubePlayerView youTubePlayerView;
