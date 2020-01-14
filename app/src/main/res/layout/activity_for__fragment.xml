@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_for_Fragment">
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_weight="1"
+        android:id="@+id/youtube_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.google.android.youtube.player.YouTubePlayerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="15dp">
+
+        </TextView>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

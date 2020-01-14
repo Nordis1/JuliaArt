@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_list-Of-learn"
+            android:icon="@mipmap/six"
+            android:title="@string/menu_stringsOfLearn" />
+        <item
+            android:id="@+id/nav_list-Of-learn_advance"
+            android:icon="@mipmap/ninght"
+            android:title="@string/menu_stringsOfLearn1" />
+        <item
+            android:id="@+id/nav_free_lesson"
+            android:icon="@mipmap/free"
+            android:title="@string/menu_free_lessons" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/patreon"
+            android:title="@string/menu_Patreon_home" />
+        <item
+            android:id="@+id/nav_youtube"
+            android:icon="@drawable/ic_you_tube"
+            android:title="@string/menu_Youtube_home" />
+    </group>
+
+    <item android:title="Дополнительно">
+        <menu>
+            <item
+                android:id="@+id/nav_Art-materials"
+                android:icon="@mipmap/shop"
+                android:title="@string/menu_myArtMaterial" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#277FC5</color>
+    <color name="colorPrimaryDark">#125880</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFCFC</color>
+    <color name="gentleGreen">#6ACE46</color>
+    <color name="violance">#6108B4</color>
+    <color name="gentleBlue">#30C0C7</color>
+    <color name="oranje">#AE9A25</color>
+    <color name="gentleoranje">#DDAF6F</color>
+    <color name="gentleblack">#270429</color>
+    <color name="tranperent">#00DFDFED</color>
+</resources>

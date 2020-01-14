@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Уроки рисования</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Julia Omelchenko Art</string>
+    <string name="nav_header_subtitle">www.patreon.com/juliaomelchenko</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">О приложении</string>
+    <string name="action_back">Назад</string>
+
+    <string name="menu_Patreon_home">На Patreon</string>
+    <string name="menu_about_patreon">Что такое Patreon?</string>
+    <string name="menu">Меню</string>
+    <string name="menu_myArtMaterial">Мои арт-материалы</string>
+    <string name="menu_free_lessons">Бесплатный урок</string>
+    <string name="menu_stringsOfLearn">Уровень \"Базовый\"</string>
+    <string name="menu_stringsOfLearn1">Уровень \"Продвинутый\"</string>
+    <string name="menu_Youtube_home">YouTube Автора</string>
+    <string name="menu_share">Поделиться</string>
+    <string name="menu_send">О проекте Patreon</string>
+
+    //Activity advanced
+    <string name="j">Законченные работы :</string>
+
+    //Descript activity 6 $
+    <string name="s">Чтобы перейти к уроку нажмите на кнопку «Перейти к уроку» или выберите
+        интересующую вас часть видео. Для просмотра вам следует зайти на Patreon под своей
+        учётной записью, на которую оформлена подписка. Приятного просмотра и обучения!\n</string>
+    <string name="btn">Перейти к уроку</string>
+    <string name="btn1">Часть 2</string>
+    <string name="btn2">Часть 3</string>
+
+
+    //что такое Patrion
+    <string name="string">Patreon - это платформа, на которой находится обучающий проект.
+        Все уроки курса поделены на два уровня доступа — Базовый и Продвинутый. Также есть третий,
+        Эксклюзивный уровень, который включает в себя анализ ваших работ. Обучение оплачивается ежемесячно
+        (1-го числа) и составляет 6 долларов на Базовом, 9 на Продвинутом и 21 доллар на Эксклюзивном уровне.
+        Оформляя подписку, вы получаете доступ сразу ко всем видео на выбранном вами уровне. Так как в проекте
+        ежемесячно появляются новые мастер-классы, список уроков в приложении обновляется раз в месяц.
+        Дополнительную информацию о регистрации и обучении вы найдёте в видео.\n</string>
+
+    //freeLesson
+    <string name="forFreeLesson">В этом мастер-классе я покажу как нарисовать реалистичного голубя цветными карандашами.
+        В первой части урока мы разберём упрощённую анатомию голубя и научимся рисовать переливающиеся перья.
+        Во второй части я покажу как нарисовать крыло и перья птицы, и расскажу о светотеневом и температурном балансе
+        в работе. В отличие от платных уроков, которые проходят в реальном времени, это процесс рисования в видео ускорен
+        в 3 раза. Приятного вам просмотра!\n</string>
+
+    //О Проекте
+    <string name="str">Видеоуроки по рисованию</string>
+    <string name="str1">Разработчик : "Omelchenko Stanislav"</string>
+    <string name="str2">Версия сборки 1.0"</string>
+    <string name="str3">Оцените приложение в GooglePlay"</string>
+
+
+    <string name="lvl_base">БАЗОВЫЙ</string>
+    <string name="lvl_advince">ПРОДВИНУТЫЙ</string>
+
+    //'Экран и меню context_menu
+    <string name="size_menu">Размер экрана</string>
+    <string name="size_small">Small</string>
+    <string name="size_nirmal">Normal</string>
+    <string name="size_nirmal_land">NormalLand</string>
+    <string name="size_standart">Standart</string>
+    <string name="size_large">Large</string>
+    <string name="size_large_land">Large_land</string>
+    <string name="size_XLarge">XLarge</string>
+    <string name="size_XLarge_land">XLarge_Land</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

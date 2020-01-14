@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/id_textSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/size_large_land">
+    </TextView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_textFor_MK"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/j"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/id_count_Of_MK"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="10"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/id_textFor_MK"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4">
+            <ImageView
+                android:id="@+id/id_Cat"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/cat"
+                android:transitionName="Cat">
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Sinichka"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/sinichka"
+                android:transitionName="Sinichka">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Mandarin"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/mandarin"
+                android:transitionName="Mandarin">
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Tigr"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/tigr"
+                android:transitionName="Tigr">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Eyes"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:background="@mipmap/eye"
+                android:transitionName="Eyes">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Mushroom"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/mushroom"
+                android:transitionName="Mushroom">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Butterfly"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/butterfly"
+                android:transitionName="Butterfly">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Tea"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/tea"
+                android:transitionName="Tea">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Beetle"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:background="@mipmap/beetle"
+                android:transitionName="Beetle">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Pumpkin"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/pumpkin"
+                android:transitionName="Pumpkin">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Sheet"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/sheet"
+                android:transitionName="Sheet">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Cherry"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/cherry"
+                android:transitionName="Cherry">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Peach"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/peach"
+                android:transitionName="Peach">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Smile"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:background="@mipmap/smile"
+                android:transitionName="Smile">
+
+            </ImageView>
+
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>
