@@ -9,7 +9,7 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
 public class Activity_for_Fragment extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
-    public static final String API_KEY = "AIzaSyBP5b4pciPceo40yjBdzzaTveNcwvV7DkM";
+    public static final String API_KEY = "Поставь свой";
     public static final String VIDEO_PREVIEW = "JGoTWbsxp14";
     YouTubePlayerView youTubePlayerView;
     YouTubePlayer Yplayer;
