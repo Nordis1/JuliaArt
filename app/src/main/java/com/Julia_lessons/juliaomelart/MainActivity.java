@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_SUBJECT,"Уроки рисования");
-                intent.putExtra(Intent.EXTRA_TEXT,"https://patreon.com/juliaomelchenko");
+                intent.putExtra(Intent.EXTRA_TEXT,"https://patreon.com/juliaomelchenko \nhttps://play.google.com/store/apps/details?id=com.Julia_lessons.juliaomelart");
                 startActivity(Intent.createChooser(intent,"Через что поделиться?"));
                 break;
             case R.id.nav_send:
