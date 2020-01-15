@@ -132,6 +132,8 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
                 intent.putExtra("intent", R.mipmap.sinichka);
                 startActivity(intent);
                 connectLink = "Sinichka";
+                part22 = connectLink + "_p2";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Mushroom:
                 intent = new Intent(this, Descript_activity.class);

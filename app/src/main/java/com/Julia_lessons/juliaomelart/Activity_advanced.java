@@ -142,12 +142,16 @@ public class Activity_advanced extends AppCompatActivity implements View.OnClick
                 intent.putExtra("intent", R.mipmap.sinichka);
                 startActivity(intent);
                 connectLink_of_advanced = "Sinichka";
+                part22 = connectLink_of_advanced + "_p2";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Cat:
                 intent = new Intent(this, Descript_activity.class);
                 intent.putExtra("intent", R.mipmap.cat);
                 startActivity(intent);
                 connectLink_of_advanced = "Cat";
+                part22 = connectLink_of_advanced + "_p2";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Tigr:
                 intent = new Intent(this, Descript_activity.class);
