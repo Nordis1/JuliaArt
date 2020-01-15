@@ -78,8 +78,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Mandarin","https://www.patreon.com/posts/mk-zapakhi-goda-32127170");
 
         mapView.put("Sinichka","https://www.patreon.com/posts/mk-sinichka-1-32299857");
+        mapView.put("Sinichka_p2","https://www.patreon.com/posts/mk-sinichka-2-i-32398957");
 
         mapView.put("Cat","https://www.patreon.com/posts/mk-kotionok-1-32539008");
+        mapView.put("Cat_p2","https://www.patreon.com/posts/mk-kotionok-2-32566937");
 
         mapView.put("Tigr","https://www.patreon.com/posts/mk-glaz-tigra-1-31747017");
         mapView.put("Tigr_p2","https://www.patreon.com/posts/mk-glaz-tigra-2-31901823");
