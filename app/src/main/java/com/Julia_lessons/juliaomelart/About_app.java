@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class About_app extends AppCompatActivity implements View.OnClickListener {
-    Button share;
+    Button share,versionCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,8 @@ public class About_app extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_about_app);
         share = findViewById(R.id.btnshare);
         share.setOnClickListener(this);
+        versionCount = findViewById(R.id.btn_countOfVersion);
+        versionCount.setText("Версия сборки 3.0");
 
     }
 
