@@ -6,7 +6,7 @@ android {
     defaultConfig {
         //applicationId "com.example.juliaomelart"
         applicationId "com.Julia_lessons.juliaomelart"
-        minSdkVersion 16
+        minSdkVersion 15
         targetSdkVersion 28 //28
         versionCode 3
         versionName '3'
