@@ -7,16 +7,18 @@
     <dimen name="margin_for_XLarge_screens">300dp</dimen>
     <dimen name="margin_for_Large_screens">150dp</dimen>
 
-    //activity_galery normal
+    //activity_galery small
     <dimen name="Act_galery_small_land_width">130dp</dimen>
     <dimen name="Act_galery_small_land_height">150dp</dimen>
     <dimen name="Act_galery_small_height">80dp</dimen>
     <dimen name="Act_galery_small_width">80dp</dimen>
 //activity_galery normal
-    <dimen name="Act_galery_normal_land_width">130dp</dimen>
+    <dimen name="Act_galery_normal_land_width">140dp</dimen>
     <dimen name="Act_galery_normal_land_height">150dp</dimen>
     <dimen name="Act_galery_normal_height">150dp</dimen>
     <dimen name="Act_galery_normal_width">170dp</dimen>
+    <dimen name="Act_galery_normal_width_max">450dp</dimen>
+    <dimen name="Act_galery_normal_width_min">310dp</dimen>
     //activity_galery Large
     <dimen name="Act_galery_Large_land_width">160dp</dimen>
     <dimen name="Act_galery_Large_land_height">150dp</dimen>
