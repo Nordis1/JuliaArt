@@ -13,7 +13,7 @@
     <dimen name="Act_galery_small_height">80dp</dimen>
     <dimen name="Act_galery_small_width">80dp</dimen>
 //activity_galery normal
-    <dimen name="Act_galery_normal_land_width">140dp</dimen>
+    <dimen name="Act_galery_normal_land_width">130dp</dimen>
     <dimen name="Act_galery_normal_land_height">150dp</dimen>
     <dimen name="Act_galery_normal_height">150dp</dimen>
     <dimen name="Act_galery_normal_width">170dp</dimen>
