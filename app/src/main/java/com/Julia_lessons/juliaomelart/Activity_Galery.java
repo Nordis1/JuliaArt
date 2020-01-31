@@ -26,9 +26,6 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__galery);
-        if (Descript_activity.nulll){
-            onDestroy();
-        }
         if (reslist.isEmpty()) {
             reslist.add(R.id.id_Sinichka);
             reslist.add(R.id.id_Sheet);

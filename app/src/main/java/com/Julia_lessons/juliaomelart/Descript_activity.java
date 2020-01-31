@@ -53,7 +53,10 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
         buttonView();
         nulll = getLiks();
         if (nulll){
-            onDestroy();
+            Log.i(TAG, "зашёл в в сброс активити ");
+            Intent i = new Intent(this,MainActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(i);
         }
     }
 
@@ -112,54 +115,6 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
 
         }
 
-    }
-
-
-
-    @Override
-    protected void onStop() {
-        Log.i(TAG,"onStop");
-        super.onStop();
-    }
-
-    @Override
-    protected void onPause() {
-        Log.i(TAG,"onPause");
-        super.onPause();
-    }
-
-
-    @Override
-    protected void onRestart() {
-        Log.i(TAG,"onRestart");
-        super.onRestart();
-    }
-
-    @Override
-    protected void onStart() {
-        Log.i(TAG,"onStart " + "s = " + s);
-        super.onStart();
-    }
-
-    @Override
-    protected void onResume() {
-        Log.i(TAG,"onResume");
-        super.onResume();
-    }
-
-    @Override
-    protected void onPostResume() {
-        Log.d(TAG,"onPostResume");
-        super.onPostResume();
-    }
-
-    @Override
-    protected void onDestroy() {
-        sPref = getSharedPreferences("SAVE",MODE_PRIVATE);
-        SharedPreferences.Editor editor = sPref.edit();
-        editor.clear().apply();
-        Log.d(TAG,"onDestroy");
-        super.onDestroy();
     }
 
     @Override

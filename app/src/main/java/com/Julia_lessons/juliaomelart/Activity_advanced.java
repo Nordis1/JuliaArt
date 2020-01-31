@@ -26,10 +26,6 @@ public class Activity_advanced extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advanced);
-        if (Descript_activity.nulll){
-            Log.i(TAG,"Запущен OnDestroy");
-            onDestroy();
-        }
         if (reslist1.isEmpty()) {
             reslist1.add(R.id.id_Smile);
             reslist1.add(R.id.id_Sheet);
@@ -70,7 +66,6 @@ public class Activity_advanced extends AppCompatActivity implements View.OnClick
             case R.id.id_Sheet:
                 getMenuInflater().inflate(R.menu.conrext_menu, menu);
                 break;
-
         }
     }
     @Override
