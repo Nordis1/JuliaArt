@@ -3,6 +3,7 @@ package com.Julia_lessons.juliaomelart;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,11 +20,16 @@ public class Activity_advanced extends AppCompatActivity implements View.OnClick
     static boolean part2, part3 = false;
     String part22, part33; // Состав строки в одну и проверка на вторую часть.
     ArrayList<Integer> reslist1 = new ArrayList<>();
+    public static final String TAG = "Activity_Advanced";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advanced);
+        if (Descript_activity.nulll){
+            Log.i(TAG,"Запущен OnDestroy");
+            onDestroy();
+        }
         if (reslist1.isEmpty()) {
             reslist1.add(R.id.id_Smile);
             reslist1.add(R.id.id_Sheet);

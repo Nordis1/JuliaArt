@@ -3,6 +3,7 @@ package com.Julia_lessons.juliaomelart;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,13 +20,17 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
     static String s,s2,s3 = "";
     TextView textfor_size;
     ImageView linkView;
+    static boolean nulll = false;
     public static final String TAG = "Descript_Activity";
     public static FrameLayout frameLayout;
+    SharedPreferences sPref;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        nulll = false;
+        Log.i(TAG,"onCreate");
         setContentView(R.layout.descript_activity);
         Intent intent = getIntent();
         int viewElement = intent.getIntExtra("intent", 0);
@@ -46,7 +51,10 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
         Log.d(TAG, "номер картинки " + viewElement);
         setFrameLayout(viewElement); // рабочий
         buttonView();
-        getLiks();
+        nulll = getLiks();
+        if (nulll){
+            onDestroy();
+        }
     }
 
     @Override
@@ -61,7 +69,8 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
         frameLayout.setBackgroundResource(i);
     }
 
-    public static void getLiks(){
+    public static Boolean getLiks(){
+        boolean b = false;
         if (Activity_Galery.load_galery) {
             s = MainActivity.mapView.get(Activity_Galery.connectLink);
             if (Activity_Galery.part2) {
@@ -79,6 +88,10 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
                 s3 = MainActivity.mapView.get(Activity_advanced.connectLink_of_advanced + "_p3");
             }
         }
+        if (s == null){
+            b = true;
+        }
+        return b;
 
     }
     public static void buttonView(){
@@ -101,33 +114,51 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
 
     }
 
+
+
     @Override
     protected void onStop() {
-        onRestart();
-        onStart();
+        Log.i(TAG,"onStop");
         super.onStop();
     }
 
     @Override
+    protected void onPause() {
+        Log.i(TAG,"onPause");
+        super.onPause();
+    }
+
+
+    @Override
     protected void onRestart() {
+        Log.i(TAG,"onRestart");
         super.onRestart();
     }
 
     @Override
     protected void onStart() {
+        Log.i(TAG,"onStart " + "s = " + s);
         super.onStart();
     }
 
     @Override
+    protected void onResume() {
+        Log.i(TAG,"onResume");
+        super.onResume();
+    }
+
+    @Override
     protected void onPostResume() {
+        Log.d(TAG,"onPostResume");
         super.onPostResume();
     }
 
     @Override
     protected void onDestroy() {
-        s = "";
-        s2 = "";
-        s3 = "";
+        sPref = getSharedPreferences("SAVE",MODE_PRIVATE);
+        SharedPreferences.Editor editor = sPref.edit();
+        editor.clear().apply();
+        Log.d(TAG,"onDestroy");
         super.onDestroy();
     }
 
@@ -136,12 +167,17 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
         Intent intent;
         switch (v.getId()) {
             case R.id.btn_linkToPatreon:
-                if (Activity_Galery.load_galery) {
-                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s));
-                    startActivity(intent);
-                }else {
-                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s));
-                    startActivity(intent);
+                try {
+                    if (Activity_Galery.load_galery) {
+                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s));
+                        startActivity(intent);
+                    }else {
+                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s));
+                        startActivity(intent);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Log.d(TAG,e.toString());
                 }
                 break;
             case R.id.btn_linkToPatreon_part2:
