@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //mobile_navigatsion.xml - изменяет название кнопки на главном экране
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home,R.id.nav_Art_materials,R.id.nav_list_Of_learn,R.id.nav_list_Of_learn_advance,
-                R.id.nav_free_lesson, R.id.nav_youtube, R.id.nav_send)
+                R.id.nav_free_lesson, R.id.nav_youtube,R.id.nav_work_of_Student, R.id.nav_send)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.main_fragment);
@@ -166,6 +166,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_send:
                 intent = new Intent(this,Activity_for_Fragment.class);
                 startActivity(intent);
+                break;
+            case R.id.nav_work_of_Student:
                 break;
         }
         return false;

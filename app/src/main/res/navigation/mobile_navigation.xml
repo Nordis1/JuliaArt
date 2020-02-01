@@ -11,7 +11,7 @@
         android:label="@string/menu"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
+<!--    <fragment
         android:id="@+id/nav_Art-materialsX"
         android:name="com.Julia_lessons.juliaomelart.ui.gallery.GalleryFragment"
         android:label="@string/menu_myArtMaterial"
@@ -27,7 +27,7 @@
         android:id="@+id/nav_youtubeX"
         android:name="com.Julia_lessons.juliaomelart.ui.tools.ToolsFragment"
         android:label="@string/menu_Youtube_home"
-        tools:layout="@layout/fragment_tools" />
+        tools:layout="@layout/fragment_tools" />-->
 
 <!--    <fragment
         android:id="@+id/nav_shareX"
@@ -35,9 +35,9 @@
         android:label="@string/menu_share"
         tools:layout="@layout/fragment_share" />-->
 
-    <fragment
+<!--    <fragment
         android:id="@+id/nav_sendX"
         android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
         android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        tools:layout="@layout/fragment_send" />-->
 </navigation>
