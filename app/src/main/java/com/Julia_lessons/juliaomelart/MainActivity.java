@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //mobile_navigatsion.xml - изменяет название кнопки на главном экране
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home,R.id.nav_Art_materials,R.id.nav_list_Of_learn,R.id.nav_list_Of_learn_advance,
-                R.id.nav_free_lesson, R.id.nav_youtube, R.id.nav_share, R.id.nav_send)
+                R.id.nav_free_lesson, R.id.nav_youtube, R.id.nav_send)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.main_fragment);
@@ -162,13 +162,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_Art_materials:
                 intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://juliaeestivene.wixsite.com/artwork/post/%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BC%D0%BE%D0%B8%D1%85-%D0%B0%D1%80%D1%82-%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%BE%D0%B2"));
                 startActivity(intent);
-                break;
-            case R.id.nav_share:
-                intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("text/plain");
-                intent.putExtra(Intent.EXTRA_SUBJECT,"Уроки рисования");
-                intent.putExtra(Intent.EXTRA_TEXT,"https://patreon.com/juliaomelchenko \nhttps://play.google.com/store/apps/details?id=com.Julia_lessons.juliaomelart");
-                startActivity(Intent.createChooser(intent,"Через что поделиться?"));
                 break;
             case R.id.nav_send:
                 intent = new Intent(this,Activity_for_Fragment.class);

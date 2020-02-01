@@ -16,7 +16,8 @@
     <string name="menu_stringsOfLearn">Уровень \"Базовый\"</string>
     <string name="menu_stringsOfLearn1">Уровень \"Продвинутый\"</string>
     <string name="menu_Youtube_home">YouTube Автора</string>
-    <string name="menu_share">Поделиться</string>
+    <string name="menu_WorkOfStudent">Работы учеников</string>
+    <!--<string name="menu_share">Поделиться</string>-->
     <string name="menu_send">О проекте Patreon</string>
 
     //Activity advanced

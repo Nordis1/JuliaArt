@@ -29,11 +29,11 @@
         android:label="@string/menu_Youtube_home"
         tools:layout="@layout/fragment_tools" />
 
-    <fragment
+<!--    <fragment
         android:id="@+id/nav_shareX"
         android:name="com.Julia_lessons.juliaomelart.ui.share.ShareFragment"
         android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        tools:layout="@layout/fragment_share" />-->
 
     <fragment
         android:id="@+id/nav_sendX"
