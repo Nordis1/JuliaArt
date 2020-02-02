@@ -17,15 +17,20 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.Julia_lessons.juliaomelart.Activity_Free_Lesson"
+        <activity android:name=".Activity_best_student"
             android:screenOrientation="portrait"></activity>
-        <activity android:name="com.Julia_lessons.juliaomelart.Activity_advanced" />
-        <activity android:name="com.Julia_lessons.juliaomelart.About_app"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.Julia_lessons.juliaomelart.Activity_for_Fragment"
-            android:screenOrientation="portrait"/>
         <activity
-            android:name="com.Julia_lessons.juliaomelart.Descript_activity"
+            android:name=".Activity_Free_Lesson"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity_advanced" />
+        <activity
+            android:name=".About_app"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_for_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Descript_activity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.Descript" />
@@ -33,7 +38,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.Julia_lessons.juliaomelart.Activity_Galery">
+        <activity android:name=".Activity_Galery">
             <intent-filter>
                 <action android:name="android.intent.action.Galerey" />
 
@@ -41,7 +46,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.Julia_lessons.juliaomelart.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">

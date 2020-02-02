@@ -93,6 +93,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Pumpkin","https://www.patreon.com/posts/mk-khellouin-30591129");
 
         mapView.put("Cherry","https://www.patreon.com/posts/mk-vishni-29231335");
+
+        mapView.put("Frog","https://www.patreon.com/posts/mk-tropicheskaia-33197864");
+        mapView.put("Frog_p2","https://www.patreon.com/posts/mk-tropicheskaia-33253277");
+
+        mapView.put("Aiva","https://www.patreon.com/posts/mk-zhivopisnaia-33425163");
     }
 
     @Override
@@ -168,6 +173,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             case R.id.nav_work_of_Student:
+                intent = new Intent(this,Activity_best_student.class);
+                startActivity(intent);
                 break;
         }
         return false;

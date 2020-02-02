@@ -36,6 +36,7 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
             reslist.add(R.id.id_Pumpkin);
             reslist.add(R.id.id_Mushroom);
             reslist.add(R.id.id_Peach);
+            reslist.add(R.id.id_Aiva);
         }
         for (int i = 0; i < reslist.size() ; i++) {
             ImageView v = findViewById(reslist.get(i));
@@ -158,6 +159,12 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
                 intent.putExtra("intent", R.mipmap.cherry);
                 startActivity(intent);
                 connectLink = "Cherry";
+                break;
+                case R.id.id_Aiva:
+                intent = new Intent(this, Descript_activity.class);
+                intent.putExtra("intent", R.mipmap.aiva);
+                startActivity(intent);
+                connectLink = "Aiva";
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

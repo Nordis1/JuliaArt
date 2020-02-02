@@ -58,8 +58,7 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/cat"
-                android:transitionName="Cat">
+                android:background="@mipmap/cat">
             </ImageView>
             <ImageView
                 android:id="@+id/id_Sinichka"
@@ -68,8 +67,7 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/sinichka"
-                android:transitionName="Sinichka">
+                android:background="@mipmap/sinichka">
 
             </ImageView>
             <ImageView
@@ -79,8 +77,7 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/mandarin"
-                android:transitionName="Mandarin">
+                android:background="@mipmap/mandarin">
             </ImageView>
             <ImageView
                 android:id="@+id/id_Tigr"
@@ -89,8 +86,7 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/tigr"
-                android:transitionName="Tigr">
+                android:background="@mipmap/tigr">
 
             </ImageView>
             <ImageView
@@ -100,8 +96,7 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
                 android:layout_gravity="center"
-                android:background="@mipmap/eye"
-                android:transitionName="Eyes">
+                android:background="@mipmap/eye">
 
             </ImageView>
             <ImageView
@@ -111,8 +106,7 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/mushroom"
-                android:transitionName="Mushroom">
+                android:background="@mipmap/mushroom">
 
             </ImageView>
             <ImageView
@@ -122,8 +116,7 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/butterfly"
-                android:transitionName="Butterfly">
+                android:background="@mipmap/butterfly">
 
             </ImageView>
             <ImageView
@@ -133,8 +126,7 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/tea"
-                android:transitionName="Tea">
+                android:background="@mipmap/tea">
 
             </ImageView>
             <ImageView
@@ -144,8 +136,7 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
                 android:layout_gravity="center"
-                android:background="@mipmap/beetle"
-                android:transitionName="Beetle">
+                android:background="@mipmap/beetle">
 
             </ImageView>
             <ImageView
@@ -155,8 +146,7 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/pumpkin"
-                android:transitionName="Pumpkin">
+                android:background="@mipmap/pumpkin">
 
             </ImageView>
             <ImageView
@@ -166,8 +156,7 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/sheet"
-                android:transitionName="Sheet">
+                android:background="@mipmap/sheet">
 
             </ImageView>
             <ImageView
@@ -177,8 +166,7 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/cherry"
-                android:transitionName="Cherry">
+                android:background="@mipmap/cherry">
 
             </ImageView>
             <ImageView
@@ -188,8 +176,7 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/peach"
-                android:transitionName="Peach">
+                android:background="@mipmap/peach">
 
             </ImageView>
             <ImageView
@@ -199,8 +186,17 @@
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
                 android:layout_gravity="center"
-                android:background="@mipmap/smile"
-                android:transitionName="Smile">
+                android:background="@mipmap/smile">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Frog"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_Large_width"
+                android:layout_height="@dimen/Act_galery_Large_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:background="@mipmap/frog">
 
             </ImageView>
 

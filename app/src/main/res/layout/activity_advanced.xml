@@ -201,6 +201,15 @@
                 android:transitionName="Smile">
 
             </ImageView>
+            <ImageView
+                android:id="@+id/id_Frog"
+                android:layout_width="@dimen/Act_galery_normal_width"
+                android:layout_height="@dimen/Act_galery_normal_height"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/frog"
+                android:transitionName="Smile">
+
+            </ImageView>
 
 
         </GridLayout>

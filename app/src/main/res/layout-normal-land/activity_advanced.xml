@@ -175,6 +175,15 @@
                 android:background="@mipmap/smile">
 
             </ImageView>
+            <ImageView
+                android:id="@+id/id_Frog"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_normal_land_width"
+                android:layout_height="@dimen/Act_galery_normal_land_height"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/frog">
+
+            </ImageView>
 
         </GridLayout>
     </ScrollView>

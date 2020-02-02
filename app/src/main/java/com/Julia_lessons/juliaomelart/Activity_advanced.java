@@ -1,6 +1,7 @@
 package com.Julia_lessons.juliaomelart;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -41,11 +42,12 @@ public class Activity_advanced extends AppCompatActivity implements View.OnClick
             reslist1.add(R.id.id_Cat);
             reslist1.add(R.id.id_Peach);
             reslist1.add(R.id.id_Tigr);
+            reslist1.add(R.id.id_Frog);
         }
-        for (int i = 0; i < reslist1.size() ; i++) {
+        for (int i = 0; i < reslist1.size(); i++) {
             ImageView v = findViewById(reslist1.get(i));
             v.setOnClickListener(this);
-            if (i == 1){
+            if (i == 1) {
                 registerForContextMenu(v);
 
             }
@@ -60,6 +62,7 @@ public class Activity_advanced extends AppCompatActivity implements View.OnClick
         connectLink_of_advanced = null;
 
     }
+
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         switch (v.getId()) {
@@ -68,6 +71,7 @@ public class Activity_advanced extends AppCompatActivity implements View.OnClick
                 break;
         }
     }
+
     @Override
     public boolean onContextItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -185,6 +189,14 @@ public class Activity_advanced extends AppCompatActivity implements View.OnClick
                 intent.putExtra("intent", R.mipmap.cherry);
                 startActivity(intent);
                 connectLink_of_advanced = "Cherry";
+                break;
+            case R.id.id_Frog:
+                intent = new Intent(this, Descript_activity.class);
+                intent.putExtra("intent", R.mipmap.frog);
+                startActivity(intent);
+                connectLink_of_advanced = "Frog";
+                part22 = connectLink_of_advanced + "_p2";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

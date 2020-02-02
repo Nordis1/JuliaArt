@@ -122,6 +122,13 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
                 android:background="@mipmap/peach"></ImageView>
+            <ImageView
+                android:id="@+id/id_Aiva"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:background="@mipmap/aiva"></ImageView>
         </GridLayout>
     </ScrollView>
 
