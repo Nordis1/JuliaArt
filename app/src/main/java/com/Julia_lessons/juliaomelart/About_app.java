@@ -18,7 +18,7 @@ public class About_app extends AppCompatActivity implements View.OnClickListener
         share = findViewById(R.id.btnshare);
         share.setOnClickListener(this);
         versionCount = findViewById(R.id.btn_countOfVersion);
-        versionCount.setText("Версия сборки 3.0");
+        versionCount.setText("Версия сборки 4.0");
 
     }
 
