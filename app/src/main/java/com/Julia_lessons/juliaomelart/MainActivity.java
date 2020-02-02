@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // 3. Создаём в Activity_Galery.xml новый view элемент.
         // 4. Регистрируем view в Activity_Galery и регистрируем в Onclick внимательно(Там много элементов нужно заменить).
         // 5. Запускаем программу.
+        // mapView(key,value) - key Всегда с большой буквы
         mapView.put("Sheet","https://www.patreon.com/posts/tsvetnye-risuem-29220651");
 
         mapView.put("Smile","https://www.patreon.com/posts/tsvetnye-ulybka-29262023");
