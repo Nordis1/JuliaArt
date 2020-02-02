@@ -13,12 +13,14 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
 public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener, AdapterView.OnItemClickListener {
-    public static final String API_KEY = "Поставь свой";
+    public static final String API_KEY = "AIzaSyBP5b4pciPceo40yjBdzzaTveNcwvV7DkM";
     public static final String VIDEO_PREVIEW = "JYsNySLuF-c";
     public static final String VIDEO_part2 = "Xkp-RYFI1do";
+    public static final String VIDEO_burd1 = "T68OPSMvEJQ";
+    public static final String VIDEO_Nectarin = "Eehov9NPj8k";
     YouTubePlayerView youTubePlayerView;
     ListView listview;
-    String[] arrayOfnames = {"Голубь часть 1","Голубь часть 2"};
+    String[] arrayOfnames = {"Голубь часть 1", "Голубь часть 2", "Айва", "Нектарин"};
     YouTubePlayer Yplayer;
 
     @Override
@@ -29,21 +31,27 @@ public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTube
 
 
         youTubePlayerView = findViewById(R.id.youtube_player1);
-        youTubePlayerView.initialize(API_KEY,this);
+        youTubePlayerView.initialize(API_KEY, this);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,arrayOfnames);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayOfnames);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(this);
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        switch (position){
+        switch (position) {
             case 0:
                 Yplayer.loadVideo(VIDEO_PREVIEW);
                 break;
             case 1:
                 Yplayer.loadVideo(VIDEO_part2);
+                break;
+            case 2:
+                Yplayer.loadVideo(VIDEO_burd1);
+                break;
+            case 3:
+                Yplayer.loadVideo(VIDEO_Nectarin);
                 break;
 
         }

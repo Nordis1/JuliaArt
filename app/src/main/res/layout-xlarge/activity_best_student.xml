@@ -18,38 +18,259 @@
             android:columnCount="1">
 
             <ImageView
-                android:id="@+id/id_Cat"
                 android:layout_width="@dimen/Act_best_Student_Xlarge_width"
                 android:layout_height="@dimen/Act_best_Student_Xlarge_height"
                 android:layout_margin="2dp"
                 android:layout_gravity="center"
-                android:background="@mipmap/cat"></ImageView>
+                android:background="@mipmap/cherry_one"></ImageView>
 
             <ImageView
-                android:id="@+id/id_Sinichka"
                 android:layout_width="@dimen/Act_best_Student_Xlarge_width"
                 android:layout_height="@dimen/Act_best_Student_Xlarge_height"
                 android:layout_margin="2dp"
                 android:layout_gravity="center"
-                android:background="@mipmap/sinichka">
+                android:background="@mipmap/students1">
 
             </ImageView>
 
             <ImageView
-                android:id="@+id/id_Mandarin"
                 android:layout_width="@dimen/Act_best_Student_Xlarge_width"
                 android:layout_height="@dimen/Act_best_Student_Xlarge_height"
                 android:layout_margin="2dp"
                 android:layout_gravity="center"
-                android:background="@mipmap/mandarin"></ImageView>
+                android:background="@mipmap/students2"></ImageView>
 
             <ImageView
-                android:id="@+id/id_Tigr"
                 android:layout_width="@dimen/Act_best_Student_Xlarge_width"
                 android:layout_height="@dimen/Act_best_Student_Xlarge_height"
                 android:layout_margin="2dp"
                 android:layout_gravity="center"
-                android:background="@mipmap/tigr">
+                android:background="@mipmap/students3">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students4">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students5">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students6">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students7">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students8">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students9">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students10">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students11">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students12">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students13">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students14">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students15">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students16">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students17">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students18">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students19">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students20">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students21">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students22">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students23">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students24">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students25">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students26">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students27">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/Act_best_Student_Xlarge_width"
+                android:layout_height="@dimen/Act_best_Student_Xlarge_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students28">
 
             </ImageView>
         </GridLayout>
