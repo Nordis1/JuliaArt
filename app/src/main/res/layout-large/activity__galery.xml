@@ -52,33 +52,22 @@
             android:columnCount="2">
 
             <ImageView
-                android:id="@+id/id_Peach"
+                android:id="@+id/id_Aiva"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
                 android:layout_gravity="center"
                 android:layout_margin="2dp"
-                android:background="@mipmap/peach">
-
-            </ImageView>
+                android:background="@mipmap/aiva"></ImageView>
 
             <ImageView
-                android:id="@+id/id_Mushroom"
+                android:id="@+id/id_Sinichka"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
                 android:layout_gravity="center"
                 android:layout_margin="2dp"
-                android:background="@mipmap/mushroom"></ImageView>
-
-            <ImageView
-                android:id="@+id/id_Pumpkin"
-                android:layout_width="@dimen/Act_galery_Large_width"
-                android:layout_height="@dimen/Act_galery_Large_height"
-                android:layout_columnWeight="1"
-                android:layout_gravity="center"
-                android:layout_margin="2dp"
-                android:background="@mipmap/pumpkin"></ImageView>
+                android:background="@mipmap/sinichka"></ImageView>
 
             <ImageView
                 android:id="@+id/id_Mandarin"
@@ -90,22 +79,13 @@
                 android:background="@mipmap/mandarin"></ImageView>
 
             <ImageView
-                android:id="@+id/id_Sheet"
+                android:id="@+id/id_Mushroom"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
                 android:layout_gravity="center"
                 android:layout_margin="2dp"
-                android:background="@mipmap/sheet"></ImageView>
-
-            <ImageView
-                android:id="@+id/id_Sinichka"
-                android:layout_width="@dimen/Act_galery_Large_width"
-                android:layout_height="@dimen/Act_galery_Large_height"
-                android:layout_columnWeight="1"
-                android:layout_gravity="center"
-                android:layout_margin="2dp"
-                android:background="@mipmap/sinichka"></ImageView>
+                android:background="@mipmap/mushroom"></ImageView>
 
             <ImageView
                 android:id="@+id/id_Tea"
@@ -126,6 +106,26 @@
                 android:background="@mipmap/butterfly"></ImageView>
 
             <ImageView
+                android:id="@+id/id_Pumpkin"
+                android:layout_width="@dimen/Act_galery_Large_width"
+                android:layout_height="@dimen/Act_galery_Large_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:background="@mipmap/pumpkin"></ImageView>
+
+            <ImageView
+                android:id="@+id/id_Peach"
+                android:layout_width="@dimen/Act_galery_Large_width"
+                android:layout_height="@dimen/Act_galery_Large_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:background="@mipmap/peach">
+
+            </ImageView>
+
+            <ImageView
                 android:id="@+id/id_Cherry"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
@@ -133,14 +133,15 @@
                 android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/cherry"></ImageView>
+
             <ImageView
-                android:id="@+id/id_Aiva"
+                android:id="@+id/id_Sheet"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
                 android:layout_gravity="center"
                 android:layout_margin="2dp"
-                android:background="@mipmap/aiva"></ImageView>
+                android:background="@mipmap/sheet"></ImageView>
 
 
         </GridLayout>
