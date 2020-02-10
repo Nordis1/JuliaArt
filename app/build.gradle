@@ -5,7 +5,7 @@ android {
     compileSdkVersion 28 //28
     defaultConfig {
         applicationId "com.Julia_lessons.juliaomelart"
-        minSdkVersion 15
+        minSdkVersion 21 //15
         targetSdkVersion 28 //28
         versionCode 5
         versionName '5.0.1'
@@ -34,8 +34,4 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation "com.android.support:support-compat:28.0.0" //для сервиса notification
     implementation files('libs/YouTubeAndroidPlayerApi.jar')
-    // recycleView support Library
-    implementation "com.android.support:recyclerview-v7:28.0.0"
-    //cycle imageView
-    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }
