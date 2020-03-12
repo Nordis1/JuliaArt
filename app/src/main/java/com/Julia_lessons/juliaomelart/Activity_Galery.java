@@ -1,4 +1,5 @@
 package com.Julia_lessons.juliaomelart;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.util.ArrayList;
 
 public class Activity_Galery extends AppCompatActivity implements View.OnClickListener {
@@ -37,11 +39,12 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
             reslist.add(R.id.id_Mushroom);
             reslist.add(R.id.id_Peach);
             reslist.add(R.id.id_Aiva);
+            reslist.add(R.id.id_Lily);
         }
-        for (int i = 0; i < reslist.size() ; i++) {
+        for (int i = 0; i < reslist.size(); i++) {
             ImageView v = findViewById(reslist.get(i));
             v.setOnClickListener(this);
-            if (i == 1){
+            if (i == 1) {
                 registerForContextMenu(v);
 
             }
@@ -89,7 +92,7 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
     protected void onDestroy() {
         part2 = false;
         part3 = false;
-        load_galery =  false;
+        load_galery = false;
         super.onDestroy();
     }
 
@@ -160,11 +163,19 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
                 startActivity(intent);
                 connectLink = "Cherry";
                 break;
-                case R.id.id_Aiva:
+            case R.id.id_Aiva:
                 intent = new Intent(this, Descript_activity.class);
                 intent.putExtra("intent", R.mipmap.aiva);
                 startActivity(intent);
                 connectLink = "Aiva";
+                break;
+            case R.id.id_Lily:
+                intent = new Intent(this, Descript_activity.class);
+                intent.putExtra("intent", R.mipmap.lily);
+                startActivity(intent);
+                connectLink = "Lily";
+                part22 = connectLink + "_p2";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

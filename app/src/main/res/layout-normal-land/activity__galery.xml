@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
     <TextView
         android:id="@+id/id_textSize"
         android:layout_width="match_parent"
@@ -47,6 +49,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:columnCount="4">
+            <ImageView
+                android:id="@+id/id_Lily"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_normal_land_width"
+                android:layout_height="@dimen/Act_galery_normal_land_height"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/lily">
+            </ImageView>
             <ImageView
                 android:id="@+id/id_Aiva"
                 android:layout_margin="2dp"

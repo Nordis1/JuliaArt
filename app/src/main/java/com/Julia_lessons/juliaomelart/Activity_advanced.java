@@ -44,6 +44,8 @@ public class Activity_advanced extends AppCompatActivity implements View.OnClick
             reslist1.add(R.id.id_Tigr);
             reslist1.add(R.id.id_Frog);
             reslist1.add(R.id.id_Aiva);
+            reslist1.add(R.id.id_Lily);
+            reslist1.add(R.id.id_Child);
         }
         for (int i = 0; i < reslist1.size(); i++) {
             ImageView v = findViewById(reslist1.get(i));
@@ -204,6 +206,24 @@ public class Activity_advanced extends AppCompatActivity implements View.OnClick
                 intent.putExtra("intent", R.mipmap.aiva);
                 startActivity(intent);
                 connectLink_of_advanced = "Aiva";
+                break;
+            case R.id.id_Lily:
+                intent = new Intent(this, Descript_activity.class);
+                intent.putExtra("intent", R.mipmap.lily);
+                startActivity(intent);
+                connectLink_of_advanced = "Lily";
+                part22 = connectLink_of_advanced + "_p2";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                break;
+            case R.id.id_Child:
+                intent = new Intent(this, Descript_activity.class);
+                intent.putExtra("intent", R.mipmap.child);
+                startActivity(intent);
+                connectLink_of_advanced = "Child";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

@@ -3,6 +3,8 @@ package com.Julia_lessons.juliaomelart;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +20,13 @@ public class About_app extends AppCompatActivity implements View.OnClickListener
         share = findViewById(R.id.btnshare);
         share.setOnClickListener(this);
         versionCount = findViewById(R.id.btn_countOfVersion);
-        versionCount.setText("Версия сборки 5.0");
+        try {
+            PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
+            String version = pInfo.versionName;
+            versionCount.setText("Версия сборки  " + version);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
 
     }
 

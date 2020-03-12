@@ -51,13 +51,22 @@
             android:layout_height="match_parent"
             android:columnCount="4">
             <ImageView
-                android:id="@+id/id_Sheet"
+                android:id="@+id/id_Lily"
                 android:layout_margin="2dp"
                 android:layout_width="@dimen/Act_galery_XLarge_width"
                 android:layout_height="@dimen/Act_galery_XLarge_height"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/sheet">
+                android:background="@mipmap/lily">
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Aiva"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_XLarge_width"
+                android:layout_height="@dimen/Act_galery_XLarge_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/aiva">
             </ImageView>
 
             <ImageView
@@ -140,13 +149,13 @@
                 android:background="@mipmap/peach">
             </ImageView>
             <ImageView
-                android:id="@+id/id_Aiva"
+                android:id="@+id/id_Sheet"
                 android:layout_margin="2dp"
                 android:layout_width="@dimen/Act_galery_XLarge_width"
                 android:layout_height="@dimen/Act_galery_XLarge_height"
                 android:layout_gravity="center"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/aiva">
+                android:background="@mipmap/sheet">
             </ImageView>
         </GridLayout>
     </ScrollView>

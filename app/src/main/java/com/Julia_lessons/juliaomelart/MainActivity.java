@@ -99,6 +99,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Frog_p2","https://www.patreon.com/posts/mk-tropicheskaia-33253277");
 
         mapView.put("Aiva","https://www.patreon.com/posts/mk-zhivopisnaia-33425163");
+
+        mapView.put("Lily","https://www.patreon.com/posts/mk-volshebnye-1-33832369");
+        mapView.put("Lily_p2","https://www.patreon.com/posts/mk-volshebnye-2-34020719");
+
+        mapView.put("Child","https://www.patreon.com/posts/mk-portret-chast-34381382");
+        mapView.put("Child_p2","https://www.patreon.com/posts/mk-portret-chast-34449497");
+        mapView.put("Child_p3","https://www.patreon.com/posts/mk-portret-chast-34801309");
     }
 
     @Override
