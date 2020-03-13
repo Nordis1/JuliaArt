@@ -5,10 +5,10 @@ android {
     compileSdkVersion 28 //28
     defaultConfig {
         applicationId "com.Julia_lessons.juliaomelart"
-        minSdkVersion 21 //15
+        minSdkVersion 15 //15
         targetSdkVersion 28 //28
-        versionCode 5
-        versionName '5.0.1'
+        versionCode 6
+        versionName '6'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
