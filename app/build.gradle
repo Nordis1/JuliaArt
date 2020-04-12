@@ -7,8 +7,8 @@ android {
         applicationId "com.Julia_lessons.juliaomelart"
         minSdkVersion 15 //15
         targetSdkVersion 28 //28
-        versionCode 6
-        versionName '6'
+        versionCode 7
+        versionName '7'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

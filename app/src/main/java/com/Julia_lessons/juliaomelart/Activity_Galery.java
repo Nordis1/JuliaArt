@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 
 public class Activity_Galery extends AppCompatActivity implements View.OnClickListener {
@@ -40,14 +39,22 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
             reslist.add(R.id.id_Peach);
             reslist.add(R.id.id_Aiva);
             reslist.add(R.id.id_Lily);
+            reslist.add(R.id.id_Lizard);
         }
-        for (int i = 0; i < reslist.size(); i++) {
-            ImageView v = findViewById(reslist.get(i));
-            v.setOnClickListener(this);
-            if (i == 1) {
-                registerForContextMenu(v);
+        try {
+            for (int i = 0; i < reslist.size(); i++) {
+                ImageView v = findViewById(reslist.get(i));
+                v.setOnClickListener(this);
+                if (i == 1) {
+                    registerForContextMenu(v);
 
+                }
             }
+        } catch (Exception e) {
+            Intent i = new Intent(this, MainActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            Toast.makeText(this,"Потеря данных",Toast.LENGTH_LONG).show();
+            startActivity(i);
         }
         textSize = findViewById(R.id.id_textSize);
         count_MK1 = findViewById(R.id.id_count_Of_MK_base);
@@ -176,6 +183,16 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
                 connectLink = "Lily";
                 part22 = connectLink + "_p2";
                 if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                break;
+            case R.id.id_Lizard:
+                intent = new Intent(this, Descript_activity.class);
+                intent.putExtra("intent", R.mipmap.lizard);
+                startActivity(intent);
+                connectLink = "Lizard";
+                part22 = connectLink + "_p2";
+                part33 = connectLink + "_p3";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

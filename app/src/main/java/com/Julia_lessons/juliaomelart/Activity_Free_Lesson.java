@@ -1,5 +1,6 @@
 package com.Julia_lessons.juliaomelart;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,14 +14,17 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
 public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener, AdapterView.OnItemClickListener {
-    public static final String API_KEY = "";
+    public static final String API_KEY = "AIzaSyBP5b4pciPceo40yjBdzzaTveNcwvV7DkM";
     public static final String VIDEO_PREVIEW = "JYsNySLuF-c";
     public static final String VIDEO_part2 = "Xkp-RYFI1do";
     public static final String VIDEO_burd1 = "T68OPSMvEJQ";
     public static final String VIDEO_Nectarin = "Eehov9NPj8k";
+    public static final String VIDEO_Tea = "blKrAnAloSM";
+    public static final String VIDEO_Gold_apple = "FO-m_GQTrcA";
+    public static final String VIDEO_Kitty = "e2DGZOcvams";
     YouTubePlayerView youTubePlayerView;
     ListView listview;
-    String[] arrayOfnames = {"Голубь часть 1", "Голубь часть 2", "Айва", "Нектарин"};
+    String[] arrayOfnames = {"Голубь часть 1", "Голубь часть 2", "Айва", "Нектарин", "Чай", "Золотое яблочко", "Котёнок"};
     YouTubePlayer Yplayer;
 
     @Override
@@ -40,20 +44,36 @@ public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTube
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        switch (position) {
-            case 0:
-                Yplayer.loadVideo(VIDEO_PREVIEW);
-                break;
-            case 1:
-                Yplayer.loadVideo(VIDEO_part2);
-                break;
-            case 2:
-                Yplayer.loadVideo(VIDEO_burd1);
-                break;
-            case 3:
-                Yplayer.loadVideo(VIDEO_Nectarin);
-                break;
+        try {
+            switch (position) {
+                case 0:
+                    Yplayer.loadVideo(VIDEO_PREVIEW);
+                    break;
+                case 1:
+                    Yplayer.loadVideo(VIDEO_part2);
+                    break;
+                case 2:
+                    Yplayer.loadVideo(VIDEO_burd1);
+                    break;
+                case 3:
+                    Yplayer.loadVideo(VIDEO_Nectarin);
+                    break;
+                case 4:
+                    Yplayer.loadVideo(VIDEO_Tea);
+                    break;
+                case 5:
+                    Yplayer.loadVideo(VIDEO_Gold_apple);
+                    break;
+                case 6:
+                    Yplayer.loadVideo(VIDEO_Kitty);
+                    break;
 
+            }
+        } catch (Exception e) {
+            Intent i = new Intent(this, MainActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            Toast.makeText(this, "Проверьте подключение к интернету", Toast.LENGTH_LONG).show();
+            startActivity(i);
         }
     }
 
@@ -62,7 +82,14 @@ public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTube
         player.setPlayerStateChangeListener(playerStateChangeListener);
         player.setPlaybackEventListener(playbackEventListener);
         Yplayer = player;
-        player.cueVideo(VIDEO_PREVIEW);
+        try {
+            player.cueVideo(VIDEO_PREVIEW);
+        } catch (Exception e) {
+            Intent i = new Intent(this, MainActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            Toast.makeText(this, "Проверьте подключение к интернету", Toast.LENGTH_LONG).show();
+            startActivity(i);
+        }
     }
 
     private YouTubePlayer.PlaybackEventListener playbackEventListener = new YouTubePlayer.PlaybackEventListener() {

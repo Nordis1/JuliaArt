@@ -18,6 +18,36 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:columnCount="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="340dp"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students333"></ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Act_best_Student_normal_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students31"></ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Act_best_Student_normal_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students32"></ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Act_best_Student_normal_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students30"></ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Act_best_Student_normal_height"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/students29"></ImageView>
 
             <ImageView
                 android:layout_width="wrap_content"
