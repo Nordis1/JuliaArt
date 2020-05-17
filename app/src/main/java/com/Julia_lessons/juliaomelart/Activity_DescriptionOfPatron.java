@@ -8,7 +8,7 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-public class Activity_for_Fragment extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
+public class Activity_DescriptionOfPatron extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
     public static final String API_KEY = "AIzaSyBP5b4pciPceo40yjBdzzaTveNcwvV7DkM";
     public static final String VIDEO_PREVIEW = "JGoTWbsxp14";
     YouTubePlayerView youTubePlayerView;
@@ -17,7 +17,7 @@ public class Activity_for_Fragment extends YouTubeBaseActivity implements YouTub
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_for__fragment);
+        setContentView(R.layout.activity_descriptionofpatron);
 
         youTubePlayerView = findViewById(R.id.youtube_player);
         youTubePlayerView.initialize(API_KEY,this);

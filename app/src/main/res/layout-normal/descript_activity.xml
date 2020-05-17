@@ -6,7 +6,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Descript_activity">
+    tools:context=".Activity_moveToWatch">
+
+    <Button
+        android:id="@+id/btn_linkToPatreon_part4"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/mybutton"
+        android:text="@string/btn3"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:visibility="visible"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="45dp"
+        app:layout_constraintHeight_min="30dp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_linkToPatreon_part3">
+
+    </Button>
 
     <TextView
         android:id="@+id/id_textSize1"
@@ -26,10 +48,8 @@
         android:text="@string/btn2"
         android:textColor="@color/white"
         android:textStyle="normal"
-        android:visibility="gone"
-        android:layout_marginBottom="8dp"
+        android:visibility="visible"
         app:layout_constrainedHeight="true"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_max="45dp"
         app:layout_constraintHeight_min="30dp"
@@ -48,7 +68,7 @@
         android:text="@string/btn1"
         android:textColor="@color/white"
         android:textStyle="normal"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constrainedHeight="true"
         app:layout_constraintBottom_toTopOf="@+id/btn_linkToPatreon_part3"
         app:layout_constraintEnd_toEndOf="parent"

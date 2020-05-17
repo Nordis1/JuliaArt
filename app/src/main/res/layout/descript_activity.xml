@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Descript_activity">
+    tools:context=".Activity_moveToWatch">
 
 
     <TextView
@@ -96,6 +96,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_linkToPatreon_part2">
 
     </Button>
+
     <ImageView
         android:id="@+id/linkView"
         android:layout_width="wrap_content"

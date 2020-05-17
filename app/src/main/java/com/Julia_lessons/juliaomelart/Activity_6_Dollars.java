@@ -13,20 +13,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
 
-public class Activity_Galery extends AppCompatActivity implements View.OnClickListener {
-    public static final String TAG = "Activity_Galery";
+public class Activity_6_Dollars extends AppCompatActivity implements View.OnClickListener {
+    public static final String TAG = "Activity_6_Dollars";
     TextView textSize;
     TextView count_MK1;
     static String connectLink; // Имя рисунка
-    static boolean part2, part3 = false;
+    static boolean part2, part3 ,part4 = false;
     static boolean load_galery = false;
-    String part22, part33; // Состав строки в одну и проверка на вторую часть.
+    String part22, part33, part44; // Состав строки в одну и проверка на вторую часть.
     ArrayList<Integer> reslist = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity__galery);
+        setContentView(R.layout.activity_6dollars);
         if (reslist.isEmpty()) {
             reslist.add(R.id.id_Sinichka);
             reslist.add(R.id.id_Sheet);
@@ -40,6 +40,7 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
             reslist.add(R.id.id_Aiva);
             reslist.add(R.id.id_Lily);
             reslist.add(R.id.id_Lizard);
+            reslist.add(R.id.id_Tropical_Fish);
         }
         try {
             for (int i = 0; i < reslist.size(); i++) {
@@ -111,13 +112,13 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
         part3 = false;
         switch (v.getId()) {
             case R.id.id_Sheet:
-                intent = new Intent(this, Descript_activity.class);
+                intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.sheet);
                 connectLink = "Sheet";
                 startActivity(intent);
                 break;
             case R.id.id_Tea:
-                intent = new Intent(this, Descript_activity.class);
+                intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.tea);
                 startActivity(intent);
                 connectLink = "Tea";
@@ -125,7 +126,7 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
                 if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Peach:
-                intent = new Intent(this, Descript_activity.class);
+                intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.peach);
                 startActivity(intent);
                 connectLink = "Peach";
@@ -133,13 +134,13 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
                 if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Mandarin:
-                intent = new Intent(this, Descript_activity.class);
+                intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.mandarin);
                 startActivity(intent);
                 connectLink = "Mandarin";
                 break;
             case R.id.id_Sinichka:
-                intent = new Intent(this, Descript_activity.class);
+                intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.sinichka);
                 startActivity(intent);
                 connectLink = "Sinichka";
@@ -147,37 +148,37 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
                 if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Mushroom:
-                intent = new Intent(this, Descript_activity.class);
+                intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.mushroom);
                 startActivity(intent);
                 connectLink = "Mushroom";
                 break;
             case R.id.id_Butterfly:
-                intent = new Intent(this, Descript_activity.class);
+                intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.butterfly);
                 startActivity(intent);
                 connectLink = "Butterfly";
                 break;
             case R.id.id_Pumpkin:
-                intent = new Intent(this, Descript_activity.class);
+                intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.pumpkin);
                 startActivity(intent);
                 connectLink = "Pumpkin";
                 break;
             case R.id.id_Cherry:
-                intent = new Intent(this, Descript_activity.class);
+                intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.cherry);
                 startActivity(intent);
                 connectLink = "Cherry";
                 break;
             case R.id.id_Aiva:
-                intent = new Intent(this, Descript_activity.class);
+                intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.aiva);
                 startActivity(intent);
                 connectLink = "Aiva";
                 break;
             case R.id.id_Lily:
-                intent = new Intent(this, Descript_activity.class);
+                intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.lily);
                 startActivity(intent);
                 connectLink = "Lily";
@@ -185,10 +186,20 @@ public class Activity_Galery extends AppCompatActivity implements View.OnClickLi
                 if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Lizard:
-                intent = new Intent(this, Descript_activity.class);
+                intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.lizard);
                 startActivity(intent);
                 connectLink = "Lizard";
+                part22 = connectLink + "_p2";
+                part33 = connectLink + "_p3";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                break;
+            case R.id.id_Tropical_Fish:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.tropical_fish);
+                startActivity(intent);
+                connectLink = "Tropical_Fish";
                 part22 = connectLink + "_p2";
                 part33 = connectLink + "_p3";
                 if (MainActivity.mapView.containsKey(part22)) part2 = true;

@@ -15,9 +15,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Descript_activity extends AppCompatActivity implements View.OnClickListener {
-    private static Button btnLink,btnLink_Part2,btnLink_Part3;
-    static String s,s2,s3 = "";
+public class Activity_moveToWatch extends AppCompatActivity implements View.OnClickListener {
+    private static Button btnLink,btnLink_Part2,btnLink_Part3,btnLink_Part4;
+    static String s,s2,s3,s4 = "";
     TextView textfor_size;
     ImageView linkView;
     static boolean nulll = false;
@@ -38,11 +38,13 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
         btnLink = findViewById(R.id.btn_linkToPatreon);
         btnLink_Part2 = findViewById(R.id.btn_linkToPatreon_part2);
         btnLink_Part3 = findViewById(R.id.btn_linkToPatreon_part3);
+        btnLink_Part4 = findViewById(R.id.btn_linkToPatreon_part4);
         linkView = findViewById(R.id.linkView);
         linkView.setOnClickListener(this);
         btnLink.setOnClickListener(this);
         btnLink_Part2.setOnClickListener(this);
         btnLink_Part3.setOnClickListener(this);
+        btnLink_Part4.setOnClickListener(this);
 
         textfor_size = findViewById(R.id.id_textSize1);
 
@@ -74,21 +76,27 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
 
     public static Boolean getLiks(){
         boolean b = false;
-        if (Activity_Galery.load_galery) {
-            s = MainActivity.mapView.get(Activity_Galery.connectLink);
-            if (Activity_Galery.part2) {
-                s2 = MainActivity.mapView.get(Activity_Galery.connectLink + "_p2");
+        if (Activity_6_Dollars.load_galery) {
+            s = MainActivity.mapView.get(Activity_6_Dollars.connectLink);
+            if (Activity_6_Dollars.part2) {
+                s2 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p2");
             }
-            if (Activity_Galery.part3) {
-                s3 = MainActivity.mapView.get(Activity_Galery.connectLink + "_p3");
+            if (Activity_6_Dollars.part3) {
+                s3 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p3");
+            }
+            if (Activity_6_Dollars.part4) {
+                s4 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p4");
             }
         }else {
-            s = MainActivity.mapView.get(Activity_advanced.connectLink_of_advanced);
-            if (Activity_advanced.part2) {
-                s2 = MainActivity.mapView.get(Activity_advanced.connectLink_of_advanced + "_p2");
+            s = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced);
+            if (Activity_9_Dollars.part2) {
+                s2 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p2");
             }
-            if (Activity_advanced.part3) {
-                s3 = MainActivity.mapView.get(Activity_advanced.connectLink_of_advanced + "_p3");
+            if (Activity_9_Dollars.part3) {
+                s3 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p3");
+            }
+            if (Activity_9_Dollars.part4) {
+                s4 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p4");
             }
         }
         if (s == null){
@@ -98,19 +106,25 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
 
     }
     public static void buttonView(){
-        if (Activity_Galery.load_galery) {
-            if (Activity_Galery.part2) {
+        if (Activity_6_Dollars.load_galery) {
+            if (Activity_6_Dollars.part2) {
                 btnLink_Part2.setVisibility(View.VISIBLE);
             }
-            if (Activity_Galery.part3) {
+            if (Activity_6_Dollars.part3) {
                 btnLink_Part3.setVisibility(View.VISIBLE);
+            }
+            if (Activity_6_Dollars.part4){
+                btnLink_Part4.setVisibility(View.VISIBLE);
             }
         }else {
-            if (Activity_advanced.part2) {
+            if (Activity_9_Dollars.part2) {
                 btnLink_Part2.setVisibility(View.VISIBLE);
             }
-            if (Activity_advanced.part3) {
+            if (Activity_9_Dollars.part3) {
                 btnLink_Part3.setVisibility(View.VISIBLE);
+            }
+            if (Activity_9_Dollars.part4){
+                btnLink_Part4.setVisibility(View.VISIBLE);
             }
 
         }
@@ -123,7 +137,7 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
         switch (v.getId()) {
             case R.id.btn_linkToPatreon:
                 try {
-                    if (Activity_Galery.load_galery) {
+                    if (Activity_6_Dollars.load_galery) {
                         intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s));
                         startActivity(intent);
                     }else {
@@ -136,7 +150,7 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
                 }
                 break;
             case R.id.btn_linkToPatreon_part2:
-                if (Activity_Galery.load_galery) {
+                if (Activity_6_Dollars.load_galery) {
                     intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s2));
                     startActivity(intent);
                 }else {
@@ -145,7 +159,7 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
                 }
                 break;
             case R.id.btn_linkToPatreon_part3:
-                if (Activity_Galery.load_galery) {
+                if (Activity_6_Dollars.load_galery) {
                     intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s3));
                     startActivity(intent);
                 }else {
@@ -153,11 +167,20 @@ public class Descript_activity extends AppCompatActivity implements View.OnClick
                     startActivity(intent);
                 }
                 break;
+            case R.id.btn_linkToPatreon_part4:
+                if (Activity_6_Dollars.load_galery) {
+                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s4));
+                    startActivity(intent);
+                }else {
+                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s4));
+                    startActivity(intent);
+                }
+                break;
             case R.id.linkView:
                 intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_SUBJECT,"Ссылки на урок");
-                intent.putExtra(Intent.EXTRA_TEXT,s+"\n"+s2+"\n"+s3);
+                intent.putExtra(Intent.EXTRA_TEXT,s+"\n"+s2+"\n"+s3+"\n"+s4);
                 startActivity(Intent.createChooser(intent,"Через что передать?"));
                 break;
         }

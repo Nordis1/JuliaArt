@@ -22,15 +22,15 @@
         <activity
             android:name=".Activity_Free_Lesson"
             android:screenOrientation="portrait" />
-        <activity android:name=".Activity_advanced" />
+        <activity android:name=".Activity_9_Dollars" />
         <activity
             android:name=".About_app"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity_for_Fragment"
+            android:name=".Activity_DescriptionOfPatron"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Descript_activity"
+            android:name=".Activity_moveToWatch"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.Descript" />
@@ -38,7 +38,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity_Galery">
+        <activity android:name=".Activity_6_Dollars">
             <intent-filter>
                 <action android:name="android.intent.action.Galerey" />
 

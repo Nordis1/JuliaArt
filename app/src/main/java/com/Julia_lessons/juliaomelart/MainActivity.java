@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public static void createMap() {
         // 1. Добавляем Элемент картинки.
         // 2. Закидываем ссылки на элемент сюда.
-        // 3. Создаём в Activity_Galery.xml новый view элемент.
-        // 4. Регистрируем view в Activity_Galery и регистрируем в Onclick внимательно(Там много элементов нужно заменить).
+        // 3. Создаём в Activity_6_Dollars.xml новый view элемент.
+        // 4. Регистрируем view в Activity_6_Dollars и регистрируем в Onclick внимательно(Там много элементов нужно заменить).
         // 5. Запускаем программу.
         // mapView(key,value) - key Всегда с большой буквы
         mapView.put("Sheet","https://www.patreon.com/posts/tsvetnye-risuem-29220651");
@@ -110,6 +110,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Lizard","https://www.patreon.com/posts/mk-iashcheritsa-35107857");
         mapView.put("Lizard_p2","https://www.patreon.com/posts/mk-iashcheritsa-35319622");
         mapView.put("Lizard_p3","https://www.patreon.com/posts/mk-iashcheritsa-35663605");
+
+        mapView.put("Dog","https://www.patreon.com/posts/mk-luchshii-drug-36093147");
+        mapView.put("Dog_p2","https://www.patreon.com/posts/mk-luchshii-drug-36239737");
+        mapView.put("Dog_p3","https://www.patreon.com/posts/mk-luchshii-drug-36306711");
+        mapView.put("Dog_p4","https://www.patreon.com/posts/mk-luchshii-drug-37139533");
+
+        mapView.put("Tropical_Fish","https://www.patreon.com/posts/mk-tropicheskaia-36453779");
+        mapView.put("Tropical_Fish_p2","https://www.patreon.com/posts/mk-tropicheskaia-36846340");
+        mapView.put("Tropical_Fish_p3","https://www.patreon.com/posts/mk-tropicheskaia-36926230");
     }
 
     @Override
@@ -127,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             case R.id.abot_Patreon:
-                intent = new Intent(this,Activity_for_Fragment.class);
+                intent = new Intent(this, Activity_DescriptionOfPatron.class);
                 startActivity(intent);
                 break;
         }
@@ -161,7 +170,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             case R.id.nav_list_Of_learn:
-                intent = new Intent(MainActivity.this,Activity_Galery.class);
+                intent = new Intent(MainActivity.this, Activity_6_Dollars.class);
                 startActivity(intent);
                 break;
             case R.id.nav_free_lesson:
@@ -169,7 +178,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             case R.id.nav_list_Of_learn_advance:
-                intent = new Intent(MainActivity.this,Activity_advanced.class);
+                intent = new Intent(MainActivity.this, Activity_9_Dollars.class);
                 startActivity(intent);
                 break;
             case R.id.nav_youtube:
@@ -181,7 +190,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             case R.id.nav_send:
-                intent = new Intent(this,Activity_for_Fragment.class);
+                intent = new Intent(this, Activity_DescriptionOfPatron.class);
                 startActivity(intent);
                 break;
             case R.id.nav_work_of_Student:
