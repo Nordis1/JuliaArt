@@ -18,9 +18,9 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
     TextView textSize;
     TextView count_MK1;
     static String connectLink; // Имя рисунка
-    static boolean part2, part3 ,part4 = false;
+    static boolean part2, part3 ,part4,part5 = false;
     static boolean load_galery = false;
-    String part22, part33, part44; // Состав строки в одну и проверка на вторую часть.
+    String part22, part33, part44,part55; // Состав строки в одну и проверка на вторую часть.
     ArrayList<Integer> reslist = new ArrayList<>();
 
     @Override
@@ -62,8 +62,10 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
         count_MK1.setText(String.valueOf(reslist.size()));
         part2 = false;
         part3 = false;
+        part4 = false;
         part22 = null;
         part33 = null;
+        part44 = null;
         connectLink = null;
         load_galery = false;
 
@@ -100,16 +102,28 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
     protected void onDestroy() {
         part2 = false;
         part3 = false;
+        part4 = false;
+        part5 = false;
+        part22 = null;
+        part33 = null;
+        part44 = null;
+        part55 = null;
         load_galery = false;
         super.onDestroy();
     }
 
     @Override
     public void onClick(View v) {
-        load_galery = true;
-        Intent intent;
         part2 = false;
         part3 = false;
+        part4 = false;
+        part5 = false;
+        part22 = null;
+        part33 = null;
+        part44 = null;
+        part55 = null;
+        load_galery = true;
+        Intent intent;
         switch (v.getId()) {
             case R.id.id_Sheet:
                 intent = new Intent(this, Activity_moveToWatch.class);

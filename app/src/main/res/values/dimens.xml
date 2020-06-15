@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="image_height">150dp</dimen>
-    <dimen name="image_weight">170dp</dimen>
-    <dimen name="image_size">500dp</dimen>
-    <dimen name="image_width">800dp</dimen>
-    <dimen name="margin_for_XLarge_screens">300dp</dimen>
-    <dimen name="margin_for_Large_screens">150dp</dimen>
 
     //activity_galery small
-    <dimen name="Act_galery_small_land_width">130dp</dimen>
-    <dimen name="Act_galery_small_land_height">150dp</dimen>
     <dimen name="Act_galery_small_height">80dp</dimen>
     <dimen name="Act_galery_small_width">80dp</dimen>
 //activity_galery normal
@@ -17,8 +9,6 @@
     <dimen name="Act_galery_normal_land_height">150dp</dimen>
     <dimen name="Act_galery_normal_height">150dp</dimen>
     <dimen name="Act_galery_normal_width">170dp</dimen>
-    <dimen name="Act_galery_normal_width_max">450dp</dimen>
-    <dimen name="Act_galery_normal_width_min">310dp</dimen>
     //activity_galery Large
     <dimen name="Act_galery_Large_land_width">160dp</dimen>
     <dimen name="Act_galery_Large_land_height">150dp</dimen>
@@ -31,9 +21,7 @@
     <dimen name="Act_galery_XLarge_width">180dp</dimen>
     //activity_Best_students XLarge
     <dimen name="Act_best_Student_small_height">130dp</dimen>
-    <dimen name="Act_best_Student_small_width">150dp</dimen>
     <dimen name="Act_best_Student_normal_height">240dp</dimen>
-    <dimen name="Act_best_Student_normal_width">380dp</dimen>
     <dimen name="Act_best_Student_large_height">340dp</dimen>
     <dimen name="Act_best_Student_large_width">460dp</dimen>
     <dimen name="Act_best_Student_Xlarge_height">440dp</dimen>

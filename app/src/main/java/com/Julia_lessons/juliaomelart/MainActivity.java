@@ -119,6 +119,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Tropical_Fish","https://www.patreon.com/posts/mk-tropicheskaia-36453779");
         mapView.put("Tropical_Fish_p2","https://www.patreon.com/posts/mk-tropicheskaia-36846340");
         mapView.put("Tropical_Fish_p3","https://www.patreon.com/posts/mk-tropicheskaia-36926230");
+
+        mapView.put("Cloudlandscape","https://www.patreon.com/posts/mk-peizazh-s-1-i-37578312");
+        mapView.put("Cloudlandscape_p2","https://www.patreon.com/posts/mk-peizazh-s-2-i-37764801");
+        mapView.put("Cloudlandscape_p3","https://www.patreon.com/posts/mk-peizazh-s-3-37846112");
+        mapView.put("Cloudlandscape_p4","https://www.patreon.com/posts/mk-peizazh-s-4-1-38119638");
+        mapView.put("Cloudlandscape_p5","https://www.patreon.com/posts/mk-peizazh-s-5-2-38159726");
     }
 
     @Override

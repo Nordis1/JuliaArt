@@ -1,12 +1,6 @@
 <resources>
     <string name="app_name">Уроки рисования</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Julia Omelchenko Art</string>
-    <string name="nav_header_subtitle">www.patreon.com/juliaomelchenko</string>
-    <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">О приложении</string>
-    <string name="action_back">Назад</string>
 
     <string name="menu_Patreon_home">На Patreon</string>
     <string name="menu_about_patreon">Что такое Patreon?</string>
@@ -28,9 +22,13 @@
         интересующую вас часть видео. Для просмотра вам следует зайти на Patreon под своей
         учётной записью, на которую оформлена подписка. Приятного просмотра и обучения!\n</string>
     <string name="btn">Перейти к уроку</string>
+    <string name="btnSmall">Часть 1</string>
     <string name="btn1">Часть 2</string>
     <string name="btn2">Часть 3</string>
     <string name="btn3">Часть 4</string>
+    <string name="btn4">Часть 5</string>
+    <string name="textlink">Отправить себе </string>
+    <string name="textlink2">cсылки на видео</string>
 
 
     //что такое Patrion
@@ -53,15 +51,11 @@
     <string name="str3">Оцените приложение в GooglePlay"</string>
 
 
-    <string name="lvl_base">БАЗОВЫЙ</string>
-    <string name="lvl_advince">ПРОДВИНУТЫЙ</string>
-
     //'Экран и меню context_menu
     <string name="size_menu">Размер экрана</string>
     <string name="size_small">Small</string>
     <string name="size_nirmal">Normal</string>
     <string name="size_nirmal_land">NormalLand</string>
-    <string name="size_standart">Standart</string>
     <string name="size_large">Large</string>
     <string name="size_large_land">Large_land</string>
     <string name="size_XLarge">XLarge</string>
@@ -69,5 +63,4 @@
 
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

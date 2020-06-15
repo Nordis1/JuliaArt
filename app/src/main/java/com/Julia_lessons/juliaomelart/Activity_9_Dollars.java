@@ -17,8 +17,8 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
     TextView textSize;
     TextView count_MK;
     static String connectLink_of_advanced; // Имя рисунка
-    static boolean part2, part3, part4 = false;
-    String part22, part33,part44; // Состав строки в одну и проверка на вторую часть.
+    static  boolean part2, part3, part4,part5 = false;
+    String part22, part33,part44,part55; // Состав строки в одну и проверка на вторую часть.
     ArrayList<Integer> reslist1 = new ArrayList<>();
     public static final String TAG = "Activity_Advanced";
 
@@ -48,6 +48,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
             reslist1.add(R.id.id_Lizard);
             reslist1.add(R.id.id_Dog);
             reslist1.add(R.id.id_Tropical_Fish);
+            reslist1.add(R.id.id_Cloudlandscape);
         }
         for (int i = 0; i < reslist1.size(); i++) {
             ImageView v = findViewById(reslist1.get(i));
@@ -62,8 +63,12 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
         count_MK.setText(String.valueOf(reslist1.size()));
         part2 = false;
         part3 = false;
+        part4 = false;
+        part5 = false;
         part22 = null;
         part33 = null;
+        part44 = null;
+        part55 = null;
         connectLink_of_advanced = null;
 
     }
@@ -89,11 +94,15 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
 
     @Override
     public void onClick(View v) {
-        Intent intent;
         part2 = false;
         part3 = false;
+        part4 = false;
+        part5 = false;
         part22 = null;
         part33 = null;
+        part44 = null;
+        part55 = null;
+        Intent intent;
         switch (v.getId()) {
             case R.id.id_Sheet:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -258,6 +267,20 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 part33 = connectLink_of_advanced + "_p3";
                 if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                break;
+            case R.id.id_Cloudlandscape:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.cloudlandscape);
+                startActivity(intent);
+                connectLink_of_advanced = "Cloudlandscape";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                part44 = connectLink_of_advanced + "_p4";
+                part55 = connectLink_of_advanced + "_p5";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                if (MainActivity.mapView.containsKey(part55)) part5 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

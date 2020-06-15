@@ -23,14 +23,13 @@
         android:layout_height="wrap_content"
         android:background="@mipmap/sinichka"
         app:layout_constrainedHeight="true"
-        app:layout_constraintHeight_max="110dp"
-        app:layout_constraintHeight_min="60dp"
         app:layout_constraintBottom_toTopOf="@+id/scrollable"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="110dp"
+        app:layout_constraintHeight_min="50dp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:layout_constraintVertical_chainStyle="packed">
 
     </FrameLayout>
@@ -40,11 +39,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/Scroll_for_buttons"
         app:layout_constraintHeight_max="50dp"
         app:layout_constraintHeight_min="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_linkToPatreon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription">
+        app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription"
+        app:layout_constraintVertical_chainStyle="packed">
 
         <TextView
             android:id="@+id/text_ofPrice"
@@ -60,80 +60,141 @@
         </TextView>
     </ScrollView>
 
-    <Button
-        android:id="@+id/btn_linkToPatreon"
-        android:layout_width="110dp"
+    <ScrollView
+        android:id="@+id/Scroll_for_buttons"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/mybutton"
-        android:text="@string/btn"
-        android:textColor="@color/white"
-        android:textStyle="normal"
-        android:layout_marginBottom="5dp"
         app:layout_constrainedHeight="true"
-        app:layout_constraintHeight_max="25dp"
-        app:layout_constraintHeight_min="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_linkToPatreon_part2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollable">
-
-    </Button>
-
-    <Button
-        android:id="@+id/btn_linkToPatreon_part2"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/mybutton"
-        android:text="@string/btn1"
-        android:textColor="@color/white"
-        android:textStyle="normal"
-        android:visibility="gone"
-        app:layout_constrainedHeight="true"
-        app:layout_constraintHeight_max="25dp"
-        app:layout_constraintHeight_min="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_linkToPatreon_part3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_linkToPatreon">
-
-    </Button>
-
-    <Button
-        android:id="@+id/btn_linkToPatreon_part3"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/mybutton"
-        android:text="@string/btn2"
-        android:textColor="@color/white"
-        android:textStyle="normal"
-        android:visibility="gone"
-        app:layout_constrainedHeight="true"
-        app:layout_constraintHeight_max="25dp"
-        app:layout_constraintHeight_min="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHeight_max="wrap"
+        app:layout_constraintHeight_min="40dp"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_linkToPatreon_part2">
+        app:layout_constraintTop_toBottomOf="@id/scrollable">
 
-    </Button>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/inner_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_linkToPatreon"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/mybutton"
+                android:text="@string/btnSmall"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:visibility="visible"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toTopOf="@id/btn_linkToPatreon_part2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_max="25dp"
+                app:layout_constraintHeight_min="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_linkToPatreon_part2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/mybutton"
+                android:text="@string/btn1"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toTopOf="@id/btn_linkToPatreon_part3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_max="25dp"
+                app:layout_constraintHeight_min="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_linkToPatreon_part3"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/mybutton"
+                android:text="@string/btn2"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toTopOf="@id/btn_linkToPatreon_part4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_max="25dp"
+                app:layout_constraintHeight_min="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part2">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_linkToPatreon_part4"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/mybutton"
+                android:text="@string/btn3"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toTopOf="@id/btn_linkToPatreon_part5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_max="25dp"
+                app:layout_constraintHeight_min="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part3">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_linkToPatreon_part5"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/mybutton"
+                android:text="@string/btn4"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_max="25dp"
+                app:layout_constraintHeight_min="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part4">
+
+            </Button>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
     <ImageView
         android:id="@+id/linkView"
         android:layout_width="18dp"
         android:layout_height="18dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="9dp"
-        app:layout_constraintStart_toEndOf="@+id/btn_linkToPatreon"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:contentDescription="@string/textlink2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollable"
         app:srcCompat="@drawable/ic_link24dp"
         tools:ignore="VectorDrawableCompat" />
