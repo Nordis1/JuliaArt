@@ -96,7 +96,8 @@
                 app:layout_constraintHeight_max="25dp"
                 app:layout_constraintHeight_min="15dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed">
 
             </Button>
 
@@ -107,7 +108,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="2dp"
                 android:background="@drawable/mybutton"
-                android:text="@string/btn1"
+                android:text="@string/btn2"
                 android:textColor="@color/white"
                 android:textStyle="normal"
                 android:visibility="gone"
@@ -117,7 +118,8 @@
                 app:layout_constraintHeight_max="25dp"
                 app:layout_constraintHeight_min="15dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon">
+                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon"
+                app:layout_constraintVertical_chainStyle="packed">
 
             </Button>
 
@@ -128,7 +130,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="2dp"
                 android:background="@drawable/mybutton"
-                android:text="@string/btn2"
+                android:text="@string/btn3"
                 android:textColor="@color/white"
                 android:textStyle="normal"
                 android:visibility="gone"
@@ -138,7 +140,8 @@
                 app:layout_constraintHeight_max="25dp"
                 app:layout_constraintHeight_min="15dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part2">
+                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part2"
+                app:layout_constraintVertical_chainStyle="packed">
 
             </Button>
 
@@ -149,7 +152,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="2dp"
                 android:background="@drawable/mybutton"
-                android:text="@string/btn3"
+                android:text="@string/btn4"
                 android:textColor="@color/white"
                 android:textStyle="normal"
                 android:visibility="gone"
@@ -159,7 +162,8 @@
                 app:layout_constraintHeight_max="25dp"
                 app:layout_constraintHeight_min="15dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part3">
+                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part3"
+                app:layout_constraintVertical_chainStyle="packed">
 
             </Button>
 
@@ -168,9 +172,51 @@
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:background="@drawable/mybutton"
+                android:text="@string/btn5"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toTopOf="@id/btn_linkToPatreon_part6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_max="25dp"
+                app:layout_constraintHeight_min="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part4"
+                app:layout_constraintVertical_chainStyle="packed">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_linkToPatreon_part6"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/mybutton"
+                android:text="@string/btn6"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toTopOf="@id/btn_linkToPatreon_part7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_max="25dp"
+                app:layout_constraintHeight_min="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part5"
+                app:layout_constraintVertical_chainStyle="packed">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_linkToPatreon_part7"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginBottom="2dp"
                 android:background="@drawable/mybutton"
-                android:text="@string/btn4"
+                android:text="@string/btn7"
                 android:textColor="@color/white"
                 android:textStyle="normal"
                 android:visibility="gone"
@@ -180,7 +226,8 @@
                 app:layout_constraintHeight_max="25dp"
                 app:layout_constraintHeight_min="15dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part4">
+                app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part6"
+                app:layout_constraintVertical_chainStyle="packed">
 
             </Button>
         </androidx.constraintlayout.widget.ConstraintLayout>

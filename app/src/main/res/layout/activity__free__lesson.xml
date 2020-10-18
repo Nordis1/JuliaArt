@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constrainedHeight="true"
-        app:layout_constraintBottom_toTopOf="@+id/list_view"
+        app:layout_constraintBottom_toTopOf="@+id/ScrollforFree"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/list_view"
         app:layout_constraintHeight_max="320dp"
@@ -24,14 +24,15 @@
     <ListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
-        app:layout_constraintBottom_toTopOf="@+id/ScrollforFree"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ScrollforFree"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.99"
         app:layout_constraintStart_toEndOf="@+id/youtube_player1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/youtube_player1">
+        app:layout_constraintTop_toBottomOf="@+id/ScrollforFree"
+        app:layout_constraintVertical_chainStyle="packed">
 
     </ListView>
 
@@ -40,14 +41,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
+        android:layout_marginTop="136dp"
         app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@+id/list_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_max="70dp"
+        app:layout_constraintHeight_max="80dp"
         app:layout_constraintHeight_min="40dp"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.982"
         app:layout_constraintStart_toEndOf="@+id/list_view"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/list_view">
+        app:layout_constraintTop_toBottomOf="@+id/youtube_player1"
+        app:layout_constraintVertical_chainStyle="packed">
 
         <TextView
             android:id="@+id/textOfFree"

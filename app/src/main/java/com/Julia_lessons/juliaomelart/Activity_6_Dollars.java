@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.util.ArrayList;
 
 public class Activity_6_Dollars extends AppCompatActivity implements View.OnClickListener {
@@ -18,9 +19,10 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
     TextView textSize;
     TextView count_MK1;
     static String connectLink; // Имя рисунка
-    static boolean part2, part3 ,part4,part5 = false;
+    static boolean part2, part3, part4, part5 = false;
     static boolean load_galery = false;
-    String part22, part33, part44,part55; // Состав строки в одну и проверка на вторую часть.
+    String part22, part33, part44, part55; // Состав строки в одну и проверка на
+    // вторую часть.
     ArrayList<Integer> reslist = new ArrayList<>();
 
     @Override
@@ -41,6 +43,8 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
             reslist.add(R.id.id_Lily);
             reslist.add(R.id.id_Lizard);
             reslist.add(R.id.id_Tropical_Fish);
+            reslist.add(R.id.id_Bumblemee);
+            reslist.add(R.id.id_Blueberry);
         }
         try {
             for (int i = 0; i < reslist.size(); i++) {
@@ -54,7 +58,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
         } catch (Exception e) {
             Intent i = new Intent(this, MainActivity.class);
             i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-            Toast.makeText(this,"Потеря данных",Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Потеря данных", Toast.LENGTH_LONG).show();
             startActivity(i);
         }
         textSize = findViewById(R.id.id_textSize);
@@ -72,7 +76,8 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
     }
 
     @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+    public void onCreateContextMenu(ContextMenu menu, View v,
+                                    ContextMenu.ContextMenuInfo menuInfo) {
         switch (v.getId()) {
             case R.id.id_Sheet:
                 getMenuInflater().inflate(R.menu.conrext_menu, menu);
@@ -218,6 +223,32 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 part33 = connectLink + "_p3";
                 if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                break;
+            case R.id.id_Bumblemee:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.bumblemee);
+                startActivity(intent);
+                connectLink = "Bumblemee";
+                part22 = connectLink + "_p2";
+                part33 = connectLink + "_p3";
+                part44 = connectLink + "_p4";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                break;
+            case R.id.id_Blueberry:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.blueberry);
+                startActivity(intent);
+                connectLink = "Blueberry";
+                part22 = connectLink + "_p2";
+                part33 = connectLink + "_p3";
+                part44 = connectLink + "_p4";
+                part55 = connectLink + "_p5";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                if (MainActivity.mapView.containsKey(part55)) part5 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

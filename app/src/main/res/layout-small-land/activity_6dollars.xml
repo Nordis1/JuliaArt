@@ -53,6 +53,24 @@
             android:layout_height="match_parent"
             android:columnCount="2">
             <ImageView
+                android:id="@+id/id_Blueberry"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_small_width"
+                android:layout_height="@dimen/Act_galery_small_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/blueberry">
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Bumblemee"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_small_width"
+                android:layout_height="@dimen/Act_galery_small_height"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:background="@mipmap/bumblemee">
+            </ImageView>
+            <ImageView
                 android:id="@+id/id_Tropical_Fish"
                 android:layout_margin="2dp"
                 android:layout_width="@dimen/Act_galery_small_width"

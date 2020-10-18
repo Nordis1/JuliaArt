@@ -17,8 +17,8 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
     TextView textSize;
     TextView count_MK;
     static String connectLink_of_advanced; // Имя рисунка
-    static  boolean part2, part3, part4,part5 = false;
-    String part22, part33,part44,part55; // Состав строки в одну и проверка на вторую часть.
+    static  boolean part2, part3, part4,part5, part6,part7 = false;
+    String part22, part33,part44,part55,part66,part77; // Состав строки в одну и проверка на вторую часть.
     ArrayList<Integer> reslist1 = new ArrayList<>();
     public static final String TAG = "Activity_Advanced";
 
@@ -49,6 +49,9 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
             reslist1.add(R.id.id_Dog);
             reslist1.add(R.id.id_Tropical_Fish);
             reslist1.add(R.id.id_Cloudlandscape);
+            reslist1.add(R.id.id_Bumblemee);
+            reslist1.add(R.id.id_Leopard);
+            reslist1.add(R.id.id_Blueberry);
         }
         for (int i = 0; i < reslist1.size(); i++) {
             ImageView v = findViewById(reslist1.get(i));
@@ -65,10 +68,14 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
         part3 = false;
         part4 = false;
         part5 = false;
+        part6 = false;
+        part7 = false;
         part22 = null;
         part33 = null;
         part44 = null;
         part55 = null;
+        part66 = null;
+        part77 = null;
         connectLink_of_advanced = null;
 
     }
@@ -98,10 +105,14 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
         part3 = false;
         part4 = false;
         part5 = false;
+        part6 = false;
+        part7 = false;
         part22 = null;
         part33 = null;
         part44 = null;
         part55 = null;
+        part66 = null;
+        part77 = null;
         Intent intent;
         switch (v.getId()) {
             case R.id.id_Sheet:
@@ -273,6 +284,50 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.cloudlandscape);
                 startActivity(intent);
                 connectLink_of_advanced = "Cloudlandscape";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                part44 = connectLink_of_advanced + "_p4";
+                part55 = connectLink_of_advanced + "_p5";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                if (MainActivity.mapView.containsKey(part55)) part5 = true;
+                break;
+                case R.id.id_Bumblemee:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.bumblemee);
+                startActivity(intent);
+                connectLink_of_advanced = "Bumblemee";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                part44 = connectLink_of_advanced + "_p4";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                break;
+            case R.id.id_Leopard:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.leopard);
+                startActivity(intent);
+                connectLink_of_advanced = "Leopard";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                part44 = connectLink_of_advanced + "_p4";
+                part55 = connectLink_of_advanced + "_p5";
+                part66 = connectLink_of_advanced + "_p6";
+                part77 = connectLink_of_advanced + "_p7";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                if (MainActivity.mapView.containsKey(part55)) part5 = true;
+                if (MainActivity.mapView.containsKey(part66)) part6 = true;
+                if (MainActivity.mapView.containsKey(part77)) part7 = true;
+                break;
+            case R.id.id_Blueberry:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.blueberry);
+                startActivity(intent);
+                connectLink_of_advanced = "Blueberry";
                 part22 = connectLink_of_advanced + "_p2";
                 part33 = connectLink_of_advanced + "_p3";
                 part44 = connectLink_of_advanced + "_p4";

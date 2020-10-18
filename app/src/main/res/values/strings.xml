@@ -23,10 +23,12 @@
         учётной записью, на которую оформлена подписка. Приятного просмотра и обучения!\n</string>
     <string name="btn">Перейти к уроку</string>
     <string name="btnSmall">Часть 1</string>
-    <string name="btn1">Часть 2</string>
-    <string name="btn2">Часть 3</string>
-    <string name="btn3">Часть 4</string>
-    <string name="btn4">Часть 5</string>
+    <string name="btn2">Часть 2</string>
+    <string name="btn3">Часть 3</string>
+    <string name="btn4">Часть 4</string>
+    <string name="btn5">Часть 5</string>
+    <string name="btn6">Часть 6</string>
+    <string name="btn7">Часть 7</string>
     <string name="textlink">Отправить себе </string>
     <string name="textlink2">cсылки на видео</string>
 
@@ -41,7 +43,7 @@
         Дополнительную информацию о регистрации и обучении вы найдёте в видео.\n</string>
 
     //freeLesson
-    <string name="forFreeLesson">Несколько сокращённых бесплатных версий мастер-классов,
+    <string name="forFreeLesson">Несколько ускоренных,сокращённых бесплатных версий мастер-классов,
         чтобы вы смогли понять, как проходит процесс обучения.Приятного вам просмотра!\n</string>
 
     //О Проекте

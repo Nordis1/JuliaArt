@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 28 //28
+    compileSdkVersion 29 //28
     defaultConfig {
         applicationId "com.Julia_lessons.juliaomelart"
         minSdkVersion 15 //15
         targetSdkVersion 28 //28
-        versionCode 8
-        versionName '8'
+        versionCode 10
+        versionName '10'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -32,6 +32,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-    implementation "com.android.support:support-compat:28.0.0" //для сервиса notification
+    implementation "com.android.support:support-compat:29.0.0" //для сервиса notification
     implementation files('libs/YouTubeAndroidPlayerApi.jar')
 }
