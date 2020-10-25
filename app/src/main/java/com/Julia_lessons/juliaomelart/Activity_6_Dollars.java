@@ -45,6 +45,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
             reslist.add(R.id.id_Tropical_Fish);
             reslist.add(R.id.id_Bumblemee);
             reslist.add(R.id.id_Blueberry);
+            reslist.add(R.id.id_GoldenFish);
         }
         try {
             for (int i = 0; i < reslist.size(); i++) {
@@ -249,6 +250,16 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 if (MainActivity.mapView.containsKey(part33)) part3 = true;
                 if (MainActivity.mapView.containsKey(part44)) part4 = true;
                 if (MainActivity.mapView.containsKey(part55)) part5 = true;
+                break;
+            case R.id.id_GoldenFish:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.goldenfish);
+                startActivity(intent);
+                connectLink = "GoldenFish";
+                part22 = connectLink + "_p2";
+                part33 = connectLink + "_p3";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

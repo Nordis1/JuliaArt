@@ -53,6 +53,16 @@
             android:layout_height="match_parent"
             android:columnCount="2">
             <ImageView
+                android:id="@+id/id_GoldenFish"
+                android:layout_width="@dimen/Act_galery_Large_width"
+                android:layout_height="@dimen/Act_galery_Large_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:background="@mipmap/goldenfish">
+
+            </ImageView>
+            <ImageView
                 android:id="@+id/id_Blueberry"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"

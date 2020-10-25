@@ -144,6 +144,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Blueberry_p3","https://www.patreon.com/posts/mk-golubika-3-40624205");
         mapView.put("Blueberry_p4","https://www.patreon.com/posts/mk-golubika-4-41449528");
         mapView.put("Blueberry_p5","https://www.patreon.com/posts/mk-golubika-5-41452486");
+
+
+        mapView.put("Owl"   ,"https://www.patreon.com/posts/mk-sova-chast-1-41737422");
+        mapView.put("Owl_p2","https://www.patreon.com/posts/mk-sova-chast-2-41999947");
+        mapView.put("Owl_p3","https://www.patreon.com/posts/mk-sova-3-chast-42324912");
+        mapView.put("Owl_p4","https://www.patreon.com/posts/mk-sova-4-chast-42481629");
+        mapView.put("Owl_p5","https://www.patreon.com/posts/mk-sova-5-chast-42553283");
+
+        mapView.put("GoldenFish"   ,"https://www.patreon.com/posts/mk-zolotaia-1-42879640");
+        mapView.put("GoldenFish_p2","https://www.patreon.com/posts/mk-zolotaia-2-42919499");
+        mapView.put("GoldenFish_p3","https://www.patreon.com/posts/mk-zolotaia-3-43024310");
     }
 
     @Override
@@ -211,7 +222,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             case R.id.nav_Art_materials:
-                intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://juliaeestivene.wixsite.com/artwork/post/%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BC%D0%BE%D0%B8%D1%85-%D0%B0%D1%80%D1%82-%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%BE%D0%B2"));
+                intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.artcolor.online/artsupplies"));
                 startActivity(intent);
                 break;
             case R.id.nav_send:

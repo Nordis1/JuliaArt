@@ -5,20 +5,20 @@
     <dimen name="Act_galery_small_height">80dp</dimen>
     <dimen name="Act_galery_small_width">80dp</dimen>
 //activity_galery normal
-    <dimen name="Act_galery_normal_land_width">130dp</dimen>
-    <dimen name="Act_galery_normal_land_height">150dp</dimen>
-    <dimen name="Act_galery_normal_height">150dp</dimen>
+    <dimen name="Act_galery_normal_land_width">175dp</dimen>
+    <dimen name="Act_galery_normal_land_height">160dp</dimen>
     <dimen name="Act_galery_normal_width">170dp</dimen>
+    <dimen name="Act_galery_normal_height">150dp</dimen>
     //activity_galery Large
     <dimen name="Act_galery_Large_land_width">160dp</dimen>
     <dimen name="Act_galery_Large_land_height">150dp</dimen>
-    <dimen name="Act_galery_Large_height">170dp</dimen>
     <dimen name="Act_galery_Large_width">200dp</dimen>
+    <dimen name="Act_galery_Large_height">170dp</dimen>
     //activity_galery XLarge
     <dimen name="Act_galery_XLarge_land_width">190dp</dimen>
     <dimen name="Act_galery_XLarge_land_height">170dp</dimen>
-    <dimen name="Act_galery_XLarge_height">170dp</dimen>
     <dimen name="Act_galery_XLarge_width">180dp</dimen>
+    <dimen name="Act_galery_XLarge_height">170dp</dimen>
     //activity_Best_students XLarge
     <dimen name="Act_best_Student_small_height">130dp</dimen>
     <dimen name="Act_best_Student_normal_height">240dp</dimen>

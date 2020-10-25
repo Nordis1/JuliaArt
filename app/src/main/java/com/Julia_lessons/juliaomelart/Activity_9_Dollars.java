@@ -52,6 +52,8 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
             reslist1.add(R.id.id_Bumblemee);
             reslist1.add(R.id.id_Leopard);
             reslist1.add(R.id.id_Blueberry);
+            reslist1.add(R.id.id_GoldenFish);
+            reslist1.add(R.id.id_Owl);
         }
         for (int i = 0; i < reslist1.size(); i++) {
             ImageView v = findViewById(reslist1.get(i));
@@ -328,6 +330,30 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.blueberry);
                 startActivity(intent);
                 connectLink_of_advanced = "Blueberry";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                part44 = connectLink_of_advanced + "_p4";
+                part55 = connectLink_of_advanced + "_p5";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                if (MainActivity.mapView.containsKey(part55)) part5 = true;
+                break;
+            case R.id.id_GoldenFish:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.goldenfish);
+                startActivity(intent);
+                connectLink_of_advanced = "GoldenFish";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                break;
+            case R.id.id_Owl:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.owl);
+                startActivity(intent);
+                connectLink_of_advanced = "Owl";
                 part22 = connectLink_of_advanced + "_p2";
                 part33 = connectLink_of_advanced + "_p3";
                 part44 = connectLink_of_advanced + "_p4";
