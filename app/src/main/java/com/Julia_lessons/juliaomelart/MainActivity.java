@@ -155,6 +155,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("GoldenFish"   ,"https://www.patreon.com/posts/mk-zolotaia-1-42879640");
         mapView.put("GoldenFish_p2","https://www.patreon.com/posts/mk-zolotaia-2-42919499");
         mapView.put("GoldenFish_p3","https://www.patreon.com/posts/mk-zolotaia-3-43024310");
+
+        mapView.put("Christmas"   ,"https://www.patreon.com/posts/mk-svet-chast-1-44923684");
+        mapView.put("Christmas_p2","https://www.patreon.com/posts/mk-svet-chast-2-45141580");
+        mapView.put("Christmas_p3","https://www.patreon.com/posts/mk-svet-chast-3-45175828");
+        mapView.put("Christmas_p4","https://www.patreon.com/posts/mk-svet-chast-4-45389331");
+
+        mapView.put("Ametist"   ,"https://www.patreon.com/posts/mk-ametist-chast-46823482");
+        mapView.put("Ametist_p2","https://www.patreon.com/posts/ametist-chast-2-47113863");
+        mapView.put("Ametist_p3","https://www.patreon.com/posts/ametist-chast-3-47158953");
+
+        mapView.put("Squirrel"   ,"https://www.patreon.com/posts/mk-zimniaia-1-45966969");
+        mapView.put("Squirrel_p2","https://www.patreon.com/posts/mk-zimniaia-2-46197769");
+        mapView.put("Squirrel_p3","https://www.patreon.com/posts/mk-zimniaia-3-46245611");
+        mapView.put("Squirrel_p4","https://www.patreon.com/posts/mk-zimniaia-4-46487075");
+        mapView.put("Squirrel_p5","https://www.patreon.com/posts/mk-zimniaia-5-46530296");
+
     }
 
     @Override

@@ -54,6 +54,36 @@
             android:layout_height="match_parent"
             android:columnCount="4">
             <ImageView
+                android:id="@+id/id_Squirrel"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_XLarge_width"
+                android:layout_height="@dimen/Act_galery_XLarge_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:background="@mipmap/squirrel">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Ametist"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_XLarge_width"
+                android:layout_height="@dimen/Act_galery_XLarge_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:background="@mipmap/amethyst">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Christmas"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_XLarge_width"
+                android:layout_height="@dimen/Act_galery_XLarge_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:background="@mipmap/christmas">
+
+            </ImageView>
+            <ImageView
                 android:id="@+id/id_GoldenFish"
                 android:layout_margin="2dp"
                 android:layout_width="@dimen/Act_galery_XLarge_width"
