@@ -15,16 +15,12 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener, AdapterView.OnItemClickListener {
     public static final String API_KEY = "AIzaSyBP5b4pciPceo40yjBdzzaTveNcwvV7DkM";
-    public static final String VIDEO_PREVIEW = "JYsNySLuF-c";
-    public static final String VIDEO_part2 = "Xkp-RYFI1do";
-    public static final String VIDEO_burd1 = "T68OPSMvEJQ";
-    public static final String VIDEO_Nectarin = "Eehov9NPj8k";
-    public static final String VIDEO_Tea = "blKrAnAloSM";
-    public static final String VIDEO_Gold_apple = "FO-m_GQTrcA";
-    public static final String VIDEO_Kitty = "e2DGZOcvams";
+    public static final String VIDEO_Cake = "P9Udw0W1Mp4";
+    public static final String VIDEO_Cake_part2 = "y1aSqRz2g_E";
+    public static final String VIDEO_cake_part3 = "yNc4YO_n2gg";
     YouTubePlayerView youTubePlayerView;
     ListView listview;
-    String[] arrayOfnames = {"Голубь часть 1", "Голубь часть 2", "Айва", "Нектарин", "Чай", "Золотое яблочко", "Котёнок"};
+    String[] arrayOfnames = {"Тортик", "Тортик часть 2", "Тортик часть 3"};
     YouTubePlayer Yplayer;
 
     @Override
@@ -47,25 +43,13 @@ public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTube
         try {
             switch (position) {
                 case 0:
-                    Yplayer.loadVideo(VIDEO_PREVIEW);
+                    Yplayer.loadVideo(VIDEO_Cake);
                     break;
                 case 1:
-                    Yplayer.loadVideo(VIDEO_part2);
+                    Yplayer.loadVideo(VIDEO_Cake_part2);
                     break;
                 case 2:
-                    Yplayer.loadVideo(VIDEO_burd1);
-                    break;
-                case 3:
-                    Yplayer.loadVideo(VIDEO_Nectarin);
-                    break;
-                case 4:
-                    Yplayer.loadVideo(VIDEO_Tea);
-                    break;
-                case 5:
-                    Yplayer.loadVideo(VIDEO_Gold_apple);
-                    break;
-                case 6:
-                    Yplayer.loadVideo(VIDEO_Kitty);
+                    Yplayer.loadVideo(VIDEO_cake_part3);
                     break;
 
             }
@@ -83,7 +67,7 @@ public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTube
         player.setPlaybackEventListener(playbackEventListener);
         Yplayer = player;
         try {
-            player.cueVideo(VIDEO_PREVIEW);
+            player.cueVideo(VIDEO_Cake);
         } catch (Exception e) {
             Intent i = new Intent(this, MainActivity.class);
             i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
