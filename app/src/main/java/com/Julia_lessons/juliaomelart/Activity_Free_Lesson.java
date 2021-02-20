@@ -1,10 +1,12 @@
 package com.Julia_lessons.juliaomelart;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -13,11 +15,12 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener, AdapterView.OnItemClickListener {
+public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener, AdapterView.OnItemClickListener, View.OnClickListener {
     public static final String API_KEY = "AIzaSyBP5b4pciPceo40yjBdzzaTveNcwvV7DkM";
     public static final String VIDEO_Cake = "P9Udw0W1Mp4";
     public static final String VIDEO_Cake_part2 = "y1aSqRz2g_E";
     public static final String VIDEO_cake_part3 = "yNc4YO_n2gg";
+    Button btntosite;
     YouTubePlayerView youTubePlayerView;
     ListView listview;
     String[] arrayOfnames = {"Тортик", "Тортик часть 2", "Тортик часть 3"};
@@ -28,6 +31,8 @@ public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTube
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__free__lesson);
         listview = findViewById(R.id.list_view);
+        btntosite = findViewById(R.id.btn_toSite);
+        btntosite.setOnClickListener(this);
 
 
         youTubePlayerView = findViewById(R.id.youtube_player1);
@@ -139,4 +144,12 @@ public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTube
         Toast.makeText(this, "Failured to Initialize!", Toast.LENGTH_LONG).show();
     }
 
+    @Override
+    public void onClick(View v) {
+        Intent intent;
+        if (v.getId() == btntosite.getId()){
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.artcolor.online"));
+            startActivity(intent);
+        }
+    }
 }

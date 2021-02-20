@@ -6,6 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".Activity_Free_Lesson">
 
+    <ScrollView
+        android:id="@+id/ScrollforFree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@+id/btn_toSite"
+        app:layout_constraintTop_toBottomOf="@+id/youtube_player1"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/textOfFree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forFreeLesson"
+            android:textStyle="bold">
+
+        </TextView>
+    </ScrollView>
+
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/youtube_player1"
         android:layout_width="match_parent"
@@ -19,7 +40,9 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"></com.google.android.youtube.player.YouTubePlayerView>
+        app:layout_constraintVertical_chainStyle="packed">
+
+    </com.google.android.youtube.player.YouTubePlayerView>
 
     <ListView
         android:id="@+id/list_view"
@@ -28,39 +51,25 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ScrollforFree"
-        app:layout_constraintHorizontal_bias="0.99"
-        app:layout_constraintStart_toEndOf="@+id/youtube_player1"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ScrollforFree"
+        app:layout_constraintTop_toBottomOf="@+id/btn_toSite"
         app:layout_constraintVertical_chainStyle="packed">
 
     </ListView>
 
-    <ScrollView
-        android:id="@+id/ScrollforFree"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btn_toSite"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:layout_marginTop="136dp"
-        app:layout_constrainedHeight="true"
+        android:background="@drawable/mybutton"
+        android:text="@string/btnToSite"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/list_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_max="80dp"
-        app:layout_constraintHeight_min="40dp"
-        app:layout_constraintHorizontal_bias="0.982"
-        app:layout_constraintStart_toEndOf="@+id/list_view"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/youtube_player1"
-        app:layout_constraintVertical_chainStyle="packed">
-
-        <TextView
-            android:id="@+id/textOfFree"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/forFreeLesson"
-            android:textStyle="bold">
-
-        </TextView>
-    </ScrollView>
+        app:layout_constraintTop_toBottomOf="@+id/ScrollforFree"
+        app:layout_constraintVertical_chainStyle="packed" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
