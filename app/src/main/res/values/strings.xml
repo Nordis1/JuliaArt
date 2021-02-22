@@ -29,7 +29,7 @@
     <string name="btn5">Часть 5</string>
     <string name="btn6">Часть 6</string>
     <string name="btn7">Часть 7</string>
-    <string name="btnToSite">Выбрать подписку</string>
+    <string name="btnToSite">На сайт Автора</string>
     <string name="textlink">Отправить себе </string>
     <string name="textlink2">cсылки на видео</string>
 
@@ -45,7 +45,8 @@
 
     //freeLesson
     <string name="forFreeLesson">Мастер класс "Торт с клубникой".Это - лишь малая толика всех уроков, которые есть в  обучающих проектах на Boosty и Patreon.
-        Если вам понравилось рисовать вместе со мной, вы можете продолжить обучение, выбрав для себя более удобный из двух проектов.\n</string>
+        Что бы были доступны все мастер-классы, нужно оформить подписку на Boosty(удобнее для Русско-язычных) или Patreon
+        Подписку удобнее приобрести через сайт Автора\n</string>
 
     //О Проекте
     <string name="str">Видеоуроки по рисованию</string>
