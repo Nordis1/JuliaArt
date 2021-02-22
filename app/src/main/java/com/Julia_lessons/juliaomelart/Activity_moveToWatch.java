@@ -83,38 +83,38 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
     public static Boolean getLiks() {
         boolean b = false;
         if (Activity_6_Dollars.load_galery) {
-            s = MainActivity.mapView.get(Activity_6_Dollars.connectLink);
+            s = MainActivity.mapViewPatreon.get(Activity_6_Dollars.connectLink);
             if (Activity_6_Dollars.part2) {
-                s2 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p2");
+                s2 = MainActivity.mapViewPatreon.get(Activity_6_Dollars.connectLink + "_p2");
             }
             if (Activity_6_Dollars.part3) {
-                s3 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p3");
+                s3 = MainActivity.mapViewPatreon.get(Activity_6_Dollars.connectLink + "_p3");
             }
             if (Activity_6_Dollars.part4) {
-                s4 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p4");
+                s4 = MainActivity.mapViewPatreon.get(Activity_6_Dollars.connectLink + "_p4");
             }
             if (Activity_6_Dollars.part5) {
-                s5 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p5");
+                s5 = MainActivity.mapViewPatreon.get(Activity_6_Dollars.connectLink + "_p5");
             }
         } else {
-            s = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced);
+            s = MainActivity.mapViewPatreon.get(Activity_9_Dollars.connectLink_of_advanced);
             if (Activity_9_Dollars.part2) {
-                s2 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p2");
+                s2 = MainActivity.mapViewPatreon.get(Activity_9_Dollars.connectLink_of_advanced + "_p2");
             }
             if (Activity_9_Dollars.part3) {
-                s3 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p3");
+                s3 = MainActivity.mapViewPatreon.get(Activity_9_Dollars.connectLink_of_advanced + "_p3");
             }
             if (Activity_9_Dollars.part4) {
-                s4 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p4");
+                s4 = MainActivity.mapViewPatreon.get(Activity_9_Dollars.connectLink_of_advanced + "_p4");
             }
             if (Activity_9_Dollars.part5) {
-                s5 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p5");
+                s5 = MainActivity.mapViewPatreon.get(Activity_9_Dollars.connectLink_of_advanced + "_p5");
             }
             if (Activity_9_Dollars.part6) {
-                s6 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p6");
+                s6 = MainActivity.mapViewPatreon.get(Activity_9_Dollars.connectLink_of_advanced + "_p6");
             }
             if (Activity_9_Dollars.part7) {
-                s7 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p7");
+                s7 = MainActivity.mapViewPatreon.get(Activity_9_Dollars.connectLink_of_advanced + "_p7");
             }
         }
         if (s == null) {

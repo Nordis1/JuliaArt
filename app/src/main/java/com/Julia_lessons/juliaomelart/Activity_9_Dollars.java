@@ -132,7 +132,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 startActivity(intent);
                 connectLink_of_advanced = "Smile";
                 part22 = connectLink_of_advanced + "_p2";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Beetle:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -141,8 +141,8 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 connectLink_of_advanced = "Beetle";
                 part22 = connectLink_of_advanced + "_p2";
                 part33 = connectLink_of_advanced + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
                 break;
             case R.id.id_Tea:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -150,7 +150,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 startActivity(intent);
                 connectLink_of_advanced = "Tea";
                 part22 = connectLink_of_advanced + "_p2";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Eyes:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -164,7 +164,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 startActivity(intent);
                 connectLink_of_advanced = "Peach";
                 part22 = connectLink_of_advanced + "_p2";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Mandarin:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -178,7 +178,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 startActivity(intent);
                 connectLink_of_advanced = "Sinichka";
                 part22 = connectLink_of_advanced + "_p2";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Cat:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -186,7 +186,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 startActivity(intent);
                 connectLink_of_advanced = "Cat";
                 part22 = connectLink_of_advanced + "_p2";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Tigr:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -194,7 +194,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 startActivity(intent);
                 connectLink_of_advanced = "Tigr";
                 part22 = connectLink_of_advanced + "_p2";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Mushroom:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -226,7 +226,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 startActivity(intent);
                 connectLink_of_advanced = "Frog";
                 part22 = connectLink_of_advanced + "_p2";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Aiva:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -240,7 +240,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 startActivity(intent);
                 connectLink_of_advanced = "Lily";
                 part22 = connectLink_of_advanced + "_p2";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
                 break;
             case R.id.id_Child:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -249,8 +249,8 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 connectLink_of_advanced = "Child";
                 part22 = connectLink_of_advanced + "_p2";
                 part33 = connectLink_of_advanced + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
                 break;
             case R.id.id_Lizard:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -259,8 +259,8 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 connectLink_of_advanced = "Lizard";
                 part22 = connectLink_of_advanced + "_p2";
                 part33 = connectLink_of_advanced + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
                 break;
             case R.id.id_Dog:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -270,9 +270,9 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 part22 = connectLink_of_advanced + "_p2";
                 part33 = connectLink_of_advanced + "_p3";
                 part44 = connectLink_of_advanced + "_p4";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
-                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part44)) part4 = true;
                 break;
             case R.id.id_Tropical_Fish:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -281,8 +281,8 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 connectLink_of_advanced = "Tropical_Fish";
                 part22 = connectLink_of_advanced + "_p2";
                 part33 = connectLink_of_advanced + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
                 break;
             case R.id.id_Cloudlandscape:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -293,10 +293,10 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 part33 = connectLink_of_advanced + "_p3";
                 part44 = connectLink_of_advanced + "_p4";
                 part55 = connectLink_of_advanced + "_p5";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
-                if (MainActivity.mapView.containsKey(part44)) part4 = true;
-                if (MainActivity.mapView.containsKey(part55)) part5 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part44)) part4 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part55)) part5 = true;
                 break;
                 case R.id.id_Bumblemee:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -306,9 +306,9 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 part22 = connectLink_of_advanced + "_p2";
                 part33 = connectLink_of_advanced + "_p3";
                 part44 = connectLink_of_advanced + "_p4";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
-                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part44)) part4 = true;
                 break;
             case R.id.id_Leopard:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -321,12 +321,12 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 part55 = connectLink_of_advanced + "_p5";
                 part66 = connectLink_of_advanced + "_p6";
                 part77 = connectLink_of_advanced + "_p7";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
-                if (MainActivity.mapView.containsKey(part44)) part4 = true;
-                if (MainActivity.mapView.containsKey(part55)) part5 = true;
-                if (MainActivity.mapView.containsKey(part66)) part6 = true;
-                if (MainActivity.mapView.containsKey(part77)) part7 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part44)) part4 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part55)) part5 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part66)) part6 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part77)) part7 = true;
                 break;
             case R.id.id_Blueberry:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -337,10 +337,10 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 part33 = connectLink_of_advanced + "_p3";
                 part44 = connectLink_of_advanced + "_p4";
                 part55 = connectLink_of_advanced + "_p5";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
-                if (MainActivity.mapView.containsKey(part44)) part4 = true;
-                if (MainActivity.mapView.containsKey(part55)) part5 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part44)) part4 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part55)) part5 = true;
                 break;
             case R.id.id_GoldenFish:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -349,8 +349,8 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 connectLink_of_advanced = "GoldenFish";
                 part22 = connectLink_of_advanced + "_p2";
                 part33 = connectLink_of_advanced + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
                 break;
             case R.id.id_Owl:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -361,10 +361,10 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 part33 = connectLink_of_advanced + "_p3";
                 part44 = connectLink_of_advanced + "_p4";
                 part55 = connectLink_of_advanced + "_p5";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
-                if (MainActivity.mapView.containsKey(part44)) part4 = true;
-                if (MainActivity.mapView.containsKey(part55)) part5 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part44)) part4 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part55)) part5 = true;
                 break;
             case R.id.id_Ametist:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -373,8 +373,8 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 connectLink_of_advanced = "Ametist";
                 part22 = connectLink_of_advanced + "_p2";
                 part33 = connectLink_of_advanced + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
                 break;
             case R.id.id_Christmas:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -384,9 +384,9 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 part22 = connectLink_of_advanced + "_p2";
                 part33 = connectLink_of_advanced + "_p3";
                 part44 = connectLink_of_advanced + "_p4";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
-                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part44)) part4 = true;
                 break;
             case R.id.id_Squirrel:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -397,10 +397,10 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 part33 = connectLink_of_advanced + "_p3";
                 part44 = connectLink_of_advanced + "_p4";
                 part55 = connectLink_of_advanced + "_p5";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
-                if (MainActivity.mapView.containsKey(part44)) part4 = true;
-                if (MainActivity.mapView.containsKey(part55)) part5 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part44)) part4 = true;
+                if (MainActivity.mapViewPatreon.containsKey(part55)) part5 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();
