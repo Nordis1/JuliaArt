@@ -54,6 +54,13 @@
             android:layout_marginLeft="20dp"
             android:columnCount="4">
             <ImageView
+                android:id="@+id/id_Silverjug"
+                android:layout_width="@dimen/Act_galery_Large_land_width"
+                android:layout_height="@dimen/Act_galery_Large_land_height"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:background="@mipmap/silverjug"></ImageView>
+            <ImageView
                 android:id="@+id/id_Ametist"
                 android:layout_width="@dimen/Act_galery_Large_land_width"
                 android:layout_height="@dimen/Act_galery_Large_land_height"
