@@ -57,6 +57,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
             reslist1.add(R.id.id_Ametist);
             reslist1.add(R.id.id_Christmas);
             reslist1.add(R.id.id_Squirrel);
+            reslist1.add(R.id.id_Silverjug);
         }
         for (int i = 0; i < reslist1.size(); i++) {
             ImageView v = findViewById(reslist1.get(i));
@@ -401,6 +402,16 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 if (MainActivity.mapView.containsKey(part33)) part3 = true;
                 if (MainActivity.mapView.containsKey(part44)) part4 = true;
                 if (MainActivity.mapView.containsKey(part55)) part5 = true;
+                break;
+            case R.id.id_Silverjug:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.silverjug);
+                startActivity(intent);
+                connectLink_of_advanced = "Silverjug";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

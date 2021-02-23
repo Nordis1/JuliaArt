@@ -36,4 +36,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation "com.android.support:support-compat:29.0.0" //для сервиса notification
     implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'me.biubiubiu.justifytext:library:1.1'
 }

@@ -171,6 +171,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Squirrel_p4","https://www.patreon.com/posts/mk-zimniaia-4-46487075");
         mapView.put("Squirrel_p5","https://www.patreon.com/posts/mk-zimniaia-5-46530296");
 
+        mapView.put("Silverjug"   ,"https://www.patreon.com/posts/mk-serebrianyi-1-47624586");
+        mapView.put("Silverjug_p2","https://www.patreon.com/posts/mk-serebrianyi-2-47741487");
+        mapView.put("Silverjug_p3","https://www.patreon.com/posts/mk-serebrianyi-3-47821645");
+
     }
 
     @Override
