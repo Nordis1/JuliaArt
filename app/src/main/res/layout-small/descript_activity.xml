@@ -46,7 +46,16 @@
         app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription"
         app:layout_constraintVertical_chainStyle="packed">
 
-        <TextView
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text_ofPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:text="@string/s">
+
+        </me.biubiubiu.justifytext.library.JustifyTextView>
+
+<!--        <TextView
             android:id="@+id/text_ofPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,7 +68,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription">
 
-        </TextView>
+        </TextView>-->
     </ScrollView>
 
     <ScrollView
