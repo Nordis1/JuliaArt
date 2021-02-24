@@ -242,7 +242,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             case R.id.nav_Art_materials:
-                intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.artcolor.online/artsupplies"));
+                intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.artcolor.online/all4art"));
                 startActivity(intent);
                 break;
             case R.id.nav_send:
