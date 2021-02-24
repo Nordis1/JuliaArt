@@ -74,6 +74,14 @@
                 android:layout_columnWeight="1">
             </ImageView>
             <ImageView
+                android:id="@+id/id_Cake"
+                android:background="@mipmap/cake"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_normal_land_width"
+                android:layout_height="@dimen/Act_galery_normal_land_height"
+                android:layout_columnWeight="1">
+            </ImageView>
+            <ImageView
                 android:id="@+id/id_GoldenFish"
                 android:background="@mipmap/goldenfish"
                 android:layout_margin="2dp"

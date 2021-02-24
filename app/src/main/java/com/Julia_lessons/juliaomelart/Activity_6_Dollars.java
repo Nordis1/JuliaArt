@@ -49,6 +49,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
             reslist.add(R.id.id_Ametist);
             reslist.add(R.id.id_Christmas);
             reslist.add(R.id.id_Silverjug);
+            reslist.add(R.id.id_Cake);
         }
         try {
             for (int i = 0; i < reslist.size(); i++) {
@@ -269,6 +270,16 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.amethyst);
                 startActivity(intent);
                 connectLink = "Ametist";
+                part22 = connectLink + "_p2";
+                part33 = connectLink + "_p3";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                break;
+            case R.id.id_Cake:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.cake);
+                startActivity(intent);
+                connectLink = "Cake";
                 part22 = connectLink + "_p2";
                 part33 = connectLink + "_p3";
                 if (MainActivity.mapView.containsKey(part22)) part2 = true;

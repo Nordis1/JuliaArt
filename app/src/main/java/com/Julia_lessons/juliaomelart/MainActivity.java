@@ -156,6 +156,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("GoldenFish_p2","https://www.patreon.com/posts/mk-zolotaia-2-42919499");
         mapView.put("GoldenFish_p3","https://www.patreon.com/posts/mk-zolotaia-3-43024310");
 
+        mapView.put("Cake"   ,"https://www.patreon.com/posts/mk-tort-s-chast-44333308");
+        mapView.put("Cake_p2","https://www.patreon.com/posts/mk-tort-s-chast-44480075");
+        mapView.put("Cake_p3","https://www.patreon.com/posts/mk-tort-s-chast-44576485");
+
+        mapView.put("Horse"   ,"https://www.patreon.com/posts/mk-osenniaia-1-43410363");
+        mapView.put("Horse_p2","https://www.patreon.com/posts/mk-osenniaia-2-43525447");
+        mapView.put("Horse_p3","https://www.patreon.com/posts/mk-osenniaia-3-43557651");
+        mapView.put("Horse_p4","https://www.patreon.com/posts/mk-osenniaia-4-43777174");
+        mapView.put("Horse_p5","https://www.patreon.com/posts/43777185");
+        mapView.put("Horse_p6","https://www.patreon.com/posts/mk-osenniaia-6-43856915");
+
         mapView.put("Christmas"   ,"https://www.patreon.com/posts/mk-svet-chast-1-44923684");
         mapView.put("Christmas_p2","https://www.patreon.com/posts/mk-svet-chast-2-45141580");
         mapView.put("Christmas_p3","https://www.patreon.com/posts/mk-svet-chast-3-45175828");
