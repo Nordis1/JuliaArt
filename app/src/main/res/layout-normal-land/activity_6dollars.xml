@@ -50,6 +50,14 @@
             android:layout_height="match_parent"
             android:columnCount="4">
             <ImageView
+                android:id="@+id/id_Silverjug"
+                android:background="@mipmap/silverjug"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_normal_land_width"
+                android:layout_height="@dimen/Act_galery_normal_land_height"
+                android:layout_columnWeight="1">
+            </ImageView>
+            <ImageView
                 android:id="@+id/id_Ametist"
                 android:background="@mipmap/amethyst"
                 android:layout_margin="2dp"
@@ -60,6 +68,14 @@
             <ImageView
                 android:id="@+id/id_Christmas"
                 android:background="@mipmap/christmas"
+                android:layout_margin="2dp"
+                android:layout_width="@dimen/Act_galery_normal_land_width"
+                android:layout_height="@dimen/Act_galery_normal_land_height"
+                android:layout_columnWeight="1">
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Cake"
+                android:background="@mipmap/cake"
                 android:layout_margin="2dp"
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"

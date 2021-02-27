@@ -20,12 +20,12 @@
         android:id="@+id/frame_from_ActivityDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="25dp"
         android:background="@mipmap/beetle"
         android:baselineAligned="false"
         app:layout_constrainedHeight="true"
         app:layout_constrainedWidth="true"
-        app:layout_constraintBottom_toTopOf="@+id/text_ofPrice"
+        app:layout_constraintBottom_toTopOf="@+id/scrollable"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_max="380dp"
         app:layout_constraintHeight_min="280dp"
@@ -36,32 +36,58 @@
 
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/text_ofPrice"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:id="@+id/scrollable"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:baselineAligned="false"
-        android:text="@string/s"
-        android:textSize="16sp"
-        android:visibility="visible"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constrainedHeight="true"
         app:layout_constraintBottom_toTopOf="@+id/btn_linkToPatreon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription">
 
-    </TextView>
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text_ofPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:text="@string/s"
+            android:textSize="16sp">
+
+        </me.biubiubiu.justifytext.library.JustifyTextView>
+
+    </ScrollView>
+<!--    <TextView
+        android:id="@+id/text_ofPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:baselineAligned="false"
+        android:textAlignment="center"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:text="@string/s"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/btn_linkToPatreon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription"
+        android:gravity="center_horizontal">
+
+    </TextView>-->
 
     <Button
         android:id="@+id/btn_linkToPatreon"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/mybutton"
         android:baselineAligned="false"
@@ -75,7 +101,7 @@
         app:layout_constraintHeight_min="30dp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_ofPrice"
+        app:layout_constraintTop_toBottomOf="@+id/scrollable"
         app:layout_constraintVertical_chainStyle="packed"></Button>
 
     <Button
@@ -235,9 +261,10 @@
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
         android:text="@string/textlink"
+        android:fontFamily="@font/sourcesanspro_regular"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_ofPrice" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollable" />
 
     <TextView
         android:id="@+id/textView4"
@@ -247,6 +274,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:text="@string/textlink2"
+        android:fontFamily="@font/sourcesanspro_regular"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />

@@ -214,12 +214,31 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         mapViewBoosty.put("Lizard", "https://www.patreon.com/posts/mk-iashcheritsa-35107857");
 
+ Test-branch
         mapViewBoosty.put("Dog", "https://www.patreon.com/posts/mk-luchshii-drug-36093147");
+
+        mapView.put("Cake"   ,"https://www.patreon.com/posts/mk-tort-s-chast-44333308");
+        mapView.put("Cake_p2","https://www.patreon.com/posts/mk-tort-s-chast-44480075");
+        mapView.put("Cake_p3","https://www.patreon.com/posts/mk-tort-s-chast-44576485");
+
+        mapView.put("Horse"   ,"https://www.patreon.com/posts/mk-osenniaia-1-43410363");
+        mapView.put("Horse_p2","https://www.patreon.com/posts/mk-osenniaia-2-43525447");
+        mapView.put("Horse_p3","https://www.patreon.com/posts/mk-osenniaia-3-43557651");
+        mapView.put("Horse_p4","https://www.patreon.com/posts/mk-osenniaia-4-43777174");
+        mapView.put("Horse_p5","https://www.patreon.com/posts/43777185");
+        mapView.put("Horse_p6","https://www.patreon.com/posts/mk-osenniaia-6-43856915");
+
+        mapView.put("Christmas"   ,"https://www.patreon.com/posts/mk-svet-chast-1-44923684");
+        mapView.put("Christmas_p2","https://www.patreon.com/posts/mk-svet-chast-2-45141580");
+        mapView.put("Christmas_p3","https://www.patreon.com/posts/mk-svet-chast-3-45175828");
+        mapView.put("Christmas_p4","https://www.patreon.com/posts/mk-svet-chast-4-45389331");
+ SecondTest
 
         mapViewBoosty.put("Tropical_Fish", "https://www.patreon.com/posts/mk-tropicheskaia-36453779");
 
         mapViewBoosty.put("Cloudlandscape", "https://www.patreon.com/posts/mk-peizazh-s-1-i-37578312");
 
+ Test-branch
         mapViewBoosty.put("Bumblemee", "https://www.patreon.com/posts/mk-mokhnatyi-1-38407522");
 
         mapViewBoosty.put("Leopard", "https://www.patreon.com/posts/mk-leopard-chast-39276553");
@@ -235,6 +254,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapViewBoosty.put("Ametist", "https://www.patreon.com/posts/mk-ametist-chast-46823482");
 
         mapViewBoosty.put("Squirrel", "https://www.patreon.com/posts/mk-zimniaia-1-45966969");
+
+        mapView.put("Silverjug"   ,"https://www.patreon.com/posts/mk-serebrianyi-1-47624586");
+        mapView.put("Silverjug_p2","https://www.patreon.com/posts/mk-serebrianyi-2-47741487");
+        mapView.put("Silverjug_p3","https://www.patreon.com/posts/mk-serebrianyi-3-47821645");
+
+ SecondTest
     }
 
 
@@ -303,7 +328,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             case R.id.nav_Art_materials:
-                intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.artcolor.online/artsupplies"));
+                intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.artcolor.online/all4art"));
                 startActivity(intent);
                 break;
             case R.id.nav_send:

@@ -41,27 +41,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toTopOf="@id/Scroll_for_buttons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription"
         app:layout_constraintVertical_chainStyle="packed">
 
-        <TextView
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text_ofPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.363"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription">
+
+        </me.biubiubiu.justifytext.library.JustifyTextView>
+
+<!--        <TextView
             android:id="@+id/text_ofPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_marginTop="48dp"
+            android:layout_margin="10dp"
             android:baselineAligned="false"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:textAlignment="center"
             android:text="@string/s"
             android:textSize="16sp"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.363"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription">
+            app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription"
+            android:gravity="center_horizontal">
 
-        </TextView>
+        </TextView>-->
     </ScrollView>
 
     <ImageView
@@ -260,6 +277,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
         android:text="@string/textlink"
+        android:fontFamily="@font/sourcesanspro_regular"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollable"
@@ -273,6 +291,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:text="@string/textlink2"
+        android:fontFamily="@font/sourcesanspro_regular"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"

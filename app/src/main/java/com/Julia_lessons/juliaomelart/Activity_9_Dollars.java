@@ -57,6 +57,9 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
             reslist1.add(R.id.id_Ametist);
             reslist1.add(R.id.id_Christmas);
             reslist1.add(R.id.id_Squirrel);
+            reslist1.add(R.id.id_Silverjug);
+            reslist1.add(R.id.id_Cake);
+            reslist1.add(R.id.id_Horse);
         }
         for (int i = 0; i < reslist1.size(); i++) {
             ImageView v = findViewById(reslist1.get(i));
@@ -252,6 +255,16 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 if (MainActivity.mapViewPatreon.containsKey(part22)) part2 = true;
                 if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
                 break;
+            case R.id.id_Cake:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.cake);
+                startActivity(intent);
+                connectLink_of_advanced = "Cake";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                break;
             case R.id.id_Lizard:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.lizard);
@@ -328,6 +341,22 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 if (MainActivity.mapViewPatreon.containsKey(part66)) part6 = true;
                 if (MainActivity.mapViewPatreon.containsKey(part77)) part7 = true;
                 break;
+            case R.id.id_Horse:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.horse);
+                startActivity(intent);
+                connectLink_of_advanced = "Horse";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                part44 = connectLink_of_advanced + "_p4";
+                part55 = connectLink_of_advanced + "_p5";
+                part66 = connectLink_of_advanced + "_p6";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                if (MainActivity.mapView.containsKey(part55)) part5 = true;
+                if (MainActivity.mapView.containsKey(part66)) part6 = true;
+                break;
             case R.id.id_Blueberry:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.blueberry);
@@ -401,6 +430,16 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 if (MainActivity.mapViewPatreon.containsKey(part33)) part3 = true;
                 if (MainActivity.mapViewPatreon.containsKey(part44)) part4 = true;
                 if (MainActivity.mapViewPatreon.containsKey(part55)) part5 = true;
+                break;
+            case R.id.id_Silverjug:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.silverjug);
+                startActivity(intent);
+                connectLink_of_advanced = "Silverjug";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

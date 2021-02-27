@@ -8,24 +8,41 @@
 
     <ScrollView
         android:id="@+id/ScrollforFree"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
         app:layout_constraintBottom_toTopOf="@+id/btn_toSite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/youtube_player1"
-        app:layout_constraintVertical_chainStyle="packed"
-        tools:layout_editor_absoluteX="16dp">
+        app:layout_constraintVertical_chainStyle="spread">
 
-        <TextView
+        <me.biubiubiu.justifytext.library.JustifyTextView
             android:id="@+id/textOfFree"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sourcesanspro_regular"
             android:text="@string/forFreeLesson"
-            android:textStyle="bold">
+            android:textStyle="normal"
+            android:gravity="center_vertical"/>
 
-        </TextView>
+<!--        <TextView
+            android:id="@+id/textOfFree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:text="@string/forFreeLesson"
+            android:textStyle="normal">
+
+        </TextView>-->
     </ScrollView>
 
     <com.google.android.youtube.player.YouTubePlayerView
@@ -41,21 +58,26 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed">
+        app:layout_constraintVertical_chainStyle="spread">
 
     </com.google.android.youtube.player.YouTubePlayerView>
 
     <ListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintHeight_max="350dp"
+        app:layout_constraintHeight_min="50dp"
+        app:layout_constraintVertical_weight="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ScrollforFree"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_toSite"
-        app:layout_constraintVertical_chainStyle="packed">
+        app:layout_constraintVertical_chainStyle="spread">
 
     </ListView>
 
@@ -66,11 +88,15 @@
         android:background="@drawable/mybutton"
         android:text="@string/btnToSite"
         android:textColor="@color/white"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constrainedHeight="true"
         app:layout_constraintBottom_toTopOf="@+id/list_view"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="45dp"
+        app:layout_constraintHeight_min="30dp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ScrollforFree"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="spread" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

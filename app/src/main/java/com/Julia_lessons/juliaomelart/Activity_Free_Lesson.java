@@ -23,7 +23,7 @@ public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTube
     Button btntosite;
     YouTubePlayerView youTubePlayerView;
     ListView listview;
-    String[] arrayOfnames = {"Тортик", "Тортик часть 2", "Тортик часть 3"};
+    String[] arrayOfnames = {"Торт с клубникой - часть 1", "Торт с клубникой - часть 2", "Торт с клубникой - часть 3"};
     YouTubePlayer Yplayer;
 
     @Override

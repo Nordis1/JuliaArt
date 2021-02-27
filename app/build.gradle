@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.Julia_lessons.juliaomelart"
         minSdkVersion 16 //15
-        targetSdkVersion 28 //28
+        targetSdkVersion 29 //28
         versionCode 13
         versionName '13'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -31,9 +31,10 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.3.3'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation 'com.google.firebase:firebase-messaging:21.0.1'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation "com.android.support:support-compat:29.0.0" //для сервиса notification
     implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'me.biubiubiu.justifytext:library:1.1'
 }
