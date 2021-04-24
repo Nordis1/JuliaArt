@@ -60,6 +60,8 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
             reslist1.add(R.id.id_Silverjug);
             reslist1.add(R.id.id_Cake);
             reslist1.add(R.id.id_Horse);
+            reslist1.add(R.id.id_Woodenmug);
+            reslist1.add(R.id.id_Seaturtle);
         }
         for (int i = 0; i < reslist1.size(); i++) {
             ImageView v = findViewById(reslist1.get(i));
@@ -440,6 +442,36 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 part33 = connectLink_of_advanced + "_p3";
                 if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                break;
+            case R.id.id_Woodenmug:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.woodenmug);
+                startActivity(intent);
+                connectLink_of_advanced = "Woodenmug";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                part44 = connectLink_of_advanced + "_p4";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                break;
+            case R.id.id_Seaturtle:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.seaturtle);
+                startActivity(intent);
+                connectLink_of_advanced = "Seaturtle";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                part44 = connectLink_of_advanced + "_p4";
+                part55 = connectLink_of_advanced + "_p5";
+                part66 = connectLink_of_advanced + "_p6";
+                part77 = connectLink_of_advanced + "_p7";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                if (MainActivity.mapView.containsKey(part55)) part5 = true;
+                if (MainActivity.mapView.containsKey(part66)) part6 = true;
+                if (MainActivity.mapView.containsKey(part77)) part7 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

@@ -194,10 +194,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Seaturtle_p6","https://www.patreon.com/posts/mk-morskaia-6-49152106");
         mapView.put("Seaturtle_p7","https://www.patreon.com/posts/mk-morskaia-7-49701467");
 
-        mapView.put("Woodenmug"   ,"https://www.patreon.com/posts/mk-morskaia-1-48127001");
-        mapView.put("Woodenmug_p2","https://www.patreon.com/posts/mk-morskaia-2-48447391");
-        mapView.put("Woodenmug_p3","https://www.patreon.com/posts/mk-morskaia-3-48698158");
-        mapView.put("Woodenmug_p4","https://www.patreon.com/posts/mk-morskaia-4-48863289");
+        mapView.put("Woodenmug"   ,"https://www.patreon.com/posts/mk-dereviannaia-49428078");
+        mapView.put("Woodenmug_p2","https://www.patreon.com/posts/mk-dereviannaia-49448640");
+        mapView.put("Woodenmug_p3","https://www.patreon.com/posts/mk-dereviannaia-49825246");
+        mapView.put("Woodenmug_p4","https://www.patreon.com/posts/mk-dereviannaia-49981901");
 
 
     }
