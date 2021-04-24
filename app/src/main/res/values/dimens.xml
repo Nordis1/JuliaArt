@@ -16,9 +16,9 @@
     <dimen name="Act_galery_Large_height">170dp</dimen>
     //activity_galery XLarge
     <dimen name="Act_galery_XLarge_land_width">190dp</dimen>
-    <dimen name="Act_galery_XLarge_land_height">170dp</dimen>
+    <dimen name="Act_galery_XLarge_land_height">270dp</dimen>
     <dimen name="Act_galery_XLarge_width">180dp</dimen>
-    <dimen name="Act_galery_XLarge_height">170dp</dimen>
+    <dimen name="Act_galery_XLarge_height">210dp</dimen>
     //activity_Best_students XLarge
     <dimen name="Act_best_Student_small_height">130dp</dimen>
     <dimen name="Act_best_Student_normal_height">240dp</dimen>

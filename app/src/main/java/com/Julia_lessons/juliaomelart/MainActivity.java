@@ -186,6 +186,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Silverjug_p2","https://www.patreon.com/posts/mk-serebrianyi-2-47741487");
         mapView.put("Silverjug_p3","https://www.patreon.com/posts/mk-serebrianyi-3-47821645");
 
+        mapView.put("Seaturtle"   ,"https://www.patreon.com/posts/mk-morskaia-1-48127001");
+        mapView.put("Seaturtle_p2","https://www.patreon.com/posts/mk-morskaia-2-48447391");
+        mapView.put("Seaturtle_p3","https://www.patreon.com/posts/mk-morskaia-3-48698158");
+        mapView.put("Seaturtle_p4","https://www.patreon.com/posts/mk-morskaia-4-48863289");
+        mapView.put("Seaturtle_p5","https://www.patreon.com/posts/mk-morskaia-5-48988117");
+        mapView.put("Seaturtle_p6","https://www.patreon.com/posts/mk-morskaia-6-49152106");
+        mapView.put("Seaturtle_p7","https://www.patreon.com/posts/mk-morskaia-7-49701467");
+
+        mapView.put("Woodenmug"   ,"https://www.patreon.com/posts/mk-morskaia-1-48127001");
+        mapView.put("Woodenmug_p2","https://www.patreon.com/posts/mk-morskaia-2-48447391");
+        mapView.put("Woodenmug_p3","https://www.patreon.com/posts/mk-morskaia-3-48698158");
+        mapView.put("Woodenmug_p4","https://www.patreon.com/posts/mk-morskaia-4-48863289");
+
+
     }
 
     @Override

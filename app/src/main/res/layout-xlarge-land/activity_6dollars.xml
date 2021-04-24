@@ -57,6 +57,14 @@
             android:columnCount="5">
 
             <ImageView
+                android:id="@+id/id_Woodenmug"
+                android:layout_width="@dimen/Act_galery_XLarge_width"
+                android:layout_height="@dimen/Act_galery_XLarge_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:background="@mipmap/woodenmug"></ImageView>
+            <ImageView
                 android:id="@+id/id_Silverjug"
                 android:layout_width="@dimen/Act_galery_XLarge_width"
                 android:layout_height="@dimen/Act_galery_XLarge_height"

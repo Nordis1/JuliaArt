@@ -52,15 +52,32 @@
 
         <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:columnCount="2">
+            <ImageView
+                android:id="@+id/id_Seaturtle"
+                android:layout_width="@dimen/Act_galery_small_width"
+                android:layout_height="@dimen/Act_galery_small_height"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:background="@mipmap/seaturtle">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/id_Woodenmug"
+                android:layout_width="@dimen/Act_galery_small_width"
+                android:layout_height="@dimen/Act_galery_small_height"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:background="@mipmap/woodenmug">
+
+            </ImageView>
 
             <ImageView
                 android:id="@+id/id_Silverjug"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/silverjug">
 
@@ -71,7 +88,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/squirrel">
 
@@ -82,7 +98,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/amethyst">
 
@@ -93,7 +108,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/christmas">
 
@@ -104,7 +118,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/horse">
 
@@ -115,7 +128,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/cake">
 
@@ -126,7 +138,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/goldenfish">
 
@@ -137,7 +148,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/owl">
 
@@ -148,7 +158,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/blueberry">
 
@@ -159,7 +168,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/leopard">
 
@@ -170,7 +178,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/bumblemee">
 
@@ -181,7 +188,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/cloudlandscape">
 
@@ -192,7 +198,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/tropical_fish">
 
@@ -203,7 +208,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/dog">
 
@@ -214,7 +218,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/lizard">
 
@@ -225,7 +228,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/child">
 
@@ -236,7 +238,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/lily">
 
@@ -247,7 +248,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/frog">
 
@@ -258,7 +258,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/aiva">
 
@@ -269,7 +268,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/cat"
                 android:transitionName="Cat"></ImageView>
@@ -279,7 +277,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/sinichka"
                 android:transitionName="Sinichka">
@@ -291,7 +288,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/mandarin"
                 android:transitionName="Mandarin"></ImageView>
@@ -301,7 +297,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/tigr"
                 android:transitionName="Tigr">
@@ -313,7 +308,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/eye"
                 android:transitionName="Eyes">
@@ -325,7 +319,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/mushroom"
                 android:transitionName="Mushroom">
@@ -337,7 +330,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/butterfly"
                 android:transitionName="Butterfly">
@@ -349,7 +341,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/tea"
                 android:transitionName="Tea">
@@ -361,7 +352,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/beetle"
                 android:transitionName="Beetle">
@@ -373,7 +363,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/pumpkin"
                 android:transitionName="Pumpkin">
@@ -385,7 +374,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/sheet"
                 android:transitionName="Sheet">
@@ -397,7 +385,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/cherry"
                 android:transitionName="Cherry">
@@ -409,7 +396,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/peach"
                 android:transitionName="Peach">
@@ -421,7 +407,6 @@
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_columnWeight="1"
-                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:background="@mipmap/smile"
                 android:transitionName="Smile">
