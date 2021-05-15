@@ -10,6 +10,7 @@ import android.view.ContextMenu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +21,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
     static String s, s2, s3, s4, s5, s6, s7 = "";
     TextView textfor_size;
     ImageView linkView;
+    ImageButton btnFeedback;
     static boolean nulll = false;
     public static final String TAG = "Descript_Activity";
     public static FrameLayout frameLayout;
@@ -35,6 +37,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
         int viewElement = intent.getIntExtra("intent", 0);
 
         btnLink = findViewById(R.id.btn_linkToPatreon);
+        btnFeedback = findViewById(R.id.btnFeedBack);
         btnLink_Part2 = findViewById(R.id.btn_linkToPatreon_part2);
         btnLink_Part3 = findViewById(R.id.btn_linkToPatreon_part3);
         btnLink_Part4 = findViewById(R.id.btn_linkToPatreon_part4);
@@ -42,6 +45,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
         btnLink_Part6 = findViewById(R.id.btn_linkToPatreon_part6);
         btnLink_Part7 = findViewById(R.id.btn_linkToPatreon_part7);
         linkView = findViewById(R.id.linkView);
+        btnFeedback.setOnClickListener(this);
         linkView.setOnClickListener(this);
         btnLink.setOnClickListener(this);
         btnLink_Part2.setOnClickListener(this);
@@ -298,6 +302,10 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Ссылки на урок");
                 intent.putExtra(Intent.EXTRA_TEXT, message);
                 startActivity(Intent.createChooser(intent, "Через что передать?"));
+                break;
+            case R.id.btnFeedBack:
+                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.Julia_lessons.juliaomelart"));
+                startActivity(intent);
                 break;
         }
 

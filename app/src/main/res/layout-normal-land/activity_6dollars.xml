@@ -55,7 +55,8 @@
                 android:layout_margin="4dp"
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
-                android:layout_columnWeight="1">
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill">
             </ImageView>
             <ImageView
                 android:id="@+id/id_Woodenmug"
@@ -63,7 +64,8 @@
                 android:layout_margin="4dp"
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
-                android:layout_columnWeight="1">
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill">
             </ImageView>
             <ImageView
                 android:id="@+id/id_Silverjug"
@@ -71,7 +73,8 @@
                 android:layout_margin="4dp"
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
-                android:layout_columnWeight="1">
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill">
             </ImageView>
             <ImageView
                 android:id="@+id/id_Ametist"
@@ -79,7 +82,8 @@
                 android:layout_margin="4dp"
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
-                android:layout_columnWeight="1">
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill">
             </ImageView>
             <ImageView
                 android:id="@+id/id_Christmas"
@@ -87,7 +91,8 @@
                 android:layout_margin="4dp"
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
-                android:layout_columnWeight="1">
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill">
             </ImageView>
             <ImageView
                 android:id="@+id/id_Cake"
@@ -95,7 +100,8 @@
                 android:layout_margin="4dp"
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
-                android:layout_columnWeight="1">
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill">
             </ImageView>
             <ImageView
                 android:id="@+id/id_GoldenFish"
@@ -103,7 +109,8 @@
                 android:layout_margin="4dp"
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
-                android:layout_columnWeight="1">
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill">
             </ImageView>
             <ImageView
                 android:id="@+id/id_Blueberry"
@@ -111,7 +118,8 @@
                 android:layout_margin="4dp"
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
-                android:layout_columnWeight="1">
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill">
             </ImageView>
             <ImageView
                 android:id="@+id/id_Bumblemee"
@@ -119,7 +127,8 @@
                 android:layout_margin="4dp"
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
-                android:layout_columnWeight="1">
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill">
             </ImageView>
             <ImageView
                 android:id="@+id/id_Tropical_Fish"
@@ -127,6 +136,7 @@
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:background="@mipmap/tropical_fish">
             </ImageView>
             <ImageView
@@ -135,6 +145,7 @@
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:background="@mipmap/lizard">
             </ImageView>
             <ImageView
@@ -143,6 +154,7 @@
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:background="@mipmap/lily">
             </ImageView>
             <ImageView
@@ -151,6 +163,7 @@
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:background="@mipmap/aiva">
             </ImageView>
 
@@ -160,6 +173,7 @@
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:background="@mipmap/sinichka">
             </ImageView>
 
@@ -169,6 +183,7 @@
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:background="@mipmap/mandarin">
             </ImageView>
 
@@ -179,6 +194,7 @@
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:background="@mipmap/mushroom">
             </ImageView>
 
@@ -188,6 +204,7 @@
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:background="@mipmap/tea">
             </ImageView>
 
@@ -197,6 +214,7 @@
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:background="@mipmap/butterfly">
             </ImageView>
 
@@ -206,6 +224,7 @@
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:background="@mipmap/peach">
             </ImageView>
             <ImageView
@@ -214,6 +233,7 @@
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:background="@mipmap/sheet">
             </ImageView>
             <ImageView
@@ -222,6 +242,7 @@
                 android:layout_width="@dimen/Act_galery_normal_land_width"
                 android:layout_height="@dimen/Act_galery_normal_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:background="@mipmap/cherry">
             </ImageView>
         </GridLayout>

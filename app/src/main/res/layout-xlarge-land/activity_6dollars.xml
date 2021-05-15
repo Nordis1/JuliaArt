@@ -61,6 +61,7 @@
                 android:layout_width="@dimen/Act_galery_XLarge_land_width"
                 android:layout_height="@dimen/Act_galery_XLarge_land_height"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:layout_margin="7dp"
                 android:background="@mipmap/tomatoes"></ImageView>
 
