@@ -53,7 +53,15 @@
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:columnCount="2">
+            android:columnCount="1">
+            <ImageView
+                android:id="@+id/id_Tomat"
+                android:layout_width="@dimen/Act_galery_small_width"
+                android:layout_height="@dimen/Act_galery_small_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:background="@mipmap/tomatoes"></ImageView>
 
             <ImageView
                 android:id="@+id/id_Woodenmug"

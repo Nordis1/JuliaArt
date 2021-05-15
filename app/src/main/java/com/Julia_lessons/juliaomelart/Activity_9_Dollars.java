@@ -62,6 +62,8 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
             reslist1.add(R.id.id_Horse);
             reslist1.add(R.id.id_Woodenmug);
             reslist1.add(R.id.id_Seaturtle);
+            reslist1.add(R.id.id_Tomat);
+            reslist1.add(R.id.id_GreyCat);
         }
         for (int i = 0; i < reslist1.size(); i++) {
             ImageView v = findViewById(reslist1.get(i));
@@ -472,6 +474,24 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 if (MainActivity.mapView.containsKey(part55)) part5 = true;
                 if (MainActivity.mapView.containsKey(part66)) part6 = true;
                 if (MainActivity.mapView.containsKey(part77)) part7 = true;
+                break;
+            case R.id.id_Tomat:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.tomatoes);
+                startActivity(intent);
+                connectLink_of_advanced = "Tomatoes";
+                part22 = connectLink_of_advanced + "_p2";
+                part33 = connectLink_of_advanced + "_p3";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                break;
+            case R.id.id_GreyCat:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.greycat);
+                startActivity(intent);
+                connectLink_of_advanced = "Greycat";
+                part22 = connectLink_of_advanced + "_p2";
+                if (MainActivity.mapView.containsKey(part22)) part2 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

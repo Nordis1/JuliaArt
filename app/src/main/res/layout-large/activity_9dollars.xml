@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <TextView
         android:id="@+id/id_textSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:text="@string/size_large">
-    </TextView>
+        android:text="@string/size_large"
+        android:visibility="gone"></TextView>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -47,323 +47,306 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="2">
             <ImageView
-                android:id="@+id/id_Seaturtle"
-                android:layout_margin="5dp"
+                android:id="@+id/id_GreyCat"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/seaturtle">
+                android:layout_margin="5dp"
+                android:background="@mipmap/greycat"></ImageView>
 
-            </ImageView>
+            <ImageView
+                android:id="@+id/id_Tomat"
+                android:layout_width="@dimen/Act_galery_Large_width"
+                android:layout_height="@dimen/Act_galery_Large_height"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@mipmap/tomatoes"></ImageView>
+
+            <ImageView
+                android:id="@+id/id_Seaturtle"
+                android:layout_width="@dimen/Act_galery_Large_width"
+                android:layout_height="@dimen/Act_galery_Large_height"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@mipmap/seaturtle"></ImageView>
+
             <ImageView
                 android:id="@+id/id_Woodenmug"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/woodenmug">
+                android:layout_margin="5dp"
+                android:background="@mipmap/woodenmug"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Silverjug"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/silverjug">
+                android:layout_margin="5dp"
+                android:background="@mipmap/silverjug"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Squirrel"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/squirrel">
+                android:layout_margin="5dp"
+                android:background="@mipmap/squirrel"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Ametist"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/amethyst">
+                android:layout_margin="5dp"
+                android:background="@mipmap/amethyst"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Christmas"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/christmas">
+                android:layout_margin="5dp"
+                android:background="@mipmap/christmas"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Horse"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/horse">
+                android:layout_margin="5dp"
+                android:background="@mipmap/horse"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Cake"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/cake">
+                android:layout_margin="5dp"
+                android:background="@mipmap/cake"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_GoldenFish"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/goldenfish">
+                android:layout_margin="5dp"
+                android:background="@mipmap/goldenfish"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Owl"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/owl">
+                android:layout_margin="5dp"
+                android:background="@mipmap/owl"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Blueberry"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/blueberry">
+                android:layout_margin="5dp"
+                android:background="@mipmap/blueberry"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Leopard"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/leopard">
+                android:layout_margin="5dp"
+                android:background="@mipmap/leopard"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Bumblemee"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/bumblemee">
+                android:layout_margin="5dp"
+                android:background="@mipmap/bumblemee"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Cloudlandscape"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/cloudlandscape">
+                android:layout_margin="5dp"
+                android:background="@mipmap/cloudlandscape"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Tropical_Fish"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/tropical_fish">
+                android:layout_margin="5dp"
+                android:background="@mipmap/tropical_fish"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Dog"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/dog">
+                android:layout_margin="5dp"
+                android:background="@mipmap/dog"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Lizard"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/lizard">
+                android:layout_margin="5dp"
+                android:background="@mipmap/lizard"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Child"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/child">
+                android:layout_margin="5dp"
+                android:background="@mipmap/child"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Lily"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/lily">
+                android:layout_margin="5dp"
+                android:background="@mipmap/lily"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Frog"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/frog">
+                android:layout_margin="5dp"
+                android:background="@mipmap/frog"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Aiva"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/aiva">
+                android:layout_margin="5dp"
+                android:background="@mipmap/aiva"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Cat"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/cat">
-            </ImageView>
+                android:layout_margin="5dp"
+                android:background="@mipmap/cat"></ImageView>
+
             <ImageView
                 android:id="@+id/id_Sinichka"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/sinichka">
+                android:layout_margin="5dp"
+                android:background="@mipmap/sinichka"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Mandarin"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/mandarin">
-            </ImageView>
+                android:layout_margin="5dp"
+                android:background="@mipmap/mandarin"></ImageView>
+
             <ImageView
                 android:id="@+id/id_Tigr"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/tigr">
+                android:layout_margin="5dp"
+                android:background="@mipmap/tigr"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Eyes"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/eye">
+                android:layout_margin="5dp"
+                android:background="@mipmap/eye"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Mushroom"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/mushroom">
+                android:layout_margin="5dp"
+                android:background="@mipmap/mushroom"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Butterfly"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/butterfly">
+                android:layout_margin="5dp"
+                android:background="@mipmap/butterfly"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Tea"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/tea">
+                android:layout_margin="5dp"
+                android:background="@mipmap/tea"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Beetle"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/beetle">
+                android:layout_margin="5dp"
+                android:background="@mipmap/beetle"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Pumpkin"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/pumpkin">
+                android:layout_margin="5dp"
+                android:background="@mipmap/pumpkin"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Sheet"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/sheet">
+                android:layout_margin="5dp"
+                android:background="@mipmap/sheet"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Cherry"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/cherry">
+                android:layout_margin="5dp"
+                android:background="@mipmap/cherry"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Peach"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/peach">
+                android:layout_margin="5dp"
+                android:background="@mipmap/peach"></ImageView>
 
-            </ImageView>
             <ImageView
                 android:id="@+id/id_Smile"
-                android:layout_margin="5dp"
                 android:layout_width="@dimen/Act_galery_Large_width"
                 android:layout_height="@dimen/Act_galery_Large_height"
                 android:layout_columnWeight="1"
-                android:background="@mipmap/smile">
-
-            </ImageView>
+                android:layout_margin="5dp"
+                android:background="@mipmap/smile"></ImageView>
 
         </GridLayout>
     </ScrollView>
