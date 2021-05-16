@@ -212,7 +212,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_marginBottom="5dp"
-            android:text="@string/s"
+            android:text="@string/Descript_text"
             android:textSize="15sp"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
