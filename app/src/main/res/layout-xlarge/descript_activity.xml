@@ -57,7 +57,7 @@
             android:layout_marginLeft="50dp"
             android:layout_marginBottom="15dp"
             android:fontFamily="@font/sourcesanspro_regular"
-            android:text="@string/s"
+            android:text="@string/Descript_text"
             android:textSize="16sp">
 
         </me.biubiubiu.justifytext.library.JustifyTextView>
@@ -242,41 +242,54 @@
 
     <ImageView
         android:id="@+id/linkView"
-        android:layout_width="34dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginRight="70dp"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
         android:contentDescription="@string/menu_share"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/btn_linkToPatreon"
         app:srcCompat="@drawable/ic_link24dp"
         tools:ignore="VectorDrawableCompat" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
-        android:text="@string/textlink"
-        android:fontFamily="@font/sourcesanspro_regular"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollable" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:text="@string/textlink2"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
         android:fontFamily="@font/sourcesanspro_regular"
+        android:text="@string/textlink2"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/linkView" />
+
+    <ImageButton
+        android:id="@+id/btnFeedBack"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/menu_To_Ask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_linkToPatreon"
+        app:srcCompat="@drawable/pngjoy" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/menu_To_Ask"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFeedBack" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

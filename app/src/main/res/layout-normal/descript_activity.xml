@@ -233,7 +233,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginLeft="12dp"
             android:fontFamily="@font/sourcesanspro_regular"
-            android:text="@string/s"
+            android:text="@string/Descript_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription">
@@ -284,8 +284,8 @@
 
     <ImageView
         android:id="@+id/linkView"
-        android:layout_width="36dp"
-        android:layout_height="33dp"
+        android:layout_width="29dp"
+        android:layout_height="31dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
         android:contentDescription="@string/menu_share"

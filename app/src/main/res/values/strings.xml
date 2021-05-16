@@ -19,7 +19,7 @@
     <string name="j">Законченные работы :</string>
 
     //Descript activity 6 $
-    <string name="s">Чтобы перейти к уроку выберите интересующую вас часть видео. Для просмотра вам следует зайти на Patreon под своей
+    <string name="Descript_text">Чтобы перейти к уроку выберите интересующую вас часть видео. Для просмотра вам следует зайти на Patreon под своей
         учётной записью, на которую оформлена подписка. Приятного просмотра и обучения!\n</string>
     <string name="btn">Часть 1</string>
     <string name="btnSmall">Часть 1</string>
@@ -30,7 +30,6 @@
     <string name="btn6">Часть 6</string>
     <string name="btn7">Часть 7</string>
     <string name="btnToSite">На сайт автора</string>
-    <string name="textlink">Отправить себе </string>
     <string name="textlink2">Ссылки на видео</string>
 
 
