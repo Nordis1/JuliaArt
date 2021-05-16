@@ -52,13 +52,12 @@
 
         <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:columnCount="1">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
             <ImageView
                 android:id="@+id/id_Tomat"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/tomatoes"></ImageView>
@@ -67,7 +66,6 @@
                 android:id="@+id/id_Woodenmug"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/woodenmug"></ImageView>
@@ -75,7 +73,6 @@
                 android:id="@+id/id_Silverjug"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/silverjug"></ImageView>
@@ -84,7 +81,6 @@
                 android:id="@+id/id_Ametist"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/amethyst"></ImageView>
@@ -93,7 +89,6 @@
                 android:id="@+id/id_Christmas"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/christmas"></ImageView>
@@ -102,7 +97,6 @@
                 android:id="@+id/id_Cake"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/cake"></ImageView>
@@ -111,7 +105,6 @@
                 android:id="@+id/id_GoldenFish"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/goldenfish"></ImageView>
@@ -120,7 +113,6 @@
                 android:id="@+id/id_Blueberry"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/blueberry"></ImageView>
@@ -129,7 +121,6 @@
                 android:id="@+id/id_Bumblemee"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/bumblemee"></ImageView>
@@ -138,7 +129,6 @@
                 android:id="@+id/id_Tropical_Fish"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/tropical_fish"></ImageView>
@@ -147,7 +137,6 @@
                 android:id="@+id/id_Lizard"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/lizard"></ImageView>
@@ -156,7 +145,6 @@
                 android:id="@+id/id_Lily"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/lily"></ImageView>
@@ -165,7 +153,6 @@
                 android:id="@+id/id_Aiva"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/aiva"></ImageView>
@@ -174,7 +161,6 @@
                 android:id="@+id/id_Sinichka"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/sinichka"></ImageView>
@@ -183,7 +169,6 @@
                 android:id="@+id/id_Tea"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/tea"></ImageView>
@@ -192,7 +177,6 @@
                 android:id="@+id/id_Butterfly"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/butterfly"></ImageView>
@@ -201,7 +185,6 @@
                 android:id="@+id/id_Cherry"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/cherry"></ImageView>
@@ -210,7 +193,6 @@
                 android:id="@+id/id_Mandarin"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/mandarin"></ImageView>
@@ -219,7 +201,6 @@
                 android:id="@+id/id_Pumpkin"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/pumpkin"></ImageView>
@@ -228,7 +209,6 @@
                 android:id="@+id/id_Mushroom"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/mushroom"></ImageView>
@@ -237,7 +217,6 @@
                 android:id="@+id/id_Peach"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/peach"></ImageView>
@@ -246,7 +225,6 @@
                 android:id="@+id/id_Sheet"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
-                android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="4dp"
                 android:background="@mipmap/sheet"></ImageView>
