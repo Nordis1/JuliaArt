@@ -2,6 +2,7 @@ package com.Julia_lessons.juliaomelart;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -13,6 +14,7 @@ import android.widget.Button;
 public class About_app extends AppCompatActivity implements View.OnClickListener {
     Button share,versionCount;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

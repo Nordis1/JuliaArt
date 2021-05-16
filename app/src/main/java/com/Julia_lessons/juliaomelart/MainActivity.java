@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_Art_materials, R.id.nav_list_Of_learn, R.id.nav_list_Of_learn_advance,
                 R.id.nav_free_lesson, R.id.nav_youtube, R.id.nav_work_of_Student, R.id.nav_send)
-                .setDrawerLayout(drawer)
+                .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.main_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
@@ -65,13 +65,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // 5. Запускаем программу.
         // mapView(key,value) - key Всегда с большой буквы
         mapView.put("Sheet", "https://www.patreon.com/posts/tsvetnye-risuem-29220651");
+        mapView.put("Sheet_Boosty", "https://boosty.to/juliaomelchenko/posts/cc77008c-90a3-45b7-83e0-aec997d4737a");
 
         mapView.put("Smile", "https://www.patreon.com/posts/tsvetnye-ulybka-29262023");
         mapView.put("Smile_p2", "https://www.patreon.com/posts/tsvetnye-ulybka-29380195");
+        mapView.put("Smile_Boosty", "https://boosty.to/juliaomelchenko/posts/449e6c97-967c-4fb7-b6f4-d0ad376800af");
 
         mapView.put("Beetle", "https://www.patreon.com/posts/mk-zhuk-chast-1-30261579");
         mapView.put("Beetle_p2", "https://www.patreon.com/posts/mk-zhuk-chast-2-30433600");
         mapView.put("Beetle_p3", "https://www.patreon.com/posts/mk-zhuk-chast-3-30719903");
+        mapView.put("Beetle_Boosty", "https://boosty.to/juliaomelchenko/posts/d56b0081-b0e7-410c-8935-a60a9012d3a5");
 
         mapView.put("Tea", "https://www.patreon.com/posts/mk-chashka-chaia-30929768");
         mapView.put("Tea_p2", "https://www.patreon.com/posts/mk-chashka-chaia-30975846");
@@ -220,7 +223,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return super.onContextItemSelected(item);
     }
 
-    @SuppressLint("ResourceAsColor")
+    @SuppressLint({"ResourceAsColor", "NonConstantResourceId"})
     @Override
     public boolean onOptionsItemSelected(MenuItem item) { // Взаимодейсвие для обычной меню
         Intent intent;
@@ -255,6 +258,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) { // метод для взаимодейсвия навигационого меню
         Intent intent;

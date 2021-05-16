@@ -2,6 +2,7 @@ package com.Julia_lessons.juliaomelart;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -16,7 +17,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Activity_moveToWatch extends AppCompatActivity implements View.OnClickListener {
-    private static Button btnLink, btnLink_Part2, btnLink_Part3, btnLink_Part4, btnLink_Part5,
+    @SuppressLint("StaticFieldLeak")
+    private static Button btnLink_Part1, btnLink_Part2, btnLink_Part3, btnLink_Part4, btnLink_Part5,
             btnLink_Part6, btnLink_Part7;
     static String s, s2, s3, s4, s5, s6, s7 = "";
     TextView textfor_size;
@@ -36,7 +38,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
         Intent intent = getIntent();
         int viewElement = intent.getIntExtra("intent", 0);
 
-        btnLink = findViewById(R.id.btn_linkToPatreon);
+        btnLink_Part1 = findViewById(R.id.btn_linkToPatreon);
         btnFeedback = findViewById(R.id.btnFeedBack);
         btnLink_Part2 = findViewById(R.id.btn_linkToPatreon_part2);
         btnLink_Part3 = findViewById(R.id.btn_linkToPatreon_part3);
@@ -47,7 +49,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
         linkView = findViewById(R.id.linkView);
         btnFeedback.setOnClickListener(this);
         linkView.setOnClickListener(this);
-        btnLink.setOnClickListener(this);
+        btnLink_Part1.setOnClickListener(this);
         btnLink_Part2.setOnClickListener(this);
         btnLink_Part3.setOnClickListener(this);
         btnLink_Part4.setOnClickListener(this);
@@ -88,36 +90,36 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
         boolean b = false;
         if (Activity_6_Dollars.load_galery) {
             s = MainActivity.mapView.get(Activity_6_Dollars.connectLink);
-            if (Activity_6_Dollars.part2) {
+            if (Activity_6_Dollars.onButtonVisible6doll_2) {
                 s2 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p2");
             }
-            if (Activity_6_Dollars.part3) {
+            if (Activity_6_Dollars.onButtonVisible6doll_3) {
                 s3 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p3");
             }
-            if (Activity_6_Dollars.part4) {
+            if (Activity_6_Dollars.onButtonVisible6doll_4) {
                 s4 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p4");
             }
-            if (Activity_6_Dollars.part5) {
+            if (Activity_6_Dollars.onButtonVisible6doll_5) {
                 s5 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p5");
             }
         } else {
             s = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced);
-            if (Activity_9_Dollars.part2) {
+            if (Activity_9_Dollars.onButtonVisible9doll_2) {
                 s2 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p2");
             }
-            if (Activity_9_Dollars.part3) {
+            if (Activity_9_Dollars.onButtonVisible9doll_3) {
                 s3 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p3");
             }
-            if (Activity_9_Dollars.part4) {
+            if (Activity_9_Dollars.onButtonVisible9doll_4) {
                 s4 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p4");
             }
-            if (Activity_9_Dollars.part5) {
+            if (Activity_9_Dollars.onButtonVisible9doll_5) {
                 s5 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p5");
             }
-            if (Activity_9_Dollars.part6) {
+            if (Activity_9_Dollars.onButtonVisible9doll_6) {
                 s6 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p6");
             }
-            if (Activity_9_Dollars.part7) {
+            if (Activity_9_Dollars.onButtonVisible9doll_7) {
                 s7 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p7");
             }
         }
@@ -130,35 +132,35 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
 
     public static void buttonView() {
         if (Activity_6_Dollars.load_galery) {
-            if (Activity_6_Dollars.part2) {
+            if (Activity_6_Dollars.onButtonVisible6doll_2) {
                 btnLink_Part2.setVisibility(View.VISIBLE);
             }
-            if (Activity_6_Dollars.part3) {
+            if (Activity_6_Dollars.onButtonVisible6doll_3) {
                 btnLink_Part3.setVisibility(View.VISIBLE);
             }
-            if (Activity_6_Dollars.part4) {
+            if (Activity_6_Dollars.onButtonVisible6doll_4) {
                 btnLink_Part4.setVisibility(View.VISIBLE);
             }
-            if (Activity_6_Dollars.part5) {
+            if (Activity_6_Dollars.onButtonVisible6doll_5) {
                 btnLink_Part5.setVisibility(View.VISIBLE);
             }
         } else {
-            if (Activity_9_Dollars.part2) {
+            if (Activity_9_Dollars.onButtonVisible9doll_2) {
                 btnLink_Part2.setVisibility(View.VISIBLE);
             }
-            if (Activity_9_Dollars.part3) {
+            if (Activity_9_Dollars.onButtonVisible9doll_3) {
                 btnLink_Part3.setVisibility(View.VISIBLE);
             }
-            if (Activity_9_Dollars.part4) {
+            if (Activity_9_Dollars.onButtonVisible9doll_4) {
                 btnLink_Part4.setVisibility(View.VISIBLE);
             }
-            if (Activity_9_Dollars.part5) {
+            if (Activity_9_Dollars.onButtonVisible9doll_5) {
                 btnLink_Part5.setVisibility(View.VISIBLE);
             }
-            if (Activity_9_Dollars.part6) {
+            if (Activity_9_Dollars.onButtonVisible9doll_6) {
                 btnLink_Part6.setVisibility(View.VISIBLE);
             }
-            if (Activity_9_Dollars.part7) {
+            if (Activity_9_Dollars.onButtonVisible9doll_7) {
                 btnLink_Part7.setVisibility(View.VISIBLE);
             }
 

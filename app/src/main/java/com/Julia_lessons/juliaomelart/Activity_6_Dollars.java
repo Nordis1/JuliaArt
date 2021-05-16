@@ -17,12 +17,11 @@ import java.util.ArrayList;
 public class Activity_6_Dollars extends AppCompatActivity implements View.OnClickListener {
     public static final String TAG = "Activity_6_Dollars";
     TextView textSize;
-    TextView count_MK1;
+    TextView count_MK1; // текст для отображения кол-во готовых работ
     static String connectLink; // Имя рисунка
-    static boolean part2, part3, part4, part5 = false;
-    static boolean load_galery = false;
-    String part22, part33, part44, part55; // Состав строки в одну и проверка на
-    // вторую часть.
+    static boolean onButtonVisible6doll_2, onButtonVisible6doll_3, onButtonVisible6doll_4, onButtonVisible6doll_5 = false;
+    static boolean load_galery = false; // переменная для распознования какие ссылки кидать в moveToWatch c 6 дол иди 9 дол.
+    String name6Doll_2, name6Doll_3, name6Doll_4, name6Doll_5; // Состав строки в одну и проверка на вторую часть.
     ArrayList<Integer> reslist = new ArrayList<>();
 
     @Override
@@ -71,12 +70,12 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
         textSize = findViewById(R.id.id_textSize);
         count_MK1 = findViewById(R.id.id_count_Of_MK_base);
         count_MK1.setText(String.valueOf(reslist.size()));
-        part2 = false;
-        part3 = false;
-        part4 = false;
-        part22 = null;
-        part33 = null;
-        part44 = null;
+        onButtonVisible6doll_2 = false;
+        onButtonVisible6doll_3 = false;
+        onButtonVisible6doll_4 = false;
+        name6Doll_2 = null;
+        name6Doll_3 = null;
+        name6Doll_4 = null;
         connectLink = null;
         load_galery = false;
 
@@ -112,28 +111,28 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
 
     @Override
     protected void onDestroy() {
-        part2 = false;
-        part3 = false;
-        part4 = false;
-        part5 = false;
-        part22 = null;
-        part33 = null;
-        part44 = null;
-        part55 = null;
+        onButtonVisible6doll_2 = false;
+        onButtonVisible6doll_3 = false;
+        onButtonVisible6doll_4 = false;
+        onButtonVisible6doll_5 = false;
+        name6Doll_2 = null;
+        name6Doll_3 = null;
+        name6Doll_4 = null;
+        name6Doll_5 = null;
         load_galery = false;
         super.onDestroy();
     }
 
     @Override
     public void onClick(View v) {
-        part2 = false;
-        part3 = false;
-        part4 = false;
-        part5 = false;
-        part22 = null;
-        part33 = null;
-        part44 = null;
-        part55 = null;
+        onButtonVisible6doll_2 = false;
+        onButtonVisible6doll_3 = false;
+        onButtonVisible6doll_4 = false;
+        onButtonVisible6doll_5 = false;
+        name6Doll_2 = null;
+        name6Doll_3 = null;
+        name6Doll_4 = null;
+        name6Doll_5 = null;
         load_galery = true;
         Intent intent;
         switch (v.getId()) {
@@ -148,16 +147,16 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.tea);
                 startActivity(intent);
                 connectLink = "Tea";
-                part22 = connectLink + "_p2";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                name6Doll_2 = connectLink + "_p2";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
                 break;
             case R.id.id_Peach:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.peach);
                 startActivity(intent);
                 connectLink = "Peach";
-                part22 = connectLink + "_p2";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                name6Doll_2 = connectLink + "_p2";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
                 break;
             case R.id.id_Mandarin:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -170,8 +169,8 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.sinichka);
                 startActivity(intent);
                 connectLink = "Sinichka";
-                part22 = connectLink + "_p2";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                name6Doll_2 = connectLink + "_p2";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
                 break;
             case R.id.id_Mushroom:
                 intent = new Intent(this, Activity_moveToWatch.class);
@@ -208,128 +207,128 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.lily);
                 startActivity(intent);
                 connectLink = "Lily";
-                part22 = connectLink + "_p2";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
+                name6Doll_2 = connectLink + "_p2";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
                 break;
             case R.id.id_Lizard:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.lizard);
                 startActivity(intent);
                 connectLink = "Lizard";
-                part22 = connectLink + "_p2";
-                part33 = connectLink + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                name6Doll_2 = connectLink + "_p2";
+                name6Doll_3 = connectLink + "_p3";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
                 break;
             case R.id.id_Tropical_Fish:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.tropical_fish);
                 startActivity(intent);
                 connectLink = "Tropical_Fish";
-                part22 = connectLink + "_p2";
-                part33 = connectLink + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                name6Doll_2 = connectLink + "_p2";
+                name6Doll_3 = connectLink + "_p3";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
                 break;
             case R.id.id_Bumblemee:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.bumblemee);
                 startActivity(intent);
                 connectLink = "Bumblemee";
-                part22 = connectLink + "_p2";
-                part33 = connectLink + "_p3";
-                part44 = connectLink + "_p4";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
-                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                name6Doll_2 = connectLink + "_p2";
+                name6Doll_3 = connectLink + "_p3";
+                name6Doll_4 = connectLink + "_p4";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_4)) onButtonVisible6doll_4 = true;
                 break;
             case R.id.id_Blueberry:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.blueberry);
                 startActivity(intent);
                 connectLink = "Blueberry";
-                part22 = connectLink + "_p2";
-                part33 = connectLink + "_p3";
-                part44 = connectLink + "_p4";
-                part55 = connectLink + "_p5";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
-                if (MainActivity.mapView.containsKey(part44)) part4 = true;
-                if (MainActivity.mapView.containsKey(part55)) part5 = true;
+                name6Doll_2 = connectLink + "_p2";
+                name6Doll_3 = connectLink + "_p3";
+                name6Doll_4 = connectLink + "_p4";
+                name6Doll_5 = connectLink + "_p5";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_4)) onButtonVisible6doll_4 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_5)) onButtonVisible6doll_5 = true;
                 break;
             case R.id.id_GoldenFish:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.goldenfish);
                 startActivity(intent);
                 connectLink = "GoldenFish";
-                part22 = connectLink + "_p2";
-                part33 = connectLink + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                name6Doll_2 = connectLink + "_p2";
+                name6Doll_3 = connectLink + "_p3";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
                 break;
             case R.id.id_Ametist:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.amethyst);
                 startActivity(intent);
                 connectLink = "Ametist";
-                part22 = connectLink + "_p2";
-                part33 = connectLink + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                name6Doll_2 = connectLink + "_p2";
+                name6Doll_3 = connectLink + "_p3";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
                 break;
             case R.id.id_Cake:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.cake);
                 startActivity(intent);
                 connectLink = "Cake";
-                part22 = connectLink + "_p2";
-                part33 = connectLink + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                name6Doll_2 = connectLink + "_p2";
+                name6Doll_3 = connectLink + "_p3";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
                 break;
             case R.id.id_Christmas:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.christmas);
                 startActivity(intent);
                 connectLink = "Christmas";
-                part22 = connectLink + "_p2";
-                part33 = connectLink + "_p3";
-                part44 = connectLink + "_p4";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
-                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                name6Doll_2 = connectLink + "_p2";
+                name6Doll_3 = connectLink + "_p3";
+                name6Doll_4 = connectLink + "_p4";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_4)) onButtonVisible6doll_4 = true;
                 break;
             case R.id.id_Silverjug:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.silverjug);
                 startActivity(intent);
                 connectLink = "Silverjug";
-                part22 = connectLink + "_p2";
-                part33 = connectLink + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                name6Doll_2 = connectLink + "_p2";
+                name6Doll_3 = connectLink + "_p3";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
                 break;
             case R.id.id_Woodenmug:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.woodenmug);
                 startActivity(intent);
                 connectLink = "Woodenmug";
-                part22 = connectLink + "_p2";
-                part33 = connectLink + "_p3";
-                part44 = connectLink + "_p4";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
-                if (MainActivity.mapView.containsKey(part44)) part4 = true;
+                name6Doll_2 = connectLink + "_p2";
+                name6Doll_3 = connectLink + "_p3";
+                name6Doll_4 = connectLink + "_p4";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_4)) onButtonVisible6doll_4 = true;
                 break;
             case R.id.id_Tomat:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.tomatoes);
                 startActivity(intent);
                 connectLink = "Tomatoes";
-                part22 = connectLink + "_p2";
-                part33 = connectLink + "_p3";
-                if (MainActivity.mapView.containsKey(part22)) part2 = true;
-                if (MainActivity.mapView.containsKey(part33)) part3 = true;
+                name6Doll_2 = connectLink + "_p2";
+                name6Doll_3 = connectLink + "_p3";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();
