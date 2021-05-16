@@ -20,7 +20,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
     @SuppressLint("StaticFieldLeak")
     private static Button btnLink_Part1, btnLink_Part2, btnLink_Part3, btnLink_Part4, btnLink_Part5,
             btnLink_Part6, btnLink_Part7;
-    static String s, s2, s3, s4, s5, s6, s7 = "";
+    static String s, s2, s3, s4, s5, s6, s7, boosty = "";
     TextView textfor_size;
     ImageView linkView;
     ImageButton btnFeedback;
@@ -90,6 +90,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
         boolean b = false;
         if (Activity_6_Dollars.load_galery) {
             s = MainActivity.mapView.get(Activity_6_Dollars.connectLink);
+            boosty = MainActivity.mapView.get(Activity_6_Dollars.boostyLink6Doll);
             if (Activity_6_Dollars.onButtonVisible6doll_2) {
                 s2 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p2");
             }
@@ -104,6 +105,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
             }
         } else {
             s = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced);
+            boosty = MainActivity.mapView.get(Activity_9_Dollars.boostylink9Doll);
             if (Activity_9_Dollars.onButtonVisible9doll_2) {
                 s2 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p2");
             }
@@ -177,6 +179,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
         s5 = null;
         s6 = null;
         s7 = null;
+        boosty = null;
         super.onDestroy();
     }
 

@@ -18,10 +18,10 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
     public static final String TAG = "Activity_6_Dollars";
     TextView textSize;
     TextView count_MK1; // текст для отображения кол-во готовых работ
-    static String connectLink; // Имя рисунка
+    static String connectLink,boostyLink6Doll; // Имя рисунка
     static boolean onButtonVisible6doll_2, onButtonVisible6doll_3, onButtonVisible6doll_4, onButtonVisible6doll_5 = false;
     static boolean load_galery = false; // переменная для распознования какие ссылки кидать в moveToWatch c 6 дол иди 9 дол.
-    String name6Doll_2, name6Doll_3, name6Doll_4, name6Doll_5; // Состав строки в одну и проверка на вторую часть.
+    String name6Doll_2, name6Doll_3, name6Doll_4, name6Doll_5 ; // Состав строки в одну и проверка на вторую часть.
     ArrayList<Integer> reslist = new ArrayList<>();
 
     @Override
@@ -73,6 +73,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
         onButtonVisible6doll_2 = false;
         onButtonVisible6doll_3 = false;
         onButtonVisible6doll_4 = false;
+        boostyLink6Doll = null;
         name6Doll_2 = null;
         name6Doll_3 = null;
         name6Doll_4 = null;
@@ -120,6 +121,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
         name6Doll_4 = null;
         name6Doll_5 = null;
         load_galery = false;
+        boostyLink6Doll = null;
         super.onDestroy();
     }
 
@@ -133,6 +135,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
         name6Doll_3 = null;
         name6Doll_4 = null;
         name6Doll_5 = null;
+        boostyLink6Doll = null;
         load_galery = true;
         Intent intent;
         switch (v.getId()) {
@@ -140,6 +143,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.sheet);
                 connectLink = "Sheet";
+                boostyLink6Doll = connectLink + "_Boosty";
                 startActivity(intent);
                 break;
             case R.id.id_Tea:
@@ -147,6 +151,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.tea);
                 startActivity(intent);
                 connectLink = "Tea";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
                 break;
@@ -155,6 +160,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.peach);
                 startActivity(intent);
                 connectLink = "Peach";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
                 break;
@@ -163,12 +169,14 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.mandarin);
                 startActivity(intent);
                 connectLink = "Mandarin";
+                boostyLink6Doll = connectLink + "_Boosty";
                 break;
             case R.id.id_Sinichka:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.sinichka);
                 startActivity(intent);
                 connectLink = "Sinichka";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
                 break;
@@ -177,36 +185,42 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.mushroom);
                 startActivity(intent);
                 connectLink = "Mushroom";
+                boostyLink6Doll = connectLink + "_Boosty";
                 break;
             case R.id.id_Butterfly:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.butterfly);
                 startActivity(intent);
                 connectLink = "Butterfly";
+                boostyLink6Doll = connectLink + "_Boosty";
                 break;
             case R.id.id_Pumpkin:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.pumpkin);
                 startActivity(intent);
                 connectLink = "Pumpkin";
+                boostyLink6Doll = connectLink + "_Boosty";
                 break;
             case R.id.id_Cherry:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.cherry);
                 startActivity(intent);
                 connectLink = "Cherry";
+                boostyLink6Doll = connectLink + "_Boosty";
                 break;
             case R.id.id_Aiva:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.aiva);
                 startActivity(intent);
                 connectLink = "Aiva";
+                boostyLink6Doll = connectLink + "_Boosty";
                 break;
             case R.id.id_Lily:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.lily);
                 startActivity(intent);
                 connectLink = "Lily";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
                 break;
@@ -215,6 +229,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.lizard);
                 startActivity(intent);
                 connectLink = "Lizard";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 name6Doll_3 = connectLink + "_p3";
                 if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
@@ -225,6 +240,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.tropical_fish);
                 startActivity(intent);
                 connectLink = "Tropical_Fish";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 name6Doll_3 = connectLink + "_p3";
                 if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
@@ -235,6 +251,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.bumblemee);
                 startActivity(intent);
                 connectLink = "Bumblemee";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 name6Doll_3 = connectLink + "_p3";
                 name6Doll_4 = connectLink + "_p4";
@@ -247,6 +264,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.blueberry);
                 startActivity(intent);
                 connectLink = "Blueberry";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 name6Doll_3 = connectLink + "_p3";
                 name6Doll_4 = connectLink + "_p4";
@@ -261,6 +279,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.goldenfish);
                 startActivity(intent);
                 connectLink = "GoldenFish";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 name6Doll_3 = connectLink + "_p3";
                 if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
@@ -271,6 +290,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.amethyst);
                 startActivity(intent);
                 connectLink = "Ametist";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 name6Doll_3 = connectLink + "_p3";
                 if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
@@ -281,6 +301,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.cake);
                 startActivity(intent);
                 connectLink = "Cake";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 name6Doll_3 = connectLink + "_p3";
                 if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
@@ -291,6 +312,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.christmas);
                 startActivity(intent);
                 connectLink = "Christmas";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 name6Doll_3 = connectLink + "_p3";
                 name6Doll_4 = connectLink + "_p4";
@@ -303,6 +325,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.silverjug);
                 startActivity(intent);
                 connectLink = "Silverjug";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 name6Doll_3 = connectLink + "_p3";
                 if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
@@ -313,6 +336,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.woodenmug);
                 startActivity(intent);
                 connectLink = "Woodenmug";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 name6Doll_3 = connectLink + "_p3";
                 name6Doll_4 = connectLink + "_p4";
@@ -325,6 +349,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.tomatoes);
                 startActivity(intent);
                 connectLink = "Tomatoes";
+                boostyLink6Doll = connectLink + "_Boosty";
                 name6Doll_2 = connectLink + "_p2";
                 name6Doll_3 = connectLink + "_p3";
                 if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;

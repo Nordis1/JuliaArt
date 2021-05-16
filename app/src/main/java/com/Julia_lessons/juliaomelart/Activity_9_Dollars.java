@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class Activity_9_Dollars extends AppCompatActivity implements View.OnClickListener {
     TextView textSize;
     TextView count_MK;
-    static String connectLink_of_advanced; // Имя рисунка
+    static String connectLink_of_advanced,boostylink9Doll; // Имя рисунка
     static  boolean onButtonVisible9doll_2, onButtonVisible9doll_3, onButtonVisible9doll_4, onButtonVisible9doll_5, onButtonVisible9doll_6, onButtonVisible9doll_7 = false;
     String name9Doll_2, name9Doll_3, name9Doll_4, name9Doll_5, name9Doll_6, name9Doll_7; // Состав строки в одну и проверка на вторую часть.
     ArrayList<Integer> reslist1 = new ArrayList<>();
@@ -77,6 +77,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
         textSize = findViewById(R.id.id_textSize);
         count_MK = findViewById(R.id.id_count_Of_MK);
         count_MK.setText(String.valueOf(reslist1.size()));
+        boostylink9Doll = null;
         onButtonVisible9doll_2 = false;
         onButtonVisible9doll_3 = false;
         onButtonVisible9doll_4 = false;
@@ -116,6 +117,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
     @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
+        boostylink9Doll = null;
         onButtonVisible9doll_2 = false;
         onButtonVisible9doll_3 = false;
         onButtonVisible9doll_4 = false;
@@ -135,12 +137,14 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.sheet);
                 connectLink_of_advanced = "Sheet";
                 startActivity(intent);
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 break;
             case R.id.id_Smile:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.smile);
                 startActivity(intent);
                 connectLink_of_advanced = "Smile";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
                 break;
@@ -149,6 +153,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.beetle);
                 startActivity(intent);
                 connectLink_of_advanced = "Beetle";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
@@ -159,6 +164,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.tea);
                 startActivity(intent);
                 connectLink_of_advanced = "Tea";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
                 break;
@@ -167,12 +173,14 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.eye);
                 startActivity(intent);
                 connectLink_of_advanced = "Eyes";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 break;
             case R.id.id_Peach:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.peach);
                 startActivity(intent);
                 connectLink_of_advanced = "Peach";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
                 break;
@@ -181,12 +189,14 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.mandarin);
                 startActivity(intent);
                 connectLink_of_advanced = "Mandarin";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 break;
             case R.id.id_Sinichka:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.sinichka);
                 startActivity(intent);
                 connectLink_of_advanced = "Sinichka";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
                 break;
@@ -195,6 +205,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.cat);
                 startActivity(intent);
                 connectLink_of_advanced = "Cat";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
                 break;
@@ -203,6 +214,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.tigr);
                 startActivity(intent);
                 connectLink_of_advanced = "Tigr";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
                 break;
@@ -211,30 +223,35 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.mushroom);
                 startActivity(intent);
                 connectLink_of_advanced = "Mushroom";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 break;
             case R.id.id_Butterfly:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.butterfly);
                 startActivity(intent);
                 connectLink_of_advanced = "Butterfly";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 break;
             case R.id.id_Pumpkin:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.pumpkin);
                 startActivity(intent);
                 connectLink_of_advanced = "Pumpkin";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 break;
             case R.id.id_Cherry:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.cherry);
                 startActivity(intent);
                 connectLink_of_advanced = "Cherry";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 break;
             case R.id.id_Frog:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.frog);
                 startActivity(intent);
                 connectLink_of_advanced = "Frog";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
                 break;
@@ -243,12 +260,14 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.aiva);
                 startActivity(intent);
                 connectLink_of_advanced = "Aiva";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 break;
             case R.id.id_Lily:
                 intent = new Intent(this, Activity_moveToWatch.class);
                 intent.putExtra("intent", R.mipmap.lily);
                 startActivity(intent);
                 connectLink_of_advanced = "Lily";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
                 break;
@@ -257,6 +276,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.child);
                 startActivity(intent);
                 connectLink_of_advanced = "Child";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
@@ -267,6 +287,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.cake);
                 startActivity(intent);
                 connectLink_of_advanced = "Cake";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
@@ -277,6 +298,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.lizard);
                 startActivity(intent);
                 connectLink_of_advanced = "Lizard";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
@@ -287,6 +309,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.dog);
                 startActivity(intent);
                 connectLink_of_advanced = "Dog";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 name9Doll_4 = connectLink_of_advanced + "_p4";
@@ -299,6 +322,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.tropical_fish);
                 startActivity(intent);
                 connectLink_of_advanced = "Tropical_Fish";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
@@ -309,6 +333,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.cloudlandscape);
                 startActivity(intent);
                 connectLink_of_advanced = "Cloudlandscape";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 name9Doll_4 = connectLink_of_advanced + "_p4";
@@ -323,6 +348,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.bumblemee);
                 startActivity(intent);
                 connectLink_of_advanced = "Bumblemee";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 name9Doll_4 = connectLink_of_advanced + "_p4";
@@ -335,6 +361,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.leopard);
                 startActivity(intent);
                 connectLink_of_advanced = "Leopard";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 name9Doll_4 = connectLink_of_advanced + "_p4";
@@ -353,6 +380,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.horse);
                 startActivity(intent);
                 connectLink_of_advanced = "Horse";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 name9Doll_4 = connectLink_of_advanced + "_p4";
@@ -369,6 +397,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.blueberry);
                 startActivity(intent);
                 connectLink_of_advanced = "Blueberry";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 name9Doll_4 = connectLink_of_advanced + "_p4";
@@ -383,6 +412,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.goldenfish);
                 startActivity(intent);
                 connectLink_of_advanced = "GoldenFish";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
@@ -393,6 +423,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.owl);
                 startActivity(intent);
                 connectLink_of_advanced = "Owl";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 name9Doll_4 = connectLink_of_advanced + "_p4";
@@ -407,6 +438,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.amethyst);
                 startActivity(intent);
                 connectLink_of_advanced = "Ametist";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
@@ -417,6 +449,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.christmas);
                 startActivity(intent);
                 connectLink_of_advanced = "Christmas";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 name9Doll_4 = connectLink_of_advanced + "_p4";
@@ -429,6 +462,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.squirrel);
                 startActivity(intent);
                 connectLink_of_advanced = "Squirrel";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 name9Doll_4 = connectLink_of_advanced + "_p4";
@@ -443,6 +477,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.silverjug);
                 startActivity(intent);
                 connectLink_of_advanced = "Silverjug";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
@@ -453,6 +488,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.woodenmug);
                 startActivity(intent);
                 connectLink_of_advanced = "Woodenmug";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 name9Doll_4 = connectLink_of_advanced + "_p4";
@@ -465,6 +501,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.seaturtle);
                 startActivity(intent);
                 connectLink_of_advanced = "Seaturtle";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 name9Doll_4 = connectLink_of_advanced + "_p4";
@@ -483,6 +520,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.tomatoes);
                 startActivity(intent);
                 connectLink_of_advanced = "Tomatoes";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 name9Doll_3 = connectLink_of_advanced + "_p3";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
@@ -493,6 +531,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 intent.putExtra("intent", R.mipmap.greycat);
                 startActivity(intent);
                 connectLink_of_advanced = "Greycat";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
                 break;
