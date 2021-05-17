@@ -18,14 +18,14 @@ import android.widget.Toast;
 
 public class Activity_moveToWatch extends AppCompatActivity implements View.OnClickListener {
     @SuppressLint("StaticFieldLeak")
-    private static Button btnLink_Part1, btnLink_Part2, btnLink_Part3, btnLink_Part4, btnLink_Part5,
-            btnLink_Part6, btnLink_Part7;
-    static String s, s2, s3, s4, s5, s6, s7, boosty = "";
+    private static Button btn_Part1, btn_Part2, btn_Part3, btn_Part4, btn_Part5, btn_Part6, btn_Part7, btn_Boosty;
+    static String string_link_1, string_link_2, string_link_3, string_link_4, string_link_5, string_link_6, string_link_7, string_link_Boosty = "";
     TextView textfor_size;
     ImageView linkView;
     ImageButton btnFeedback;
     static boolean nulll = false;
     public static final String TAG = "Descript_Activity";
+    @SuppressLint("StaticFieldLeak")
     public static FrameLayout frameLayout;
 
 
@@ -38,24 +38,26 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
         Intent intent = getIntent();
         int viewElement = intent.getIntExtra("intent", 0);
 
-        btnLink_Part1 = findViewById(R.id.btn_linkToPatreon);
+        btn_Part1 = findViewById(R.id.btn_linkToPatreon);
         btnFeedback = findViewById(R.id.btnFeedBack);
-        btnLink_Part2 = findViewById(R.id.btn_linkToPatreon_part2);
-        btnLink_Part3 = findViewById(R.id.btn_linkToPatreon_part3);
-        btnLink_Part4 = findViewById(R.id.btn_linkToPatreon_part4);
-        btnLink_Part5 = findViewById(R.id.btn_linkToPatreon_part5);
-        btnLink_Part6 = findViewById(R.id.btn_linkToPatreon_part6);
-        btnLink_Part7 = findViewById(R.id.btn_linkToPatreon_part7);
+        btn_Part2 = findViewById(R.id.btn_linkToPatreon_part2);
+        btn_Part3 = findViewById(R.id.btn_linkToPatreon_part3);
+        btn_Part4 = findViewById(R.id.btn_linkToPatreon_part4);
+        btn_Part5 = findViewById(R.id.btn_linkToPatreon_part5);
+        btn_Part6 = findViewById(R.id.btn_linkToPatreon_part6);
+        btn_Part7 = findViewById(R.id.btn_linkToPatreon_part7);
+        btn_Boosty = findViewById(R.id.btnBoosty);
         linkView = findViewById(R.id.linkView);
         btnFeedback.setOnClickListener(this);
         linkView.setOnClickListener(this);
-        btnLink_Part1.setOnClickListener(this);
-        btnLink_Part2.setOnClickListener(this);
-        btnLink_Part3.setOnClickListener(this);
-        btnLink_Part4.setOnClickListener(this);
-        btnLink_Part5.setOnClickListener(this);
-        btnLink_Part6.setOnClickListener(this);
-        btnLink_Part7.setOnClickListener(this);
+        btn_Part1.setOnClickListener(this);
+        btn_Part2.setOnClickListener(this);
+        btn_Part3.setOnClickListener(this);
+        btn_Part4.setOnClickListener(this);
+        btn_Part5.setOnClickListener(this);
+        btn_Part6.setOnClickListener(this);
+        btn_Part7.setOnClickListener(this);
+        btn_Boosty.setOnClickListener(this);
 
         textfor_size = findViewById(R.id.id_textSize1);
 
@@ -73,12 +75,12 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
         }
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v,
                                     ContextMenu.ContextMenuInfo menuInfo) {
-        switch (v.getId()) {
-            case R.id.frame_from_ActivityDescription:
-                Toast.makeText(this, "Size = " + textfor_size.getText(), Toast.LENGTH_LONG).show();
+        if (v.getId() == R.id.frame_from_ActivityDescription) {
+            Toast.makeText(this, "Size = " + textfor_size.getText(), Toast.LENGTH_LONG).show();
         }
     }
 
@@ -89,43 +91,43 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
     public static Boolean getLiks() {
         boolean b = false;
         if (Activity_6_Dollars.load_galery) {
-            s = MainActivity.mapView.get(Activity_6_Dollars.connectLink);
-            boosty = MainActivity.mapView.get(Activity_6_Dollars.boostyLink6Doll);
+            string_link_1 = MainActivity.mapView.get(Activity_6_Dollars.connectLink);
+            string_link_Boosty = MainActivity.mapView.get(Activity_6_Dollars.boostyLink6Doll);
             if (Activity_6_Dollars.onButtonVisible6doll_2) {
-                s2 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p2");
+                string_link_2 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p2");
             }
             if (Activity_6_Dollars.onButtonVisible6doll_3) {
-                s3 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p3");
+                string_link_3 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p3");
             }
             if (Activity_6_Dollars.onButtonVisible6doll_4) {
-                s4 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p4");
+                string_link_4 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p4");
             }
             if (Activity_6_Dollars.onButtonVisible6doll_5) {
-                s5 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p5");
+                string_link_5 = MainActivity.mapView.get(Activity_6_Dollars.connectLink + "_p5");
             }
         } else {
-            s = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced);
-            boosty = MainActivity.mapView.get(Activity_9_Dollars.boostylink9Doll);
+            string_link_1 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced);
+            string_link_Boosty = MainActivity.mapView.get(Activity_9_Dollars.boostylink9Doll);
             if (Activity_9_Dollars.onButtonVisible9doll_2) {
-                s2 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p2");
+                string_link_2 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p2");
             }
             if (Activity_9_Dollars.onButtonVisible9doll_3) {
-                s3 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p3");
+                string_link_3 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p3");
             }
             if (Activity_9_Dollars.onButtonVisible9doll_4) {
-                s4 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p4");
+                string_link_4 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p4");
             }
             if (Activity_9_Dollars.onButtonVisible9doll_5) {
-                s5 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p5");
+                string_link_5 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p5");
             }
             if (Activity_9_Dollars.onButtonVisible9doll_6) {
-                s6 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p6");
+                string_link_6 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p6");
             }
             if (Activity_9_Dollars.onButtonVisible9doll_7) {
-                s7 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p7");
+                string_link_7 = MainActivity.mapView.get(Activity_9_Dollars.connectLink_of_advanced + "_p7");
             }
         }
-        if (s == null) {
+        if (string_link_1 == null) {
             b = true;
         }
         return b;
@@ -135,35 +137,35 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
     public static void buttonView() {
         if (Activity_6_Dollars.load_galery) {
             if (Activity_6_Dollars.onButtonVisible6doll_2) {
-                btnLink_Part2.setVisibility(View.VISIBLE);
+                btn_Part2.setVisibility(View.VISIBLE);
             }
             if (Activity_6_Dollars.onButtonVisible6doll_3) {
-                btnLink_Part3.setVisibility(View.VISIBLE);
+                btn_Part3.setVisibility(View.VISIBLE);
             }
             if (Activity_6_Dollars.onButtonVisible6doll_4) {
-                btnLink_Part4.setVisibility(View.VISIBLE);
+                btn_Part4.setVisibility(View.VISIBLE);
             }
             if (Activity_6_Dollars.onButtonVisible6doll_5) {
-                btnLink_Part5.setVisibility(View.VISIBLE);
+                btn_Part5.setVisibility(View.VISIBLE);
             }
         } else {
             if (Activity_9_Dollars.onButtonVisible9doll_2) {
-                btnLink_Part2.setVisibility(View.VISIBLE);
+                btn_Part2.setVisibility(View.VISIBLE);
             }
             if (Activity_9_Dollars.onButtonVisible9doll_3) {
-                btnLink_Part3.setVisibility(View.VISIBLE);
+                btn_Part3.setVisibility(View.VISIBLE);
             }
             if (Activity_9_Dollars.onButtonVisible9doll_4) {
-                btnLink_Part4.setVisibility(View.VISIBLE);
+                btn_Part4.setVisibility(View.VISIBLE);
             }
             if (Activity_9_Dollars.onButtonVisible9doll_5) {
-                btnLink_Part5.setVisibility(View.VISIBLE);
+                btn_Part5.setVisibility(View.VISIBLE);
             }
             if (Activity_9_Dollars.onButtonVisible9doll_6) {
-                btnLink_Part6.setVisibility(View.VISIBLE);
+                btn_Part6.setVisibility(View.VISIBLE);
             }
             if (Activity_9_Dollars.onButtonVisible9doll_7) {
-                btnLink_Part7.setVisibility(View.VISIBLE);
+                btn_Part7.setVisibility(View.VISIBLE);
             }
 
         }
@@ -172,30 +174,26 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
 
     @Override
     protected void onDestroy() {
-        s = null;
-        s2 = null;
-        s3 = null;
-        s4 = null;
-        s5 = null;
-        s6 = null;
-        s7 = null;
-        boosty = null;
+        string_link_1 = null;
+        string_link_2 = null;
+        string_link_3 = null;
+        string_link_4 = null;
+        string_link_5 = null;
+        string_link_6 = null;
+        string_link_7 = null;
+        string_link_Boosty = null;
         super.onDestroy();
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         Intent intent;
         switch (v.getId()) {
             case R.id.btn_linkToPatreon:
                 try {
-                    if (Activity_6_Dollars.load_galery) {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s));
+                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(string_link_1));
                         startActivity(intent);
-                    } else {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s));
-                        startActivity(intent);
-                    }
                 } catch (Exception e) {
                     Toast.makeText(this, "Данные утеряны", Toast.LENGTH_LONG).show();
                     Log.d(TAG, e.toString());
@@ -203,103 +201,79 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
                 break;
             case R.id.btn_linkToPatreon_part2:
                 try {
-                    if (Activity_6_Dollars.load_galery) {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s2));
-                        startActivity(intent);
-                    } else {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s2));
-                        startActivity(intent);
-                    }
+                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(string_link_2));
+                    startActivity(intent);
                 } catch (Exception e) {
                     Toast.makeText(this, "Данные утеряны", Toast.LENGTH_LONG).show();
+                    Log.d(TAG, e.toString());
                 }
                 break;
             case R.id.btn_linkToPatreon_part3:
                 try {
-                    if (Activity_6_Dollars.load_galery) {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s3));
-                        startActivity(intent);
-                    } else {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s3));
-                        startActivity(intent);
-                    }
+                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(string_link_3));
+                    startActivity(intent);
                 } catch (Exception e) {
                     Toast.makeText(this, "Данные утеряны", Toast.LENGTH_LONG).show();
+                    Log.d(TAG, e.toString());
                 }
                 break;
             case R.id.btn_linkToPatreon_part4:
                 try {
-                    if (Activity_6_Dollars.load_galery) {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s4));
-                        startActivity(intent);
-                    } else {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s4));
-                        startActivity(intent);
-                    }
+                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(string_link_4));
+                    startActivity(intent);
                 } catch (Exception e) {
                     Toast.makeText(this, "Данные утеряны", Toast.LENGTH_LONG).show();
+                    Log.d(TAG, e.toString());
                 }
                 break;
             case R.id.btn_linkToPatreon_part5:
                 try {
-                    if (Activity_6_Dollars.load_galery) {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s5));
-                        startActivity(intent);
-                    } else {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s5));
-                        startActivity(intent);
-                    }
+                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(string_link_5));
+                    startActivity(intent);
                 } catch (Exception e) {
                     Toast.makeText(this, "Данные утеряны", Toast.LENGTH_LONG).show();
+                    Log.d(TAG, e.toString());
                 }
                 break;
             case R.id.btn_linkToPatreon_part6:
                 try {
-                    if (Activity_6_Dollars.load_galery) {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s6));
-                        startActivity(intent);
-                    } else {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s6));
-                        startActivity(intent);
-                    }
+                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(string_link_6));
+                    startActivity(intent);
                 } catch (Exception e) {
                     Toast.makeText(this, "Данные утеряны", Toast.LENGTH_LONG).show();
+                    Log.d(TAG, e.toString());
                 }
                 break;
             case R.id.btn_linkToPatreon_part7:
                 try {
-                    if (Activity_6_Dollars.load_galery) {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s7));
-                        startActivity(intent);
-                    } else {
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(s7));
-                        startActivity(intent);
-                    }
+                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(string_link_7));
+                    startActivity(intent);
                 } catch (Exception e) {
                     Toast.makeText(this, "Данные утеряны", Toast.LENGTH_LONG).show();
+                    Log.d(TAG, e.toString());
                 }
                 break;
             case R.id.linkView:
                 String message = null;
-                if (s2 == null) {
-                    message = "Часть 1 - " + s;
-                } else if (s3 == null) {
-                    message = "Часть 1 - " + s + "\n" + "Часть 2 - " + s2;
-                } else if (s4 == null) {
+                if (string_link_2 == null) {
+                    message = "Часть 1 - " + string_link_1;
+                } else if (string_link_3 == null) {
+                    message = "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2;
+                } else if (string_link_4 == null) {
                     message =
-                            "Часть 1 - " + s + "\n" + "Часть 2 - " + s2 + "\n" + "Часть 3 - " + s3;
-                } else if (s5 == null) {
+                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3;
+                } else if (string_link_5 == null) {
                     message =
-                            "Часть 1 - " + s + "\n" + "Часть 2 - " + s2 + "\n" + "Часть 3 - " + s3 + "\n" + "Часть 4 - " + s4;
-                }else if (s6 == null) {
+                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Часть 4 - " + string_link_4;
+                }else if (string_link_6 == null) {
                     message =
-                            "Часть 1 - " + s + "\n" + "Часть 2 - " + s2 + "\n" + "Часть 3 - " + s3 + "\n" + "Часть 4 - " + s4 + "Часть 5 - " + s5;
-                }else if (s7 == null) {
+                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Часть 4 - " + string_link_4 + "Часть 5 - " + string_link_5;
+                }else if (string_link_7 == null) {
                     message =
-                            "Часть 1 - " + s + "\n" + "Часть 2 - " + s2 + "\n" + "Часть 3 - " + s3 + "\n" + "Часть 4 - " + s4 + "\n" + "Часть 5 - " + s5 + "\n" + "Часть 6 - " + s6;
+                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Часть 4 - " + string_link_4 + "\n" + "Часть 5 - " + string_link_5 + "\n" + "Часть 6 - " + string_link_6;
                 } else {
                     message =
-                            "Часть 1 - " + s + "\n" + "Часть 2 - " + s2 + "\n" + "Часть 3 - " + s3 + "\n" + "Часть 4 - " + s4 + "\n" + "Часть 5 - " + s5+ "\n" + "Часть 6 - " + s6+ "\n" + "Часть 7 - " + s7;
+                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Часть 4 - " + string_link_4 + "\n" + "Часть 5 - " + string_link_5 + "\n" + "Часть 6 - " + string_link_6 + "\n" + "Часть 7 - " + string_link_7;
                 }
 
                 intent = new Intent(Intent.ACTION_SEND);
@@ -311,6 +285,15 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
             case R.id.btnFeedBack:
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.Julia_lessons.juliaomelart"));
                 startActivity(intent);
+                break;
+            case R.id.btnBoosty:
+                try {
+                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(string_link_Boosty));
+                    startActivity(intent);
+                } catch (Exception e) {
+                    Toast.makeText(this, "Данные утеряны", Toast.LENGTH_LONG).show();
+                    Log.d(TAG, e.toString());
+                }
                 break;
         }
 
