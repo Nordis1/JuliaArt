@@ -54,11 +54,47 @@
             android:layout_gravity="center_vertical"
             android:layout_marginStart="50dp"
             android:layout_marginLeft="50dp"
-            android:text="@string/Descript_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.363"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription">
+            android:text="@string/Descript_text1">
+
+        </me.biubiubiu.justifytext.library.JustifyTextView>
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text_ofPrice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/Patreon">
+
+        </me.biubiubiu.justifytext.library.JustifyTextView>
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text_ofPrice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/Descript_text2">
+
+        </me.biubiubiu.justifytext.library.JustifyTextView>
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text_ofPrice3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/Boosty">
+
+        </me.biubiubiu.justifytext.library.JustifyTextView>
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text_ofPrice4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/Descript_text3">
 
         </me.biubiubiu.justifytext.library.JustifyTextView>
 
@@ -115,7 +151,8 @@
                 android:text="@string/btn"
                 android:textColor="@color/white"
                 android:textStyle="normal"
-                android:visibility="visible"
+                app:layout_constraintHeight_max="50dp"
+                app:layout_constraintHeight_min="30dp"
                 app:layout_constrainedHeight="true"
                 app:layout_constraintBottom_toTopOf="@id/btn_linkToPatreon_part2"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -245,7 +282,7 @@
                 android:textStyle="normal"
                 android:visibility="gone"
                 app:layout_constrainedHeight="true"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/btnBoosty"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_max="50dp"
                 app:layout_constraintHeight_min="30dp"
@@ -254,6 +291,22 @@
                 app:layout_constraintVertical_chainStyle="packed">
 
             </Button>
+            <Button
+                android:id="@+id/btnBoosty"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHeight_max="50dp"
+                app:layout_constraintHeight_min="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_linkToPatreon_part7"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:background="@drawable/myboostybutton"
+                android:text="@string/btnboosty" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

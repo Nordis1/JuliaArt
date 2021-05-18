@@ -78,86 +78,86 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         mapView.put("Tea", "https://www.patreon.com/posts/mk-chashka-chaia-30929768");
         mapView.put("Tea_p2", "https://www.patreon.com/posts/mk-chashka-chaia-30975846");
-        mapView.put("Tea_Boosty", "");
+        mapView.put("Tea_Boosty", "https://boosty.to/juliaomelchenko/posts/4f3316ca-6070-4384-8599-5ba5957c2bf9");
 
         mapView.put("Eyes", "https://www.patreon.com/posts/mk-glaz-31550571");
-        mapView.put("Eyes_Boosty", "");
+        mapView.put("Eyes_Boosty", "https://boosty.to/juliaomelchenko/posts/d06ef5de-e638-4ecb-9086-910379cee8e4");
 
         mapView.put("Peach", "https://www.patreon.com/posts/tsvetnye-chast-1-29430213");
         mapView.put("Peach_p2", "https://www.patreon.com/posts/tsvetnye-chast-2-29561744");
-        mapView.put("Peach_Boosty", "");
+        mapView.put("Peach_Boosty", "https://boosty.to/juliaomelchenko/posts/3f900251-e556-477e-8863-14320f13389b");
 
         mapView.put("Mandarin", "https://www.patreon.com/posts/mk-zapakhi-goda-32127170");
-        mapView.put("Mandarin_Boosty", "");
+        mapView.put("Mandarin_Boosty", "https://boosty.to/juliaomelchenko/posts/705101ed-9295-4f6f-a4a7-4106ebc96581");
 
         mapView.put("Sinichka", "https://www.patreon.com/posts/mk-sinichka-1-32299857");
         mapView.put("Sinichka_p2", "https://www.patreon.com/posts/mk-sinichka-2-i-32398957");
-        mapView.put("Sinichka_Boosty", "");
+        mapView.put("Sinichka_Boosty", "https://boosty.to/juliaomelchenko/posts/ee18330d-42f1-4762-8574-641e75d26839");
 
         mapView.put("Cat", "https://www.patreon.com/posts/mk-kotionok-1-32539008");
         mapView.put("Cat_p2", "https://www.patreon.com/posts/mk-kotionok-2-32566937");
-        mapView.put("Cat_Boosty", "");
+        mapView.put("Cat_Boosty", "https://boosty.to/juliaomelchenko/posts/2d3c73aa-bdfe-48af-867f-757d0695debe");
 
         mapView.put("Tigr", "https://www.patreon.com/posts/mk-glaz-tigra-1-31747017");
         mapView.put("Tigr_p2", "https://www.patreon.com/posts/mk-glaz-tigra-2-31901823");
-        mapView.put("Tigr_Boosty", "");
+        mapView.put("Tigr_Boosty", "https://boosty.to/juliaomelchenko/posts/9d1c41ef-d836-4291-bcd3-7963bba22a71");
 
         mapView.put("Mushroom", "https://www.patreon.com/posts/mk-grib-borovik-31387084");
-        mapView.put("Mushroom_Boosty", "");
+        mapView.put("Mushroom_Boosty", "https://boosty.to/juliaomelchenko/posts/7d783f27-4c06-45f6-b295-8c90f4541130");
 
         mapView.put("Butterfly", "https://www.patreon.com/posts/mk-babochka-na-31189002");
-        mapView.put("Butterfly_Boosty", "");
+        mapView.put("Butterfly_Boosty", "https://boosty.to/juliaomelchenko/posts/b5201b00-9ad4-4def-95c9-60287b7e12fd");
 
         mapView.put("Pumpkin", "https://www.patreon.com/posts/mk-khellouin-30591129");
-        mapView.put("Pumpkin_Boosty", "");
+        mapView.put("Pumpkin_Boosty", "https://boosty.to/juliaomelchenko/posts/a9f11355-414a-420f-814b-cb2a5191541f");
 
         mapView.put("Cherry", "https://www.patreon.com/posts/mk-vishni-29231335");
-        mapView.put("Cherry_Boosty", "");
+        mapView.put("Cherry_Boosty", "https://boosty.to/juliaomelchenko/posts/73fa1ee9-b8ad-48f7-923b-286dea6317fc");
 
         mapView.put("Frog", "https://www.patreon.com/posts/mk-tropicheskaia-33197864");
         mapView.put("Frog_p2", "https://www.patreon.com/posts/mk-tropicheskaia-33253277");
-        mapView.put("Frog_Boosty", "");
+        mapView.put("Frog_Boosty", "https://boosty.to/juliaomelchenko/posts/82d776da-d988-48b6-bcbf-e2fcbf17b8c5");
 
         mapView.put("Aiva", "https://www.patreon.com/posts/mk-zhivopisnaia-33425163");
-        mapView.put("Aiva_Boosty", "");
+        mapView.put("Aiva_Boosty", "https://boosty.to/juliaomelchenko/posts/5fa234ea-bb91-4c0a-9635-4d0fdef7ace5");
 
         mapView.put("Lily", "https://www.patreon.com/posts/mk-volshebnye-1-33832369");
         mapView.put("Lily_p2", "https://www.patreon.com/posts/mk-volshebnye-2-34020719");
-        mapView.put("Lily_Boosty", "");
+        mapView.put("Lily_Boosty", "https://boosty.to/juliaomelchenko/posts/d2372860-e895-4bdc-ab2f-a4f05054ce2a");
 
         mapView.put("Child", "https://www.patreon.com/posts/mk-portret-chast-34381382");
         mapView.put("Child_p2", "https://www.patreon.com/posts/mk-portret-chast-34449497");
         mapView.put("Child_p3", "https://www.patreon.com/posts/mk-portret-chast-34801309");
-        mapView.put("Child_Boosty", "");
+        mapView.put("Child_Boosty", "https://boosty.to/juliaomelchenko/posts/f86c5e6e-cb7c-4427-8cc6-9be55b4854a4");
 
         mapView.put("Lizard", "https://www.patreon.com/posts/mk-iashcheritsa-35107857");
         mapView.put("Lizard_p2", "https://www.patreon.com/posts/mk-iashcheritsa-35319622");
         mapView.put("Lizard_p3", "https://www.patreon.com/posts/mk-iashcheritsa-35663605");
-        mapView.put("Lizard_Boosty", "");
+        mapView.put("Lizard_Boosty", "https://boosty.to/juliaomelchenko/posts/916ddedf-4a0a-47e5-835f-96cebec9f1a1");
 
         mapView.put("Dog", "https://www.patreon.com/posts/mk-luchshii-drug-36093147");
         mapView.put("Dog_p2", "https://www.patreon.com/posts/mk-luchshii-drug-36239737");
         mapView.put("Dog_p3", "https://www.patreon.com/posts/mk-luchshii-drug-36306711");
         mapView.put("Dog_p4", "https://www.patreon.com/posts/mk-luchshii-drug-37139533");
-        mapView.put("Dog_Boosty", "");
+        mapView.put("Dog_Boosty", "https://boosty.to/juliaomelchenko/posts/a78ff12e-b831-4ce8-af4e-5bd68d5c5db0");
 
         mapView.put("Tropical_Fish", "https://www.patreon.com/posts/mk-tropicheskaia-36453779");
         mapView.put("Tropical_Fish_p2", "https://www.patreon.com/posts/mk-tropicheskaia-36846340");
         mapView.put("Tropical_Fish_p3", "https://www.patreon.com/posts/mk-tropicheskaia-36926230");
-        mapView.put("Tropical_Fish_Boosty", "");
+        mapView.put("Tropical_Fish_Boosty", "https://boosty.to/juliaomelchenko/posts/5cf32cbd-12e7-4eaf-aeb2-9b2a9ed43834");
 
         mapView.put("Cloudlandscape", "https://www.patreon.com/posts/mk-peizazh-s-1-i-37578312");
         mapView.put("Cloudlandscape_p2", "https://www.patreon.com/posts/mk-peizazh-s-2-i-37764801");
         mapView.put("Cloudlandscape_p3", "https://www.patreon.com/posts/mk-peizazh-s-3-37846112");
         mapView.put("Cloudlandscape_p4", "https://www.patreon.com/posts/mk-peizazh-s-4-1-38119638");
         mapView.put("Cloudlandscape_p5", "https://www.patreon.com/posts/mk-peizazh-s-5-2-38159726");
-        mapView.put("Cloudlandscape_Boosty", "");
+        mapView.put("Cloudlandscape_Boosty", "https://boosty.to/juliaomelchenko/posts/da1ed91a-d8b3-4579-af26-d031bba8c15b");
 
         mapView.put("Bumblemee", "https://www.patreon.com/posts/mk-mokhnatyi-1-38407522");
         mapView.put("Bumblemee_p2", "https://www.patreon.com/posts/mk-mokhnatyi-2-38703063");
         mapView.put("Bumblemee_p3", "https://www.patreon.com/posts/mk-mokhnatyi-3-38755199");
         mapView.put("Bumblemee_p4", "https://www.patreon.com/posts/mk-mokhnatyi-4-38789249");
-        mapView.put("Bumblemee_Boosty", "");
+        mapView.put("Bumblemee_Boosty", "https://boosty.to/juliaomelchenko/posts/ad7a5784-d7de-417b-9867-54753dfcf320");
 
         mapView.put("Leopard", "https://www.patreon.com/posts/mk-leopard-chast-39276553");
         mapView.put("Leopard_p2", "https://www.patreon.com/posts/39307430");
@@ -166,14 +166,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Leopard_p5", "https://www.patreon.com/posts/mk-leopard-chast-40911715");
         mapView.put("Leopard_p6", "https://www.patreon.com/posts/mk-leopard-chast-40952718");
         mapView.put("Leopard_p7", "https://www.patreon.com/posts/mk-leopard-chast-41303145");
-        mapView.put("Leopard_Boosty", "");
+        mapView.put("Leopard_Boosty", "https://boosty.to/juliaomelchenko/posts/87143318-db26-4b78-b5c2-8c5ff1249356");
 
         mapView.put("Blueberry", "https://www.patreon.com/posts/mk-golubika-1-40012508");
         mapView.put("Blueberry_p2", "https://www.patreon.com/posts/mk-golubika-2-40411329");
         mapView.put("Blueberry_p3", "https://www.patreon.com/posts/mk-golubika-3-40624205");
         mapView.put("Blueberry_p4", "https://www.patreon.com/posts/mk-golubika-4-41449528");
         mapView.put("Blueberry_p5", "https://www.patreon.com/posts/mk-golubika-5-41452486");
-        mapView.put("Blueberry_Boosty", "");
+        mapView.put("Blueberry_Boosty", "https://boosty.to/juliaomelchenko/posts/c18ae3e7-33a7-47f0-bb1a-79148a584cc9");
 
 
         mapView.put("Owl", "https://www.patreon.com/posts/mk-sova-chast-1-41737422");
@@ -181,17 +181,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Owl_p3", "https://www.patreon.com/posts/mk-sova-3-chast-42324912");
         mapView.put("Owl_p4", "https://www.patreon.com/posts/mk-sova-4-chast-42481629");
         mapView.put("Owl_p5", "https://www.patreon.com/posts/mk-sova-5-chast-42553283");
-        mapView.put("Owl_Boosty", "");
+        mapView.put("Owl_Boosty", "https://boosty.to/juliaomelchenko/posts/e3dce756-9094-4a35-b2f4-98bec6e8947b");
 
         mapView.put("GoldenFish", "https://www.patreon.com/posts/mk-zolotaia-1-42879640");
         mapView.put("GoldenFish_p2", "https://www.patreon.com/posts/mk-zolotaia-2-42919499");
         mapView.put("GoldenFish_p3", "https://www.patreon.com/posts/mk-zolotaia-3-43024310");
-        mapView.put("GoldenFish_Boosty", "");
+        mapView.put("GoldenFish_Boosty", "https://boosty.to/juliaomelchenko/posts/1e3d121a-a1f6-4e50-a78b-ac8514114ca1");
 
         mapView.put("Cake", "https://www.patreon.com/posts/mk-tort-s-chast-44333308");
         mapView.put("Cake_p2", "https://www.patreon.com/posts/mk-tort-s-chast-44480075");
         mapView.put("Cake_p3", "https://www.patreon.com/posts/mk-tort-s-chast-44576485");
-        mapView.put("Cake_Boosty", "");
+        mapView.put("Cake_Boosty", "https://boosty.to/juliaomelchenko/posts/6101ca2c-7056-47f8-8d14-e59774571929");
 
         mapView.put("Horse", "https://www.patreon.com/posts/mk-osenniaia-1-43410363");
         mapView.put("Horse_p2", "https://www.patreon.com/posts/mk-osenniaia-2-43525447");
@@ -199,30 +199,30 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Horse_p4", "https://www.patreon.com/posts/mk-osenniaia-4-43777174");
         mapView.put("Horse_p5", "https://www.patreon.com/posts/43777185");
         mapView.put("Horse_p6", "https://www.patreon.com/posts/mk-osenniaia-6-43856915");
-        mapView.put("Horse_Boosty", "");
+        mapView.put("Horse_Boosty", "https://boosty.to/juliaomelchenko/posts/10a2dea3-57fd-4253-9aab-12958fa2b11d");
 
         mapView.put("Christmas", "https://www.patreon.com/posts/mk-svet-chast-1-44923684");
         mapView.put("Christmas_p2", "https://www.patreon.com/posts/mk-svet-chast-2-45141580");
         mapView.put("Christmas_p3", "https://www.patreon.com/posts/mk-svet-chast-3-45175828");
         mapView.put("Christmas_p4", "https://www.patreon.com/posts/mk-svet-chast-4-45389331");
-        mapView.put("Christmas_Boosty", "");
+        mapView.put("Christmas_Boosty", "https://boosty.to/juliaomelchenko/posts/939f2e5e-ac8a-4163-aafe-b563e6198281");
 
         mapView.put("Ametist", "https://www.patreon.com/posts/mk-ametist-chast-46823482");
         mapView.put("Ametist_p2", "https://www.patreon.com/posts/ametist-chast-2-47113863");
         mapView.put("Ametist_p3", "https://www.patreon.com/posts/ametist-chast-3-47158953");
-        mapView.put("Ametist_Boosty", "");
+        mapView.put("Ametist_Boosty", "https://boosty.to/juliaomelchenko/posts/ee589e9c-0c4d-4739-b027-f0f6075bb77b");
 
         mapView.put("Squirrel", "https://www.patreon.com/posts/mk-zimniaia-1-45966969");
         mapView.put("Squirrel_p2", "https://www.patreon.com/posts/mk-zimniaia-2-46197769");
         mapView.put("Squirrel_p3", "https://www.patreon.com/posts/mk-zimniaia-3-46245611");
         mapView.put("Squirrel_p4", "https://www.patreon.com/posts/mk-zimniaia-4-46487075");
         mapView.put("Squirrel_p5", "https://www.patreon.com/posts/mk-zimniaia-5-46530296");
-        mapView.put("Squirrel_Boosty", "");
+        mapView.put("Squirrel_Boosty", "https://boosty.to/juliaomelchenko/posts/86a1abbd-0fd3-4cfe-b415-f39f0941f5d7");
 
         mapView.put("Silverjug", "https://www.patreon.com/posts/mk-serebrianyi-1-47624586");
         mapView.put("Silverjug_p2", "https://www.patreon.com/posts/mk-serebrianyi-2-47741487");
         mapView.put("Silverjug_p3", "https://www.patreon.com/posts/mk-serebrianyi-3-47821645");
-        mapView.put("Silverjug_Boosty", "");
+        mapView.put("Silverjug_Boosty", "https://boosty.to/juliaomelchenko/posts/8bbf12d8-7e8f-43d3-9c7a-44fdb49d51ba");
 
         mapView.put("Seaturtle"   ,"https://www.patreon.com/posts/mk-morskaia-1-48127001");
         mapView.put("Seaturtle_p2","https://www.patreon.com/posts/mk-morskaia-2-48447391");
@@ -231,22 +231,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Seaturtle_p5","https://www.patreon.com/posts/mk-morskaia-5-48988117");
         mapView.put("Seaturtle_p6","https://www.patreon.com/posts/mk-morskaia-6-49152106");
         mapView.put("Seaturtle_p7","https://www.patreon.com/posts/mk-morskaia-7-49701467");
-        mapView.put("Seaturtle_Boosty","");
+        mapView.put("Seaturtle_Boosty","https://boosty.to/juliaomelchenko/posts/3f0c5c5d-263f-4e3d-bcfa-d2b5e7965d67");
 
         mapView.put("Woodenmug"   ,"https://www.patreon.com/posts/mk-dereviannaia-49428078");
         mapView.put("Woodenmug_p2","https://www.patreon.com/posts/mk-dereviannaia-49448640");
         mapView.put("Woodenmug_p3","https://www.patreon.com/posts/mk-dereviannaia-49825246");
         mapView.put("Woodenmug_p4","https://www.patreon.com/posts/mk-dereviannaia-49981901");
-        mapView.put("Woodenmug_Boosty","");
+        mapView.put("Woodenmug_Boosty","https://boosty.to/juliaomelchenko/posts/4652fbaf-0cc8-4f4a-be7e-840ee2e0f87f");
 
         mapView.put("Tomatoes"   ,"https://www.patreon.com/posts/mk-natiurmort-s-50299138");
         mapView.put("Tomatoes_p2","https://www.patreon.com/posts/mk-natiurmort-s-50381398");
         mapView.put("Tomatoes_p3","https://www.patreon.com/posts/mk-natiurmort-s-50580425");
-        mapView.put("Tomatoes_Boosty","");
+        mapView.put("Tomatoes_Boosty","https://boosty.to/juliaomelchenko/posts/1b9432fb-242a-4f68-a6d2-48f89b845873");
 
         mapView.put("Greycat"   ,"https://www.patreon.com/posts/mk-seryi-chast-1-50710089");
         mapView.put("Greycat_p2","https://www.patreon.com/posts/mk-seryi-chast-2-50892755");
-        mapView.put("Greycat_Boosty","");
+        mapView.put("Greycat_Boosty","https://boosty.to/juliaomelchenko/posts/39b044fd-d8c6-49a7-b8c0-0aea38229378");
 
 
 

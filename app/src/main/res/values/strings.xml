@@ -19,8 +19,13 @@
     <string name="j">Законченные работы :</string>
 
     //Descript activity 6 $
-    <string name="Descript_text">Чтобы перейти к уроку выберите интересующую вас часть видео. Для просмотра вам следует зайти на Patreon под своей
+    <string name="Descript_text">Чтобы перейти к уроку выберите интересующую вас часть видео. Для просмотра вам следует зайти на Patreon или Boosty под своей
         учётной записью, на которую оформлена подписка. Приятного просмотра и обучения!\n</string>
+    <string name="Descript_text1">Чтобы перейти к уроку выберите интересующую вас часть видео. Для просмотра вам следует зайти на </string>
+    <string name="Descript_text2"> или </string>
+    <string name="Descript_text3"> под своей учётной записью, на которую оформлена подписка. Приятного просмотра и обучения!\n</string>
+    <string name="Patreon">Patreon</string>
+    <string name="Boosty">Boosty</string>
     <string name="btn">Часть 1</string>
     <string name="btnSmall">Часть 1</string>
     <string name="btn2">Часть 2</string>
