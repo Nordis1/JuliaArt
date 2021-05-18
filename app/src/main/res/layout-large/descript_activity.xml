@@ -54,47 +54,11 @@
             android:layout_gravity="center_vertical"
             android:layout_marginStart="50dp"
             android:layout_marginLeft="50dp"
-            android:text="@string/Descript_text1">
-
-        </me.biubiubiu.justifytext.library.JustifyTextView>
-        <me.biubiubiu.justifytext.library.JustifyTextView
-            android:id="@+id/text_ofPrice1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="50dp"
-            android:text="@string/Patreon">
-
-        </me.biubiubiu.justifytext.library.JustifyTextView>
-        <me.biubiubiu.justifytext.library.JustifyTextView
-            android:id="@+id/text_ofPrice2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="50dp"
-            android:text="@string/Descript_text2">
-
-        </me.biubiubiu.justifytext.library.JustifyTextView>
-        <me.biubiubiu.justifytext.library.JustifyTextView
-            android:id="@+id/text_ofPrice3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="50dp"
-            android:text="@string/Boosty">
-
-        </me.biubiubiu.justifytext.library.JustifyTextView>
-        <me.biubiubiu.justifytext.library.JustifyTextView
-            android:id="@+id/text_ofPrice4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="50dp"
-            android:text="@string/Descript_text3">
+            android:text="@string/Descript_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.363"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription">
 
         </me.biubiubiu.justifytext.library.JustifyTextView>
 
