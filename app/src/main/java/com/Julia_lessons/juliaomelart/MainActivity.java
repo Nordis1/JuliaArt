@@ -78,66 +78,86 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         mapView.put("Tea", "https://www.patreon.com/posts/mk-chashka-chaia-30929768");
         mapView.put("Tea_p2", "https://www.patreon.com/posts/mk-chashka-chaia-30975846");
+        mapView.put("Tea_Boosty", "");
 
         mapView.put("Eyes", "https://www.patreon.com/posts/mk-glaz-31550571");
+        mapView.put("Eyes_Boosty", "");
 
         mapView.put("Peach", "https://www.patreon.com/posts/tsvetnye-chast-1-29430213");
         mapView.put("Peach_p2", "https://www.patreon.com/posts/tsvetnye-chast-2-29561744");
+        mapView.put("Peach_Boosty", "");
 
         mapView.put("Mandarin", "https://www.patreon.com/posts/mk-zapakhi-goda-32127170");
+        mapView.put("Mandarin_Boosty", "");
 
         mapView.put("Sinichka", "https://www.patreon.com/posts/mk-sinichka-1-32299857");
         mapView.put("Sinichka_p2", "https://www.patreon.com/posts/mk-sinichka-2-i-32398957");
+        mapView.put("Sinichka_Boosty", "");
 
         mapView.put("Cat", "https://www.patreon.com/posts/mk-kotionok-1-32539008");
         mapView.put("Cat_p2", "https://www.patreon.com/posts/mk-kotionok-2-32566937");
+        mapView.put("Cat_Boosty", "");
 
         mapView.put("Tigr", "https://www.patreon.com/posts/mk-glaz-tigra-1-31747017");
         mapView.put("Tigr_p2", "https://www.patreon.com/posts/mk-glaz-tigra-2-31901823");
+        mapView.put("Tigr_Boosty", "");
 
         mapView.put("Mushroom", "https://www.patreon.com/posts/mk-grib-borovik-31387084");
+        mapView.put("Mushroom_Boosty", "");
 
         mapView.put("Butterfly", "https://www.patreon.com/posts/mk-babochka-na-31189002");
+        mapView.put("Butterfly_Boosty", "");
 
         mapView.put("Pumpkin", "https://www.patreon.com/posts/mk-khellouin-30591129");
+        mapView.put("Pumpkin_Boosty", "");
 
         mapView.put("Cherry", "https://www.patreon.com/posts/mk-vishni-29231335");
+        mapView.put("Cherry_Boosty", "");
 
         mapView.put("Frog", "https://www.patreon.com/posts/mk-tropicheskaia-33197864");
         mapView.put("Frog_p2", "https://www.patreon.com/posts/mk-tropicheskaia-33253277");
+        mapView.put("Frog_Boosty", "");
 
         mapView.put("Aiva", "https://www.patreon.com/posts/mk-zhivopisnaia-33425163");
+        mapView.put("Aiva_Boosty", "");
 
         mapView.put("Lily", "https://www.patreon.com/posts/mk-volshebnye-1-33832369");
         mapView.put("Lily_p2", "https://www.patreon.com/posts/mk-volshebnye-2-34020719");
+        mapView.put("Lily_Boosty", "");
 
         mapView.put("Child", "https://www.patreon.com/posts/mk-portret-chast-34381382");
         mapView.put("Child_p2", "https://www.patreon.com/posts/mk-portret-chast-34449497");
         mapView.put("Child_p3", "https://www.patreon.com/posts/mk-portret-chast-34801309");
+        mapView.put("Child_Boosty", "");
 
         mapView.put("Lizard", "https://www.patreon.com/posts/mk-iashcheritsa-35107857");
         mapView.put("Lizard_p2", "https://www.patreon.com/posts/mk-iashcheritsa-35319622");
         mapView.put("Lizard_p3", "https://www.patreon.com/posts/mk-iashcheritsa-35663605");
+        mapView.put("Lizard_Boosty", "");
 
         mapView.put("Dog", "https://www.patreon.com/posts/mk-luchshii-drug-36093147");
         mapView.put("Dog_p2", "https://www.patreon.com/posts/mk-luchshii-drug-36239737");
         mapView.put("Dog_p3", "https://www.patreon.com/posts/mk-luchshii-drug-36306711");
         mapView.put("Dog_p4", "https://www.patreon.com/posts/mk-luchshii-drug-37139533");
+        mapView.put("Dog_Boosty", "");
 
         mapView.put("Tropical_Fish", "https://www.patreon.com/posts/mk-tropicheskaia-36453779");
         mapView.put("Tropical_Fish_p2", "https://www.patreon.com/posts/mk-tropicheskaia-36846340");
         mapView.put("Tropical_Fish_p3", "https://www.patreon.com/posts/mk-tropicheskaia-36926230");
+        mapView.put("Tropical_Fish_Boosty", "");
 
         mapView.put("Cloudlandscape", "https://www.patreon.com/posts/mk-peizazh-s-1-i-37578312");
         mapView.put("Cloudlandscape_p2", "https://www.patreon.com/posts/mk-peizazh-s-2-i-37764801");
         mapView.put("Cloudlandscape_p3", "https://www.patreon.com/posts/mk-peizazh-s-3-37846112");
         mapView.put("Cloudlandscape_p4", "https://www.patreon.com/posts/mk-peizazh-s-4-1-38119638");
         mapView.put("Cloudlandscape_p5", "https://www.patreon.com/posts/mk-peizazh-s-5-2-38159726");
+        mapView.put("Cloudlandscape_Boosty", "");
 
         mapView.put("Bumblemee", "https://www.patreon.com/posts/mk-mokhnatyi-1-38407522");
         mapView.put("Bumblemee_p2", "https://www.patreon.com/posts/mk-mokhnatyi-2-38703063");
         mapView.put("Bumblemee_p3", "https://www.patreon.com/posts/mk-mokhnatyi-3-38755199");
         mapView.put("Bumblemee_p4", "https://www.patreon.com/posts/mk-mokhnatyi-4-38789249");
+        mapView.put("Bumblemee_Boosty", "");
 
         mapView.put("Leopard", "https://www.patreon.com/posts/mk-leopard-chast-39276553");
         mapView.put("Leopard_p2", "https://www.patreon.com/posts/39307430");
@@ -146,12 +166,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Leopard_p5", "https://www.patreon.com/posts/mk-leopard-chast-40911715");
         mapView.put("Leopard_p6", "https://www.patreon.com/posts/mk-leopard-chast-40952718");
         mapView.put("Leopard_p7", "https://www.patreon.com/posts/mk-leopard-chast-41303145");
+        mapView.put("Leopard_Boosty", "");
 
         mapView.put("Blueberry", "https://www.patreon.com/posts/mk-golubika-1-40012508");
         mapView.put("Blueberry_p2", "https://www.patreon.com/posts/mk-golubika-2-40411329");
         mapView.put("Blueberry_p3", "https://www.patreon.com/posts/mk-golubika-3-40624205");
         mapView.put("Blueberry_p4", "https://www.patreon.com/posts/mk-golubika-4-41449528");
         mapView.put("Blueberry_p5", "https://www.patreon.com/posts/mk-golubika-5-41452486");
+        mapView.put("Blueberry_Boosty", "");
 
 
         mapView.put("Owl", "https://www.patreon.com/posts/mk-sova-chast-1-41737422");
@@ -159,14 +181,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Owl_p3", "https://www.patreon.com/posts/mk-sova-3-chast-42324912");
         mapView.put("Owl_p4", "https://www.patreon.com/posts/mk-sova-4-chast-42481629");
         mapView.put("Owl_p5", "https://www.patreon.com/posts/mk-sova-5-chast-42553283");
+        mapView.put("Owl_Boosty", "");
 
         mapView.put("GoldenFish", "https://www.patreon.com/posts/mk-zolotaia-1-42879640");
         mapView.put("GoldenFish_p2", "https://www.patreon.com/posts/mk-zolotaia-2-42919499");
         mapView.put("GoldenFish_p3", "https://www.patreon.com/posts/mk-zolotaia-3-43024310");
+        mapView.put("GoldenFish_Boosty", "");
 
         mapView.put("Cake", "https://www.patreon.com/posts/mk-tort-s-chast-44333308");
         mapView.put("Cake_p2", "https://www.patreon.com/posts/mk-tort-s-chast-44480075");
         mapView.put("Cake_p3", "https://www.patreon.com/posts/mk-tort-s-chast-44576485");
+        mapView.put("Cake_Boosty", "");
 
         mapView.put("Horse", "https://www.patreon.com/posts/mk-osenniaia-1-43410363");
         mapView.put("Horse_p2", "https://www.patreon.com/posts/mk-osenniaia-2-43525447");
@@ -174,25 +199,30 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Horse_p4", "https://www.patreon.com/posts/mk-osenniaia-4-43777174");
         mapView.put("Horse_p5", "https://www.patreon.com/posts/43777185");
         mapView.put("Horse_p6", "https://www.patreon.com/posts/mk-osenniaia-6-43856915");
+        mapView.put("Horse_Boosty", "");
 
         mapView.put("Christmas", "https://www.patreon.com/posts/mk-svet-chast-1-44923684");
         mapView.put("Christmas_p2", "https://www.patreon.com/posts/mk-svet-chast-2-45141580");
         mapView.put("Christmas_p3", "https://www.patreon.com/posts/mk-svet-chast-3-45175828");
         mapView.put("Christmas_p4", "https://www.patreon.com/posts/mk-svet-chast-4-45389331");
+        mapView.put("Christmas_Boosty", "");
 
         mapView.put("Ametist", "https://www.patreon.com/posts/mk-ametist-chast-46823482");
         mapView.put("Ametist_p2", "https://www.patreon.com/posts/ametist-chast-2-47113863");
         mapView.put("Ametist_p3", "https://www.patreon.com/posts/ametist-chast-3-47158953");
+        mapView.put("Ametist_Boosty", "");
 
         mapView.put("Squirrel", "https://www.patreon.com/posts/mk-zimniaia-1-45966969");
         mapView.put("Squirrel_p2", "https://www.patreon.com/posts/mk-zimniaia-2-46197769");
         mapView.put("Squirrel_p3", "https://www.patreon.com/posts/mk-zimniaia-3-46245611");
         mapView.put("Squirrel_p4", "https://www.patreon.com/posts/mk-zimniaia-4-46487075");
         mapView.put("Squirrel_p5", "https://www.patreon.com/posts/mk-zimniaia-5-46530296");
+        mapView.put("Squirrel_Boosty", "");
 
         mapView.put("Silverjug", "https://www.patreon.com/posts/mk-serebrianyi-1-47624586");
         mapView.put("Silverjug_p2", "https://www.patreon.com/posts/mk-serebrianyi-2-47741487");
         mapView.put("Silverjug_p3", "https://www.patreon.com/posts/mk-serebrianyi-3-47821645");
+        mapView.put("Silverjug_Boosty", "");
 
         mapView.put("Seaturtle"   ,"https://www.patreon.com/posts/mk-morskaia-1-48127001");
         mapView.put("Seaturtle_p2","https://www.patreon.com/posts/mk-morskaia-2-48447391");
@@ -201,18 +231,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Seaturtle_p5","https://www.patreon.com/posts/mk-morskaia-5-48988117");
         mapView.put("Seaturtle_p6","https://www.patreon.com/posts/mk-morskaia-6-49152106");
         mapView.put("Seaturtle_p7","https://www.patreon.com/posts/mk-morskaia-7-49701467");
+        mapView.put("Seaturtle_Boosty","");
 
         mapView.put("Woodenmug"   ,"https://www.patreon.com/posts/mk-dereviannaia-49428078");
         mapView.put("Woodenmug_p2","https://www.patreon.com/posts/mk-dereviannaia-49448640");
         mapView.put("Woodenmug_p3","https://www.patreon.com/posts/mk-dereviannaia-49825246");
         mapView.put("Woodenmug_p4","https://www.patreon.com/posts/mk-dereviannaia-49981901");
+        mapView.put("Woodenmug_Boosty","");
 
         mapView.put("Tomatoes"   ,"https://www.patreon.com/posts/mk-natiurmort-s-50299138");
         mapView.put("Tomatoes_p2","https://www.patreon.com/posts/mk-natiurmort-s-50381398");
         mapView.put("Tomatoes_p3","https://www.patreon.com/posts/mk-natiurmort-s-50580425");
+        mapView.put("Tomatoes_Boosty","");
 
         mapView.put("Greycat"   ,"https://www.patreon.com/posts/mk-seryi-chast-1-50710089");
         mapView.put("Greycat_p2","https://www.patreon.com/posts/mk-seryi-chast-2-50892755");
+        mapView.put("Greycat_Boosty","");
 
 
 
