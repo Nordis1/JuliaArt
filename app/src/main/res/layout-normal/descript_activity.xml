@@ -204,7 +204,6 @@
                 app:layout_constraintHeight_min="30dp"
                 app:layout_constraintTop_toBottomOf="@+id/btn_linkToPatreon_part7"
                 app:layout_constraintVertical_chainStyle="packed"
-                tools:layout_constraintVertical_chainStyle="packed"
                 android:background="@drawable/myboostybutton"
                 android:text="@string/btnboosty" />
 
@@ -257,20 +256,7 @@
             app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription">
 
         </me.biubiubiu.justifytext.library.JustifyTextView>
-        <!--        <TextView
-            android:id="@+id/text_ofPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:fontFamily="@font/sourcesanspro_regular"
-            android:text="@string/s"
-            android:textSize="15sp"
-            android:visibility="visible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription">
 
-        </TextView>-->
     </ScrollView>
 
     <TextView

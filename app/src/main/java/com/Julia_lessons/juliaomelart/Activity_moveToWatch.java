@@ -256,24 +256,24 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
             case R.id.linkView:
                 String message = null;
                 if (string_link_2 == null) {
-                    message = "Часть 1 - " + string_link_1;
+                    message = "Часть 1 - " + string_link_1 + "\n" + "Boosty - " + string_link_Boosty;
                 } else if (string_link_3 == null) {
-                    message = "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2;
+                    message = "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Boosty - " + string_link_Boosty;
                 } else if (string_link_4 == null) {
                     message =
-                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3;
+                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Boosty - " + string_link_Boosty;
                 } else if (string_link_5 == null) {
                     message =
-                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Часть 4 - " + string_link_4;
+                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Часть 4 - " + string_link_4 + "\n" + "Boosty - " + string_link_Boosty;
                 }else if (string_link_6 == null) {
                     message =
-                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Часть 4 - " + string_link_4 + "Часть 5 - " + string_link_5;
+                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Часть 4 - " + string_link_4 + "Часть 5 - " + string_link_5 + "\n" + "Boosty - " + string_link_Boosty;
                 }else if (string_link_7 == null) {
                     message =
-                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Часть 4 - " + string_link_4 + "\n" + "Часть 5 - " + string_link_5 + "\n" + "Часть 6 - " + string_link_6;
+                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Часть 4 - " + string_link_4 + "\n" + "Часть 5 - " + string_link_5 + "\n" + "Часть 6 - " + string_link_6 + "\n" + "Boosty - " + string_link_Boosty;
                 } else {
                     message =
-                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Часть 4 - " + string_link_4 + "\n" + "Часть 5 - " + string_link_5 + "\n" + "Часть 6 - " + string_link_6 + "\n" + "Часть 7 - " + string_link_7;
+                            "Часть 1 - " + string_link_1 + "\n" + "Часть 2 - " + string_link_2 + "\n" + "Часть 3 - " + string_link_3 + "\n" + "Часть 4 - " + string_link_4 + "\n" + "Часть 5 - " + string_link_5 + "\n" + "Часть 6 - " + string_link_6 + "\n" + "Часть 7 - " + string_link_7 + "\n" + "Boosty - " + string_link_Boosty;
                 }
 
                 intent = new Intent(Intent.ACTION_SEND);
