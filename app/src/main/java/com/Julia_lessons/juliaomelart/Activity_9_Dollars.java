@@ -66,13 +66,20 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
             reslist1.add(R.id.id_Tomat);
             reslist1.add(R.id.id_GreyCat);
         }
-        for (int i = 0; i < reslist1.size(); i++) {
-            ImageView v = findViewById(reslist1.get(i));
-            v.setOnClickListener(this);
-            if (i == 1) {
-                registerForContextMenu(v);
+        try {
+            for (int i = 0; i < reslist1.size(); i++) {
+                ImageView v = findViewById(reslist1.get(i));
+                v.setOnClickListener(this);
+                if (i == 1) {
+                    registerForContextMenu(v);
 
+                }
             }
+        } catch (Exception e) {
+            Intent i = new Intent(this, MainActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            Toast.makeText(this, "Потеря данных", Toast.LENGTH_LONG).show();
+            startActivity(i);
         }
         textSize = findViewById(R.id.id_textSize);
         count_MK = findViewById(R.id.id_count_Of_MK);
@@ -96,20 +103,16 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        switch (v.getId()) {
-            case R.id.id_Sheet:
-                getMenuInflater().inflate(R.menu.conrext_menu, menu);
-                break;
+        if (v.getId() == R.id.id_Sheet) {
+            getMenuInflater().inflate(R.menu.conrext_menu, menu);
         }
     }
 
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.id_context_menu:
-                Toast.makeText(this, "Size = " + textSize.getText(), Toast.LENGTH_LONG).show();
-                break;
+        if (item.getItemId() == R.id.id_context_menu) {
+            Toast.makeText(this, "Size = " + textSize.getText(), Toast.LENGTH_LONG).show();
         }
         return super.onContextItemSelected(item);
     }

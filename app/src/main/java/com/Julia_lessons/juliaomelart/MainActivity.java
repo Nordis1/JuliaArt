@@ -224,30 +224,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Silverjug_p3", "https://www.patreon.com/posts/mk-serebrianyi-3-47821645");
         mapView.put("Silverjug_Boosty", "https://boosty.to/juliaomelchenko/posts/8bbf12d8-7e8f-43d3-9c7a-44fdb49d51ba");
 
-        mapView.put("Seaturtle"   ,"https://www.patreon.com/posts/mk-morskaia-1-48127001");
-        mapView.put("Seaturtle_p2","https://www.patreon.com/posts/mk-morskaia-2-48447391");
-        mapView.put("Seaturtle_p3","https://www.patreon.com/posts/mk-morskaia-3-48698158");
-        mapView.put("Seaturtle_p4","https://www.patreon.com/posts/mk-morskaia-4-48863289");
-        mapView.put("Seaturtle_p5","https://www.patreon.com/posts/mk-morskaia-5-48988117");
-        mapView.put("Seaturtle_p6","https://www.patreon.com/posts/mk-morskaia-6-49152106");
-        mapView.put("Seaturtle_p7","https://www.patreon.com/posts/mk-morskaia-7-49701467");
-        mapView.put("Seaturtle_Boosty","https://boosty.to/juliaomelchenko/posts/3f0c5c5d-263f-4e3d-bcfa-d2b5e7965d67");
+        mapView.put("Seaturtle", "https://www.patreon.com/posts/mk-morskaia-1-48127001");
+        mapView.put("Seaturtle_p2", "https://www.patreon.com/posts/mk-morskaia-2-48447391");
+        mapView.put("Seaturtle_p3", "https://www.patreon.com/posts/mk-morskaia-3-48698158");
+        mapView.put("Seaturtle_p4", "https://www.patreon.com/posts/mk-morskaia-4-48863289");
+        mapView.put("Seaturtle_p5", "https://www.patreon.com/posts/mk-morskaia-5-48988117");
+        mapView.put("Seaturtle_p6", "https://www.patreon.com/posts/mk-morskaia-6-49152106");
+        mapView.put("Seaturtle_p7", "https://www.patreon.com/posts/mk-morskaia-7-49701467");
+        mapView.put("Seaturtle_Boosty", "https://boosty.to/juliaomelchenko/posts/3f0c5c5d-263f-4e3d-bcfa-d2b5e7965d67");
 
-        mapView.put("Woodenmug"   ,"https://www.patreon.com/posts/mk-dereviannaia-49428078");
-        mapView.put("Woodenmug_p2","https://www.patreon.com/posts/mk-dereviannaia-49448640");
-        mapView.put("Woodenmug_p3","https://www.patreon.com/posts/mk-dereviannaia-49825246");
-        mapView.put("Woodenmug_p4","https://www.patreon.com/posts/mk-dereviannaia-49981901");
-        mapView.put("Woodenmug_Boosty","https://boosty.to/juliaomelchenko/posts/4652fbaf-0cc8-4f4a-be7e-840ee2e0f87f");
+        mapView.put("Woodenmug", "https://www.patreon.com/posts/mk-dereviannaia-49428078");
+        mapView.put("Woodenmug_p2", "https://www.patreon.com/posts/mk-dereviannaia-49448640");
+        mapView.put("Woodenmug_p3", "https://www.patreon.com/posts/mk-dereviannaia-49825246");
+        mapView.put("Woodenmug_p4", "https://www.patreon.com/posts/mk-dereviannaia-49981901");
+        mapView.put("Woodenmug_Boosty", "https://boosty.to/juliaomelchenko/posts/4652fbaf-0cc8-4f4a-be7e-840ee2e0f87f");
 
-        mapView.put("Tomatoes"   ,"https://www.patreon.com/posts/mk-natiurmort-s-50299138");
-        mapView.put("Tomatoes_p2","https://www.patreon.com/posts/mk-natiurmort-s-50381398");
-        mapView.put("Tomatoes_p3","https://www.patreon.com/posts/mk-natiurmort-s-50580425");
-        mapView.put("Tomatoes_Boosty","https://boosty.to/juliaomelchenko/posts/1b9432fb-242a-4f68-a6d2-48f89b845873");
+        mapView.put("Tomatoes", "https://www.patreon.com/posts/mk-natiurmort-s-50299138");
+        mapView.put("Tomatoes_p2", "https://www.patreon.com/posts/mk-natiurmort-s-50381398");
+        mapView.put("Tomatoes_p3", "https://www.patreon.com/posts/mk-natiurmort-s-50580425");
+        mapView.put("Tomatoes_Boosty", "https://boosty.to/juliaomelchenko/posts/1b9432fb-242a-4f68-a6d2-48f89b845873");
 
-        mapView.put("Greycat"   ,"https://www.patreon.com/posts/mk-seryi-chast-1-50710089");
-        mapView.put("Greycat_p2","https://www.patreon.com/posts/mk-seryi-chast-2-50892755");
-        mapView.put("Greycat_Boosty","https://boosty.to/juliaomelchenko/posts/39b044fd-d8c6-49a7-b8c0-0aea38229378");
-
+        mapView.put("Greycat", "https://www.patreon.com/posts/mk-seryi-chast-1-50710089");
+        mapView.put("Greycat_p2", "https://www.patreon.com/posts/mk-seryi-chast-2-50892755");
+        mapView.put("Greycat_Boosty", "https://boosty.to/juliaomelchenko/posts/39b044fd-d8c6-49a7-b8c0-0aea38229378");
 
 
     }
