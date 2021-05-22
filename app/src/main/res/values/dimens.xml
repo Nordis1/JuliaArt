@@ -24,6 +24,4 @@
     <dimen name="Act_best_Student_normal_height">240dp</dimen>
     <dimen name="Act_best_Student_large_height">340dp</dimen>
     <dimen name="Act_best_Student_large_width">460dp</dimen>
-    <dimen name="Act_best_Student_Xlarge_height">440dp</dimen>
-    <dimen name="Act_best_Student_Xlarge_width">560dp</dimen>
 </resources>

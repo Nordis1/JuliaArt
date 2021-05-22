@@ -16,51 +16,52 @@
 
         <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:columnCount="1">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="340dp"
-                android:layout_margin="2dp"
-                android:layout_gravity="center"
-                android:background="@mipmap/students333"></ImageView>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students31"></ImageView>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students32"></ImageView>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students30"></ImageView>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students29"></ImageView>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/cherry_one"></ImageView>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students1">
 
             </ImageView>
@@ -68,15 +69,17 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students2"></ImageView>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students3">
 
             </ImageView>
@@ -84,8 +87,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students4">
 
             </ImageView>
@@ -93,8 +97,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students5">
 
             </ImageView>
@@ -102,8 +107,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students6">
 
             </ImageView>
@@ -111,8 +117,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students7">
 
             </ImageView>
@@ -120,8 +127,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students8">
 
             </ImageView>
@@ -129,8 +137,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students9">
 
             </ImageView>
@@ -138,8 +147,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students10">
 
             </ImageView>
@@ -147,8 +157,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students11">
 
             </ImageView>
@@ -156,8 +167,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students12">
 
             </ImageView>
@@ -165,8 +177,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students13">
 
             </ImageView>
@@ -174,8 +187,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students14">
 
             </ImageView>
@@ -183,8 +197,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students15">
 
             </ImageView>
@@ -192,8 +207,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students16">
 
             </ImageView>
@@ -201,8 +217,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students17">
 
             </ImageView>
@@ -210,8 +227,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students18">
 
             </ImageView>
@@ -219,8 +237,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students19">
 
             </ImageView>
@@ -228,8 +247,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students20">
 
             </ImageView>
@@ -237,8 +257,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students21">
 
             </ImageView>
@@ -246,8 +267,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students22">
 
             </ImageView>
@@ -255,8 +277,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students23">
 
             </ImageView>
@@ -264,8 +287,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students24">
 
             </ImageView>
@@ -273,8 +297,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students25">
 
             </ImageView>
@@ -282,8 +307,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students26">
 
             </ImageView>
@@ -291,8 +317,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students27">
 
             </ImageView>
@@ -300,11 +327,19 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/Act_best_Student_normal_height"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                tools:ignore="ContentDescription"
                 android:background="@mipmap/students28">
 
             </ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription"
+                android:background="@mipmap/students33"></ImageView>
         </GridLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

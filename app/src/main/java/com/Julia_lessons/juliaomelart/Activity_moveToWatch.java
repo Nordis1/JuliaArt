@@ -20,7 +20,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
     @SuppressLint("StaticFieldLeak")
     private static Button btn_Part1, btn_Part2, btn_Part3, btn_Part4, btn_Part5, btn_Part6, btn_Part7, btn_Boosty;
     static String string_link_1, string_link_2, string_link_3, string_link_4, string_link_5, string_link_6, string_link_7, string_link_Boosty = "";
-    TextView textfor_size;
+    TextView textfor_size, textOfDescription;
     ImageView linkView;
     ImageButton btnFeedback;
     static boolean nulll = false;
@@ -46,6 +46,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
         btn_Part5 = findViewById(R.id.btn_linkToPatreon_part5);
         btn_Part6 = findViewById(R.id.btn_linkToPatreon_part6);
         btn_Part7 = findViewById(R.id.btn_linkToPatreon_part7);
+        textOfDescription = findViewById(R.id.text_ofPrice);
         btn_Boosty = findViewById(R.id.btnBoosty);
         linkView = findViewById(R.id.linkView);
         btnFeedback.setOnClickListener(this);
@@ -58,6 +59,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
         btn_Part6.setOnClickListener(this);
         btn_Part7.setOnClickListener(this);
         btn_Boosty.setOnClickListener(this);
+        textOfDescription.setOnClickListener(this);
 
         textfor_size = findViewById(R.id.id_textSize1);
 
@@ -287,6 +289,15 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
                 startActivity(intent);
                 break;
             case R.id.btnBoosty:
+                try {
+                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(string_link_Boosty));
+                    startActivity(intent);
+                } catch (Exception e) {
+                    Toast.makeText(this, "Данные утеряны", Toast.LENGTH_LONG).show();
+                    Log.d(TAG, e.toString());
+                }
+                break;
+            case R.id.text_ofPrice:
                 try {
                     intent = new Intent(Intent.ACTION_VIEW, Uri.parse(string_link_Boosty));
                     startActivity(intent);
