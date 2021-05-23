@@ -10,7 +10,7 @@ public class HomeViewModel extends ViewModel {
 
     public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("");//сдесь текст идёт на Основной фрагмент, на главную страницу
+        mText.setValue("");//здесь текст идёт на Основной фрагмент, на главную страницу
     }
 
     public LiveData<String> getText() {

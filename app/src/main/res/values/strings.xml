@@ -5,12 +5,14 @@
     <string name="menu_Patreon_home">На Patreon</string>
     <string name="menu_about_patreon">Что такое Patreon?</string>
     <string name="menu">Меню</string>
-    <string name="menu_myArtMaterial">Мои арт-материалы</string>
+    <string name="menu_myArtMaterial">Арт-материалы</string>
     <string name="menu_free_lessons">Бесплатные уроки</string>
     <string name="menu_stringsOfLearn">Уровень \"Базовый\"</string>
     <string name="menu_stringsOfLearn1">Уровень \"Продвинутый\"</string>
     <string name="menu_Youtube_home">YouTube Автора</string>
+    <string name="add">Дополнительно</string>
     <string name="menu_WorkOfStudent">Работы учеников</string>
+    <string name="menu_State">Статьи</string>
     <string name="menu_share">Поделиться</string>
     <string name="menu_send">О проекте Patreon</string>
     <string name="menu_To_Ask">Обратная связь</string>

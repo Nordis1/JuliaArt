@@ -5,41 +5,42 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_list-Of-learn"
+            android:id="@+id/nav_list_Of_learn"
             android:icon="@mipmap/six"
             android:title="@string/menu_stringsOfLearn" />
         <item
-            android:id="@+id/nav_list-Of-learn_advance"
+            android:id="@+id/nav_list_Of_learn_advance"
             android:icon="@mipmap/ninght"
             android:title="@string/menu_stringsOfLearn1" />
-        <item
-            android:id="@+id/nav_work_of_Student"
-            android:icon="@drawable/ic_school_black_24dp"
-            android:title="@string/menu_WorkOfStudent" />
-        <item
-            android:id="@+id/nav_free_lesson"
-            android:icon="@mipmap/free"
-            android:title="@string/menu_free_lessons" />
-        <item
-            android:id="@+id/nav_home"
-            android:icon="@mipmap/patreon"
-            android:title="@string/menu_Patreon_home" />
         <item
             android:id="@+id/nav_youtube"
             android:icon="@drawable/ic_you_tube"
             android:title="@string/menu_Youtube_home" />
+        <item
+            android:id="@+id/nav_free_lesson"
+            android:icon="@mipmap/free"
+            android:title="@string/menu_free_lessons" />
+
     </group>
 
-    <item android:title="Дополнительно">
+    <item android:title="@string/add">
         <menu>
             <item
-                android:id="@+id/nav_Art-materials"
+                android:id="@+id/nav_State"
+                android:icon="@drawable/ic_baseline_article_24"
+                android:title="@string/menu_State" />
+            <item
+                android:id="@+id/nav_Art_materials"
                 android:icon="@mipmap/shop"
                 android:title="@string/menu_myArtMaterial" />
-   <!--         <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />-->
+            <item
+                android:id="@+id/nav_work_of_Student"
+                android:icon="@drawable/ic_school_black_24dp"
+                android:title="@string/menu_WorkOfStudent" />
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@mipmap/patreon"
+                android:title="@string/menu_Patreon_home" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"

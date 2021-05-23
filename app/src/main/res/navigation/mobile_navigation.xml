@@ -6,38 +6,54 @@
     app:startDestination="@+id/nav_home">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.Julia_lessons.juliaomelart.ui.home.HomeFragment"
-        android:label="@string/menu"
-        tools:layout="@layout/fragment_home" />
-
-<!--    <fragment
-        android:id="@+id/nav_Art-materialsX"
-        android:name="com.Julia_lessons.juliaomelart.ui.gallery.GalleryFragment"
-        android:label="@string/menu_myArtMaterial"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_list-Of-learnX"
-        android:name="com.Julia_lessons.juliaomelart.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_list_Of_learn"
         android:label="@string/menu_stringsOfLearn"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
+        tools:layout="@layout/fragment_learn6doll" />
 
     <fragment
-        android:id="@+id/nav_youtubeX"
-        android:name="com.Julia_lessons.juliaomelart.ui.tools.ToolsFragment"
-        android:label="@string/menu_Youtube_home"
-        tools:layout="@layout/fragment_tools" />-->
+        android:id="@+id/nav_list_Of_learn_advance"
+        android:label="@string/menu_stringsOfLearn1"
+        android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
+        tools:layout="@layout/fragment_lear9doll" />
 
-<!--    <fragment
-        android:id="@+id/nav_shareX"
-        android:name="com.Julia_lessons.juliaomelart.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />-->
+    <fragment
+        android:id="@+id/nav_free_lesson"
+        android:label="@string/menu_free_lessons"
+        android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
+        tools:layout="@layout/fragment_free_lessons" />
 
-<!--    <fragment
-        android:id="@+id/nav_sendX"
+    <fragment
+        android:id="@+id/nav_youtube"
+        android:label="@string/menu_send"
+        android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
+        tools:layout="@layout/fragment_youtube" />
+
+    <!--дополнительно-->
+
+    <fragment
+        android:id="@+id/nav_State"
+        android:label="@string/menu_send"
+        android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
+        tools:layout="@layout/fragment_state" />
+    <fragment
+        android:id="@+id/nav_Art_materials"
+        android:label="@string/menu_send"
+        android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
+        tools:layout="@layout/fragment_artmaterials" />
+    <fragment
+        android:id="@+id/nav_work_of_Student"
+        android:label="@string/menu_WorkOfStudent"
+        android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
+        tools:layout="@layout/fragment_work_of_student" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:label="@string/menu"
+        android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_send"
         android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
         android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />-->
+        tools:layout="@layout/fragment_whatispatreon" />
 </navigation>
