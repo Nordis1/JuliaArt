@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 import com.Julia_lessons.juliaomelart.R;
 
@@ -18,8 +19,7 @@ public class SendFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        sendViewModel =
-                ViewModelProviders.of(this).get(SendViewModel.class);
+        sendViewModel = new ViewModelProvider(this).get(SendViewModel.class);
         View root = inflater.inflate(R.layout.fragment_youtube, container, false);
         final TextView textView = root.findViewById(R.id.text_send);
         sendViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {

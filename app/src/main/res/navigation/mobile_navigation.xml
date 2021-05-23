@@ -5,7 +5,7 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/nav_home">
 
-    <fragment
+<!--    <fragment
         android:id="@+id/nav_list_Of_learn"
         android:label="@string/menu_stringsOfLearn"
         android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
@@ -27,11 +27,11 @@
         android:id="@+id/nav_youtube"
         android:label="@string/menu_send"
         android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
-        tools:layout="@layout/fragment_youtube" />
+        tools:layout="@layout/fragment_youtube" />-->
 
     <!--дополнительно-->
 
-    <fragment
+<!--    <fragment
         android:id="@+id/nav_State"
         android:label="@string/menu_send"
         android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
@@ -45,15 +45,15 @@
         android:id="@+id/nav_work_of_Student"
         android:label="@string/menu_WorkOfStudent"
         android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
-        tools:layout="@layout/fragment_work_of_student" />
+        tools:layout="@layout/fragment_work_of_student" />-->
     <fragment
         android:id="@+id/nav_home"
         android:label="@string/menu"
-        android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
+        android:name="com.Julia_lessons.juliaomelart.ui.home.HomeFragment"
         tools:layout="@layout/fragment_home" />
-    <fragment
+<!--    <fragment
         android:id="@+id/nav_send"
         android:name="com.Julia_lessons.juliaomelart.ui.send.SendFragment"
         android:label="@string/menu_send"
-        tools:layout="@layout/fragment_whatispatreon" />
+        tools:layout="@layout/fragment_whatispatreon" />-->
 </navigation>
