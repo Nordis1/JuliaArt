@@ -1,11 +1,16 @@
 package com.Julia_lessons.juliaomelart;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.View;
@@ -59,7 +64,7 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
         btn_Part6.setOnClickListener(this);
         btn_Part7.setOnClickListener(this);
         btn_Boosty.setOnClickListener(this);
-        textOfDescription.setOnClickListener(this);
+        //textOfDescription.setOnClickListener(this);
 
         textfor_size = findViewById(R.id.id_textSize1);
 
@@ -75,6 +80,41 @@ public class Activity_moveToWatch extends AppCompatActivity implements View.OnCl
             i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(i);
         }
+        giveLinktoText();
+
+    }
+
+    private void giveLinktoText() {
+        // info from www.youtube.com/watch?v=E4xSjGZWR3E
+
+        String mdescript_text = "Чтобы перейти к уроку выберите интересующую вас часть видео. Для просмотра вам следует зайти на Boosty или Patreon под своей учётной записью, на которую оформлена подписка. Приятного просмотра и обучения!";
+        SpannableString spString = new SpannableString("" + mdescript_text);
+        ClickableSpan mclickablespan = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget) {
+                try {
+                   Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://boosty.to/juliaomelchenko"));
+                    startActivity(intent);
+                }catch (Exception e){
+                    Toast.makeText(Activity_moveToWatch.this, "Данные утеряны", Toast.LENGTH_LONG).show();
+                };
+            }
+        };
+        ClickableSpan mclickablespan2 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget) {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.patreon.com/juliaomelchenko"));
+                    startActivity(intent);
+                }catch (Exception e){
+                    Toast.makeText(Activity_moveToWatch.this, "Данные утеряны", Toast.LENGTH_LONG).show();
+                };
+            }
+        };
+        spString.setSpan(mclickablespan,96,102, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spString.setSpan(mclickablespan2,107,114, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        textOfDescription.setText(spString);
+        textOfDescription.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     @SuppressLint("NonConstantResourceId")

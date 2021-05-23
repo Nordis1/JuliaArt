@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:baselineAligned="false"
-        android:text="@string/size_large"
+        android:text="@string/size_large_v26"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></TextView>
@@ -58,11 +58,9 @@
             android:layout_marginEnd="12dp"
             android:layout_marginRight="12dp"
             android:textSize="20sp"
-            android:fontFamily="@font/sourcesanspro_regular"
-            tools:ignore="UnusedAttribute">
-
+            android:fontFamily="@font/sourcesanspro_regular">
         </TextView>
-
+        
     </ScrollView>
 
     <ScrollView

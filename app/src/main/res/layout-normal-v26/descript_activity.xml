@@ -12,7 +12,7 @@
         android:id="@+id/id_textSize1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/size_nirmal"
+        android:text="@string/size_normal"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></TextView>
@@ -38,8 +38,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/inner_constraint"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp">
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/btn_linkToPatreon"
@@ -50,7 +49,6 @@
                 android:text="@string/btn"
                 android:textColor="@color/white"
                 android:textStyle="normal"
-                android:layout_marginTop="6dp"
                 app:layout_constrainedHeight="true"
                 app:layout_constraintHeight_max="45dp"
                 app:layout_constraintHeight_min="30dp"
@@ -245,7 +243,7 @@
         app:layout_constrainedHeight="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_max="wrap"
-        app:layout_constraintHeight_min="125dp"
+        app:layout_constraintHeight_min="115dp"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/frame_from_ActivityDescription"
@@ -257,17 +255,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
-            android:text="@string/Descript_text"
             android:gravity="center_horizontal"
             android:layout_marginStart="12dp"
             android:layout_marginLeft="12dp"
             android:layout_marginEnd="12dp"
             android:layout_marginRight="12dp"
             android:textSize="17sp"
-            android:fontFamily="@font/sourcesanspro_regular"
-            tools:ignore="UnusedAttribute">
+            android:text="@string/Descript_text"
+            android:fontFamily="@font/sourcesanspro_regular">
 
         </TextView>
+<!--        <com.bluejamesbond.text.DocumentView
+            android:id="@+id/text_ofPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:text="@string/Descript_text">
+
+        </com.bluejamesbond.text.DocumentView>-->
+
+<!--        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text_ofPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:textAppearance="@string/Descript_text"
+            android:fontFamily="@font/sourcesanspro_regular">
+
+        </me.biubiubiu.justifytext.library.JustifyTextView>-->
+
 
     </ScrollView>
 
@@ -303,7 +320,6 @@
         android:layout_width="29dp"
         android:layout_height="31dp"
         android:layout_marginEnd="33dp"
-        android:layout_marginRight="33dp"
         android:contentDescription="@string/menu_share"
         app:layout_constrainedHeight="true"
         app:layout_constraintEnd_toEndOf="parent"

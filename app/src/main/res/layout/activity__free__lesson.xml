@@ -28,11 +28,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginBottom="5dp"
+            android:textSize="15sp"
             android:fontFamily="@font/sourcesanspro_regular"
             android:text="@string/forFreeLesson"
             android:textStyle="normal"
-            android:gravity="center_vertical"/>
+            android:gravity="center_vertical" />
 
 <!--        <TextView
             android:id="@+id/textOfFree"

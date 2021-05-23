@@ -22,10 +22,11 @@
     <string name="Descript_text">Чтобы перейти к уроку выберите интересующую вас часть видео. Для просмотра вам следует зайти на Patreon или Boosty под своей
         учётной записью, на которую оформлена подписка. Приятного просмотра и обучения!\n</string>
     <string name="Descript_text1">Чтобы перейти к уроку выберите интересующую вас часть видео. Для просмотра вам следует зайти на </string>
-    <string name="Descript_text2"> или </string>
+    <string name="Boosty"> Boosty</string>
+    <string name="Descript_text2"> или</string>
+    <string name="Patreon"> Patreon</string>
     <string name="Descript_text3"> под своей учётной записью, на которую оформлена подписка. Приятного просмотра и обучения!\n</string>
-    <string name="Patreon">Patreon</string>
-    <string name="Boosty">Boosty</string>
+
     <string name="btn">Часть 1</string>
     <string name="btnSmall">Часть 1</string>
     <string name="btn2">Часть 2</string>
@@ -64,8 +65,10 @@
     <string name="size_menu">Размер экрана</string>
     <string name="size_small">Small</string>
     <string name="size_nirmal">Normal</string>
+    <string name="size_normal">Normal-v26</string>
     <string name="size_nirmal_land">NormalLand</string>
     <string name="size_large">Large</string>
+    <string name="size_large_v26">Large-v26</string>
     <string name="size_large_land">Large_land</string>
     <string name="size_XLarge">XLarge</string>
     <string name="size_XLarge_land">XLarge_Land</string>
