@@ -32,7 +32,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed">
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_constraintHorizontal_chainStyle="spread">
 
     </FrameLayout>
 
@@ -42,49 +43,49 @@
         android:layout_height="wrap_content"
 
         app:layout_constrainedHeight="true"
-        app:layout_constraintBottom_toTopOf="@+id/btn_linkToPatreon"
+        app:layout_constraintBottom_toTopOf="@+id/btnBoosty"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription">
+        app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription"
+        tools:layout_constraintHorizontal_chainStyle="spread">
 
         <TextView
             android:id="@+id/text_ofPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:justificationMode="inter_word"
-            android:text="@string/Descript_text"
-            android:gravity="center"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
-            android:textSize="18sp"
-            android:fontFamily="@font/sourcesanspro_regular">
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:text="@string/Descript_text"
+            android:textSize="18sp">
 
         </TextView>
 
     </ScrollView>
-<!--    <TextView
-        android:id="@+id/text_ofPrice"
-        android:layout_width="wrap_content"
+
+    <Button
+        android:id="@+id/btnBoosty"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:baselineAligned="false"
-        android:textAlignment="center"
-        android:fontFamily="@font/sourcesanspro_regular"
-        android:text="@string/s"
-        android:textSize="16sp"
-        android:visibility="visible"
-        app:layout_constrainedWidth="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/myboostybutton"
+        android:text="@string/btnboosty"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        app:layout_constrainedHeight="true"
         app:layout_constraintBottom_toTopOf="@+id/btn_linkToPatreon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHeight_max="50dp"
+        app:layout_constraintHeight_min="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription"
-        android:gravity="center_horizontal">
-
-    </TextView>-->
+        app:layout_constraintTop_toBottomOf="@+id/scrollable"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_constraintHorizontal_chainStyle="spread"></Button>
 
     <Button
         android:id="@+id/btn_linkToPatreon"
@@ -103,8 +104,9 @@
         app:layout_constraintHeight_min="30dp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollable"
-        app:layout_constraintVertical_chainStyle="packed"></Button>
+        app:layout_constraintTop_toBottomOf="@+id/btnBoosty"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_constraintHorizontal_chainStyle="spread"></Button>
 
     <Button
         android:id="@+id/btn_linkToPatreon_part2"
@@ -125,7 +127,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_linkToPatreon"
-        app:layout_constraintVertical_chainStyle="packed">
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_constraintHorizontal_chainStyle="spread">
 
     </Button>
 
@@ -148,7 +151,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_linkToPatreon_part2"
-        app:layout_constraintVertical_chainStyle="packed">
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_constraintHorizontal_chainStyle="spread">
 
     </Button>
 
@@ -171,7 +175,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_linkToPatreon_part3"
-        app:layout_constraintVertical_chainStyle="packed">
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_constraintHorizontal_chainStyle="spread">
 
     </Button>
 
@@ -193,7 +198,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part4"
-        app:layout_constraintVertical_chainStyle="packed">
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_constraintHorizontal_chainStyle="spread">
 
     </Button>
 
@@ -215,7 +221,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part5"
-        app:layout_constraintVertical_chainStyle="packed">
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_constraintHorizontal_chainStyle="spread">
 
     </Button>
 
@@ -231,33 +238,16 @@
         android:textStyle="normal"
         android:visibility="gone"
         app:layout_constrainedHeight="true"
-        app:layout_constraintBottom_toTopOf="@+id/btnBoosty"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_max="50dp"
         app:layout_constraintHeight_min="30dp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_linkToPatreon_part6"
-        app:layout_constraintVertical_chainStyle="packed">
-
-    </Button>
-    <Button
-        android:id="@+id/btnBoosty"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textStyle="normal"
-        android:layout_marginBottom="5dp"
-        app:layout_constrainedHeight="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHeight_max="50dp"
-        app:layout_constraintHeight_min="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/btn_linkToPatreon_part7"
         app:layout_constraintVertical_chainStyle="packed"
-        android:background="@drawable/myboostybutton"
-        android:text="@string/btnboosty" />
+        tools:layout_constraintHorizontal_chainStyle="spread" />
+
 
     <ImageView
         android:id="@+id/linkView"
@@ -268,7 +258,7 @@
         android:layout_marginRight="80dp"
         android:contentDescription="@string/menu_share"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_linkToPatreon"
+        app:layout_constraintTop_toTopOf="@+id/btnBoosty"
         app:srcCompat="@drawable/ic_link24dp"
         tools:ignore="VectorDrawableCompat" />
 
@@ -296,7 +286,7 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/menu_To_Ask"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_linkToPatreon"
+        app:layout_constraintTop_toTopOf="@+id/btnBoosty"
         app:srcCompat="@drawable/pngjoy" />
 
     <TextView

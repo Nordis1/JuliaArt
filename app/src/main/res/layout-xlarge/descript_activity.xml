@@ -43,7 +43,7 @@
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         app:layout_constrainedHeight="true"
-        app:layout_constraintBottom_toTopOf="@+id/btn_linkToPatreon"
+        app:layout_constraintBottom_toTopOf="@+id/btnBoosty"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,40 +53,39 @@
             android:id="@+id/text_ofPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:justificationMode="inter_word"
-            android:text="@string/Descript_text"
-            android:gravity="fill_horizontal"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
-            android:textSize="18sp"
             android:fontFamily="@font/sourcesanspro_regular"
+            android:gravity="fill_horizontal"
+            android:justificationMode="inter_word"
+            android:text="@string/Descript_text"
+            android:textSize="18sp"
             tools:ignore="UnusedAttribute">
 
         </TextView>
 
     </ScrollView>
-<!--    <TextView
-        android:id="@+id/text_ofPrice"
-        android:layout_width="wrap_content"
+
+    <Button
+        android:id="@+id/btnBoosty"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:baselineAligned="false"
-        android:textAlignment="center"
-        android:fontFamily="@font/sourcesanspro_regular"
-        android:text="@string/s"
-        android:textSize="16sp"
-        android:visibility="visible"
-        app:layout_constrainedWidth="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/myboostybutton"
+        android:text="@string/btnboosty"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        app:layout_constrainedHeight="true"
         app:layout_constraintBottom_toTopOf="@+id/btn_linkToPatreon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHeight_max="50dp"
+        app:layout_constraintHeight_min="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frame_from_ActivityDescription"
-        android:gravity="center_horizontal">
-
-    </TextView>-->
+        app:layout_constraintTop_toBottomOf="@+id/scrollable"
+        app:layout_constraintVertical_chainStyle="packed"></Button>
 
     <Button
         android:id="@+id/btn_linkToPatreon"
@@ -94,7 +93,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:background="@drawable/mybutton"
-        android:baselineAligned="false"
         android:text="@string/btn"
         android:textColor="@color/white"
         android:textStyle="normal"
@@ -103,9 +101,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_max="50dp"
         app:layout_constraintHeight_min="30dp"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollable"
+        app:layout_constraintTop_toBottomOf="@+id/btnBoosty"
         app:layout_constraintVertical_chainStyle="packed"></Button>
 
     <Button
@@ -233,7 +230,7 @@
         android:textStyle="normal"
         android:visibility="gone"
         app:layout_constrainedHeight="true"
-        app:layout_constraintBottom_toTopOf="@+id/btnBoosty"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_max="50dp"
         app:layout_constraintHeight_min="30dp"
@@ -243,23 +240,6 @@
         app:layout_constraintVertical_chainStyle="packed">
 
     </Button>
-    <Button
-        android:id="@+id/btnBoosty"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textStyle="normal"
-        android:layout_marginBottom="5dp"
-        app:layout_constrainedHeight="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHeight_max="50dp"
-        app:layout_constraintHeight_min="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/btn_linkToPatreon_part7"
-        app:layout_constraintVertical_chainStyle="packed"
-        android:background="@drawable/myboostybutton"
-        android:text="@string/btnboosty" />
 
     <ImageView
         android:id="@+id/linkView"
@@ -270,7 +250,7 @@
         android:layout_marginRight="80dp"
         android:contentDescription="@string/menu_share"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_linkToPatreon"
+        app:layout_constraintTop_toTopOf="@+id/btnBoosty"
         app:srcCompat="@drawable/ic_link24dp"
         tools:ignore="VectorDrawableCompat" />
 
@@ -298,7 +278,7 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/menu_To_Ask"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_linkToPatreon"
+        app:layout_constraintTop_toTopOf="@+id/btnBoosty"
         app:srcCompat="@drawable/pngjoy" />
 
     <TextView
