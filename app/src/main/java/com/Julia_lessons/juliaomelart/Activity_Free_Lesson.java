@@ -3,12 +3,19 @@ package com.Julia_lessons.juliaomelart;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -21,6 +28,7 @@ public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTube
     public static final String VIDEO_Cake_part2 = "y1aSqRz2g_E";
     public static final String VIDEO_cake_part3 = "yNc4YO_n2gg";
     Button btntosite;
+    TextView description_text;
     YouTubePlayerView youTubePlayerView;
     ListView listview;
     String[] arrayOfnames = {"Торт с клубникой - часть 1", "Торт с клубникой - часть 2", "Торт с клубникой - часть 3"};
@@ -32,6 +40,7 @@ public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTube
         setContentView(R.layout.activity__free__lesson);
         listview = findViewById(R.id.list_view);
         btntosite = findViewById(R.id.btn_toSite);
+        description_text = findViewById(R.id.textOfFree);
         btntosite.setOnClickListener(this);
 
 
@@ -41,6 +50,41 @@ public class Activity_Free_Lesson extends YouTubeBaseActivity implements YouTube
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayOfnames);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(this);
+        giveLinktoText();
+    }
+
+    private void giveLinktoText() {
+        String mdescript_text = "Мастер-класс Торт с клубникой - это лишь малая часть всех уроков. " +
+                "Для доступа к остальным мастер-классам, общей продолжительностью более 200 академических часов," +
+                " вам следует оформить подписку на Boosty или Patreon." +
+                "Подробнее об обучении можно узнать на сайте автора";
+        SpannableString spString = new SpannableString("" + mdescript_text);
+        ClickableSpan mclickablespan = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget) {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://boosty.to/juliaomelchenko"));
+                    startActivity(intent);
+                }catch (Exception e){
+                    Toast.makeText(Activity_Free_Lesson.this, "Данные утеряны", Toast.LENGTH_LONG).show();
+                };
+            }
+        };
+        ClickableSpan mclickablespan2 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget) {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.patreon.com/juliaomelchenko"));
+                    startActivity(intent);
+                }catch (Exception e){
+                    Toast.makeText(Activity_Free_Lesson.this, "Данные утеряны", Toast.LENGTH_LONG).show();
+                };
+            }
+        };
+        spString.setSpan(mclickablespan,195,201, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spString.setSpan(mclickablespan2,206,213, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        description_text.setText(spString);
+        description_text.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     @Override
