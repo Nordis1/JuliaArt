@@ -248,11 +248,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Greycat_p2", "https://www.patreon.com/posts/mk-seryi-chast-2-50892755");
         mapView.put("Greycat_Boosty", "https://boosty.to/juliaomelchenko/posts/39b044fd-d8c6-49a7-b8c0-0aea38229378");
 
-        mapView.put("Flouwers_Iris", "https://www.patreon.com/posts/mk-dereviannaia-49428078");
-        mapView.put("Flouwers_Iris_p2", "https://www.patreon.com/posts/mk-dereviannaia-49448640");
-        mapView.put("Flouwers_Iris_p3", "https://www.patreon.com/posts/mk-dereviannaia-49825246");
-        mapView.put("Flouwers_Iris_p4", "https://www.patreon.com/posts/mk-dereviannaia-49981901");
-        mapView.put("Flouwers_Iris_Boosty", "https://boosty.to/juliaomelchenko/posts/4652fbaf-0cc8-4f4a-be7e-840ee2e0f87f");
+        mapView.put("Flowers_Iris", "https://www.patreon.com/posts/mk-irisy-na-fone-51208025");
+        mapView.put("Flowers_Iris_p2", "https://www.patreon.com/posts/mk-irisy-na-fone-51249118");
+        mapView.put("Flowers_Iris_p3", "https://www.patreon.com/posts/mk-irisy-na-fone-51485638");
+        mapView.put("Flowers_Iris_p4", "https://www.patreon.com/posts/mk-irisy-na-fone-51553354");
+        mapView.put("Flowers_Iris_Boosty", "https://boosty.to/juliaomelchenko/posts/06fec8bf-e512-4b56-86a1-22d5a50c926e");
 
 
     }

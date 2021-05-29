@@ -58,6 +58,15 @@
             android:paddingRight="14dp"
             android:columnCount="2">
             <ImageView
+                android:id="@+id/id_Iris"
+                android:layout_width="@dimen/Act_galery_normal_width"
+                android:layout_height="@dimen/Act_galery_normal_height"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="14dp"
+                android:background="@mipmap/iris"></ImageView>
+            <ImageView
                 android:id="@+id/id_Tomat"
                 android:layout_width="@dimen/Act_galery_normal_width"
                 android:layout_height="@dimen/Act_galery_normal_height"
@@ -72,7 +81,6 @@
                 android:layout_height="@dimen/Act_galery_normal_height"
                 android:layout_columnWeight="1"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="14dp"
                 android:background="@mipmap/woodenmug"></ImageView>
 

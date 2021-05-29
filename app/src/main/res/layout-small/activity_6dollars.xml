@@ -54,10 +54,17 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/id_Tomat"
+                android:id="@+id/id_Iris"
                 android:layout_width="@dimen/Act_galery_small_width"
                 android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="9dp"
+                android:background="@mipmap/iris"></ImageView>
+            <ImageView
+                android:id="@+id/id_Tomat"
+                android:layout_width="@dimen/Act_galery_small_width"
+                android:layout_height="@dimen/Act_galery_small_height"
                 android:layout_gravity="center"
                 android:layout_marginBottom="9dp"
                 android:background="@mipmap/tomatoes"></ImageView>

@@ -65,6 +65,7 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
             reslist1.add(R.id.id_Seaturtle);
             reslist1.add(R.id.id_Tomat);
             reslist1.add(R.id.id_GreyCat);
+            reslist1.add(R.id.id_Iris);
         }
         try {
             for (int i = 0; i < reslist1.size(); i++) {
@@ -537,6 +538,19 @@ public class Activity_9_Dollars extends AppCompatActivity implements View.OnClic
                 boostylink9Doll = connectLink_of_advanced + "_Boosty";
                 name9Doll_2 = connectLink_of_advanced + "_p2";
                 if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
+                break;
+            case R.id.id_Iris:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.iris);
+                startActivity(intent);
+                connectLink_of_advanced = "Flowers_Iris";
+                boostylink9Doll = connectLink_of_advanced + "_Boosty";
+                name9Doll_2 = connectLink_of_advanced + "_p2";
+                name9Doll_3 = connectLink_of_advanced + "_p3";
+                name9Doll_4 = connectLink_of_advanced + "_p4";
+                if (MainActivity.mapView.containsKey(name9Doll_2)) onButtonVisible9doll_2 = true;
+                if (MainActivity.mapView.containsKey(name9Doll_3)) onButtonVisible9doll_3 = true;
+                if (MainActivity.mapView.containsKey(name9Doll_4)) onButtonVisible9doll_4 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();

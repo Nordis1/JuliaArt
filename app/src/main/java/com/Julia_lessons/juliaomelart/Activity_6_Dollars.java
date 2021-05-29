@@ -51,6 +51,7 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
             reslist.add(R.id.id_Cake);
             reslist.add(R.id.id_Woodenmug);
             reslist.add(R.id.id_Tomat);
+            reslist.add(R.id.id_Iris);
         }
         try {
             for (int i = 0; i < reslist.size(); i++) {
@@ -354,6 +355,19 @@ public class Activity_6_Dollars extends AppCompatActivity implements View.OnClic
                 name6Doll_3 = connectLink + "_p3";
                 if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
                 if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
+                break;
+            case R.id.id_Iris:
+                intent = new Intent(this, Activity_moveToWatch.class);
+                intent.putExtra("intent", R.mipmap.iris);
+                startActivity(intent);
+                connectLink = "Flowers_Iris";
+                boostyLink6Doll = connectLink + "_Boosty";
+                name6Doll_2 = connectLink + "_p2";
+                name6Doll_3 = connectLink + "_p3";
+                name6Doll_4 = connectLink + "_p4";
+                if (MainActivity.mapView.containsKey(name6Doll_2)) onButtonVisible6doll_2 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_3)) onButtonVisible6doll_3 = true;
+                if (MainActivity.mapView.containsKey(name6Doll_4)) onButtonVisible6doll_4 = true;
                 break;
             default:
                 Toast.makeText(this, "Не установленно!", Toast.LENGTH_LONG).show();
