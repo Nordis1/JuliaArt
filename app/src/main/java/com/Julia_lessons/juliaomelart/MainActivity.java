@@ -248,6 +248,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mapView.put("Greycat_p2", "https://www.patreon.com/posts/mk-seryi-chast-2-50892755");
         mapView.put("Greycat_Boosty", "https://boosty.to/juliaomelchenko/posts/39b044fd-d8c6-49a7-b8c0-0aea38229378");
 
+        mapView.put("Flouwers_Iris", "https://www.patreon.com/posts/mk-dereviannaia-49428078");
+        mapView.put("Flouwers_Iris_p2", "https://www.patreon.com/posts/mk-dereviannaia-49448640");
+        mapView.put("Flouwers_Iris_p3", "https://www.patreon.com/posts/mk-dereviannaia-49825246");
+        mapView.put("Flouwers_Iris_p4", "https://www.patreon.com/posts/mk-dereviannaia-49981901");
+        mapView.put("Flouwers_Iris_Boosty", "https://boosty.to/juliaomelchenko/posts/4652fbaf-0cc8-4f4a-be7e-840ee2e0f87f");
+
 
     }
 

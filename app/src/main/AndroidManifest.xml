@@ -17,12 +17,15 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_best_student"
+        <activity
+            android:name=".Activity_best_student"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name=".Activity_Free_Lesson"
             android:screenOrientation="portrait" />
-        <activity android:name=".Activity_9_Dollars" />
+        <activity
+            android:name=".Activity_9_Dollars"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".About_app"
             android:screenOrientation="portrait" />
@@ -39,7 +42,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity_6_Dollars">
+        <activity
+            android:name=".Activity_6_Dollars"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.Galerey" />
 
